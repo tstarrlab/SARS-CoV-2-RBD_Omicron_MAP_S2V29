@@ -1,0 +1,23 @@
+# cluster configuration for running Snakefile on Hutch cluster
+
+__default__:
+  cpus: 1
+  time: 0-4
+  mem: 32000
+  name: "{rule}"
+
+gisaid_rbd_mutations:
+  cpus: 12
+  time: 1-0
+  mem: 75000
+
+download_gisaid:
+  cpus: 12
+  time: 1-0
+  mem: 75000
+
+count_variants:
+  cpus: 4
+  time: 0-4
+  mem: 100000
+

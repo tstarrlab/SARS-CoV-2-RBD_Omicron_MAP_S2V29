@@ -1,0 +1,101 @@
+---
+title: "Analyze GISAID mutations"
+author: "Tyler Starr"
+date: "6/1/2023"
+output:
+  github_document:
+    toc: true
+    html_preview: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+This notebook download spike sequences from GISAID, aligns them, and computes mutant frequencies.
+
+```{r setup, message=FALSE, warning=FALSE, error=FALSE}
+#list of packages to install/load
+packages = c("yaml","data.table","tidyverse","gridExtra","bio3d", "devtools", "lubridate","knitr")
+#install any packages not already installed
+installed_packages <- packages %in% rownames(installed.packages())
+if(any(installed_packages == F)){
+  install.packages(packages[!installed_packages],
+                   lib=c(paste("/uufs/chpc.utah.edu/common/home/",Sys.getenv("USER"),"/RLibs/",Sys.getenv("R_VERSION"),sep="")),
+                   repos=c("http://cran.us.r-project.org"))
+}
+#load packages
+invisible(lapply(packages, library, character.only=T))
+
+knitr::opts_chunk$set(echo = T)
+knitr::opts_chunk$set(dev.args = list(png = list(type = "cairo")))
+
+devtools::install_github("Wytamma/GISAIDR")
+library(GISAIDR)
+
+#read in config file
+config <- read_yaml("config.yaml")
+
+#make output directory
+if(!file.exists(config$gisaid_mutations_dir)){
+  dir.create(file.path(config$gisaid_mutations_dir))
+}
+
+```
+
+Session info for reproducing environment:
+```{r print_sessionInfo}
+sessionInfo()
+```
+
+## GISAIDR setup
+
+We have to hardcode GISAID username and password. Will always remove password when pushing to git, this needs to be manually filled in each iteration.
+```{r gisaid_login}
+credentials <- login(username = "tylernstarr", password = "VirusesEvolve")
+
+```
+
+Query for all BA2 accessions
+
+```{r query_GISAID}
+BA2_df <- query(credentials = credentials,
+                lineage = "BA.2",
+                low_coverage_excl = TRUE,
+                complete = TRUE,
+                high_coverage = TRUE,
+                fast = TRUE)
+```
+Download the sequences (have to do this in batches of 5000 -- maybe 4000 to avoid download errors?)
+
+```{r download_GISAID}
+chunk <- 4000
+segments <- length(BA2_df$accession_id) %/% chunk # number of 4000-seq downloads to make
+remainder <- length(BA2_df$accession_id) %% chunk # remainder for last download
+
+credentials <- login(username = "tylernstarr", password = "VirusesEvolve")
+
+BA2_df_with_seq <- download(credentials = credentials,
+                            list_of_accession_ids = BA2_df$accession_id[1:chunk])
+for(i in 23:segments){ #start with 2 (chunk 1 started above)
+  print(i)
+  credentials <- login(username = "tylernstarr", password = "VirusesEvolve")
+  start <- (i-1)*chunk + 1
+  end <- i*chunk
+  BA2_df_with_seq <- rbind(BA2_df_with_seq,
+                           download(credentials = credentials,
+                                    list_of_accession_ids = BA2_df$accession_id[start:end]))
+  }
+credentials <- login(username = "tylernstarr", password = "VirusesEvolve")
+BA2_df_with_seq <- rbind(BA2_df_with_seq,
+                         download(credentials = credentials,
+                                  list_of_accession_ids = BA2_df$accession_id[(end+1):(end+remainder)]))
+```
+
+Output FASTA for later alignment
+
+```{r output_fasta}
+export_fasta(BA2_df_with_seq, 
+             out_file_name = config$spike_sequences,
+             export_dated_only = FALSE)
+
+
+```

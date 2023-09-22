@@ -1,0 +1,185 @@
+---
+title: "custom analysis plots"
+author: "Tyler Starr"
+date: "06/02/2023"
+output:
+  github_document:
+    toc: true
+    html_preview: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+This notebook does some random analyses on the mAbs panel that vary from the more constrained global pipeline.
+
+```{r setup, message=FALSE, warning=FALSE, error=FALSE}
+#list of packages to install/load
+packages = c("yaml","data.table","tidyverse","ggrepel","knitr")
+#install any packages not already installed
+installed_packages <- packages %in% rownames(installed.packages())
+if(any(installed_packages == F)){
+  install.packages(packages[!installed_packages],
+                   lib=c(paste("/uufs/chpc.utah.edu/common/home/",Sys.getenv("USER"),"/RLibs/",Sys.getenv("R_VERSION"),sep="")),
+                   repos=c("http://cran.us.r-project.org"))
+}
+#load packages
+invisible(lapply(packages, library, character.only=T))
+
+knitr::opts_chunk$set(echo = T)
+knitr::opts_chunk$set(dev.args = list(png = list(type = "cairo")))
+
+#read in config file
+config <- read_yaml("./config.yaml")
+
+#make output directory
+output_dir <- config$custom_plots_dir
+if(!file.exists(output_dir)){
+  dir.create(file.path(output_dir))
+}
+```
+Session info for reproducing environment:
+```{r print_sessionInfo}
+sessionInfo()
+```
+
+## Data input and formatting
+
+Read in escape fractions, filter for Vir mAbs.
+
+```{r data input}
+dt <- data.table(read.csv(file=config$escape_fracs_Omicron_BA2,stringsAsFactors=F))
+#all mAbs used in plots
+dt <- dt[library=="average", .(selection,condition,site,protein_site,wildtype,mutation,mut_escape_frac_single_mut,site_total_escape_frac_single_mut)]
+
+setnames(dt,"mut_escape_frac_single_mut","mut_escape_frac");setnames(dt,"site_total_escape_frac_single_mut","site_total_escape")
+
+dt[,antibody:=as.character(NA)]
+dt[condition=="S2V29_33",antibody:="S2V29"]; dt[condition=="S3L17_51",antibody:="S3L17"]; dt[condition=="S2K146_60",antibody:="S2K146"]  
+
+#set antibody as a factor in order of plotting
+dt$antibody <- factor(dt$antibody,levels=c("S2V29","S3L17","S2K146"))
+
+dt <- dt[,.(antibody,protein_site,wildtype,mutation,mut_escape_frac,site_total_escape)]
+setnames(dt,"protein_site","site")
+
+dt[,site_max_escape:=max(mut_escape_frac,na.rm=T),by=c("antibody","site")]
+
+#load prior dms data
+dms <- data.table(read.csv(file=config$mut_bind_expr,stringsAsFactors=F));dms[,mutation:=NULL];dms <- dms[target=="Omicron_BA2"]
+
+```
+
+## Part 1: Circulating variants at the per-mut level
+
+
+We read in table reporting circulating mutants. We add new columns to our data frame indicating the nobs and frequency on GISAID, and the number of countries in which a mutant has been observed. Then, First, for each antibody, we plot per-mutation escape fraction versus frequency (log10), with a 'pseudo-frequency' of 0.1x the lowest actual frequency, to enable log10 plotting)
+
+```{r mutation_escape_v_freq, echo=T, fig.width=11, fig.height=4, fig.align="center", dpi=300,dev="png"}
+#read in table giving mutant counts/frequencies on GISAID
+counts <- read.csv(config$gisaid_mutation_counts,stringsAsFactors=F)
+#add to scores table
+dt[,n_country:=0];dt[,frequency:=0]
+for(i in 1:nrow(counts)){
+  dt[site==counts[i,"site"] & mutation==counts[i,"mutant"],n_country:=counts[i,"n_countries"]]
+  dt[site==counts[i,"site"] & mutation==counts[i,"mutant"],frequency:=counts[i,"frequency"]]
+}
+
+#add a 'pseudo-frequency' for visualizaiton of count=0 on log plot (add railroad tracks manually and indicate this is 0).
+dt[,pseudo_frequency:=frequency]
+dt[frequency==0,pseudo_frequency:=0.1*min(dt[frequency>0,frequency])]
+
+p1 <- ggplot(dt)+aes(x=pseudo_frequency,y=mut_escape_frac)+
+  geom_point(shape=16, alpha=0.5, size=2.25)+
+  facet_wrap(~antibody,nrow=1)+
+  scale_x_continuous(trans="log10")+
+  scale_y_continuous(limits=c(0,1.05))+
+  theme_classic()+
+  xlab('mutant frequency on GISAID (log10 scale)')+
+  ylab('mutant escape fraction')+
+  geom_text_repel(aes(label=ifelse((mut_escape_frac>0.10925 & frequency>1e-6),as.character(paste(wildtype,site,mutation,sep="")),'')),size=3,color="gray40")
+p1
+
+invisible(dev.print(pdf, paste(output_dir,"/circ-mut-scatterplot.pdf",sep="")))
+
+```
+
+## Part 2: Visualizing selected viral escape mutations from orthogonal experiments
+
+```{r mutation_escape_v_ACE2, echo=T, fig.width=11, fig.height=3.5, fig.align="center", dpi=300,dev="png"}
+#annotate each mutation if its single nt mutationally accessible from wt BA2
+#table has column giving the ba2 spike codon
+RBD_sites <- data.table(read.csv(file=config$RBD_sites))
+
+#function to return single nt accessibile codons
+get.codon.muts <- function(codon){
+  nt <- c("a","c","g","t")
+  codon_split <- strsplit(codon,split="")[[1]]
+  codon_muts <- vector()
+  for(i in nt[nt!=codon_split[1]]){
+    codon_muts <- c(codon_muts,seqinr::translate(c(i,codon_split[2:3])))
+  }
+  for(i in nt[nt!=codon_split[2]]){
+    codon_muts <- c(codon_muts,seqinr::translate(c(codon_split[1],i,codon_split[3])))
+  }
+  for(i in nt[nt!=codon_split[3]]){
+    codon_muts <- c(codon_muts,seqinr::translate(c(codon_split[1:2],i)))
+  }
+  return(codon_muts)
+}
+
+dt[,BA2_codon := RBD_sites[site_SARS2==site,codon_SARS2_BA2],by=.(site)]
+
+dt[,singlemut := mutation %in% get.codon.muts(BA2_codon),by=.(site,wildtype,mutation)]
+
+#annotate mutations selected as viral escape selection mutants
+dt[,viral_escape := FALSE]
+dt[antibody=="S2V29" & ( (site==455 & mutation=="W") | 
+                          (site==459 & mutation=="P") | 
+                          (site==456 & mutation=="L")),
+   viral_escape := TRUE]
+
+dt[antibody=="S3L17" & (site==371 & mutation=="L"),
+   viral_escape := TRUE]
+
+dt[antibody=="S2K146" & (site==489 & mutation=="H"),
+   viral_escape := TRUE]
+
+#add in ACE2 binding effect of mutation from DMS
+dt[,ACE2 := dms[position==site & mutant==mutation,delta_bind],by=c("site","mutation")]
+
+#set color, plot symbol, alpha, symbol size, etc. as a single column based on selection parameters above?
+dt[,mutation_type:="single-nt"]
+dt[singlemut==F,mutation_type:="multi-nt"]
+dt[viral_escape==T,mutation_type:="selected"]
+dt[,mutation_type := factor(mutation_type,levels=c("multi-nt","single-nt","selected"))]
+
+dt[,alpha:=0.4]
+dt[viral_escape==T,alpha:=1]
+
+dt[,cex:=1]
+dt[viral_escape==T,cex:=4]
+
+dt[,col:="#7f7f7f"]
+dt[singlemut==F,col:="#D2B48C"]
+dt[viral_escape==T,col:="#FF0000"]
+
+p1 <- ggplot(dt %>% arrange(mutation_type))+
+  aes(x=mut_escape_frac,y=ACE2, color=mutation_type, size=mutation_type, shape=mutation_type, alpha=alpha)+
+  geom_point()+
+  scale_shape_manual(values=c("single-nt" = 16, "multi-nt" = 4, "selected" = 18))+
+  scale_size_manual(values=c("single-nt" = 1, "multi-nt" = 1, "selected" = 4))+
+  scale_color_manual(values=c("single-nt" = "#7f7f7f", "multi-nt" = "#D2B48C", "selected" = "#FF0000"))+
+  scale_alpha_identity()+
+  facet_wrap(~antibody,nrow=1)+
+  scale_x_continuous(limits=c(0,1.05))+
+  scale_y_continuous()+
+  theme_classic()+
+  xlab('mutation effect on antibody escape (escape fraction)')+
+  ylab('mutation effect on ACE2 binding (delta-log10Ka)')+
+  geom_text_repel(aes(label=ifelse((viral_escape==TRUE),as.character(paste(wildtype,site,mutation,sep="")),'')),size=2,color="red",max.overlaps=5000)+
+  geom_text_repel(aes(label=ifelse((viral_escape==FALSE & singlemut==T & mut_escape_frac > 0.5 & ACE2 > -1),as.character(paste(wildtype,site,mutation,sep="")),'')),size=2,color="gray20",max.overlaps=1000)
+p1
+
+invisible(dev.print(pdf, paste(output_dir,"/viral-escape-selection-scatterplot.pdf",sep="")))
+
+```
