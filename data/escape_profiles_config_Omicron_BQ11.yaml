@@ -49,6 +49,10 @@ S2V29:
   dmslogo_draw_logo_kwargs:
     widthscale: 0.75
     axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8
 
 S2V29_wide:
   conditions:
@@ -67,6 +71,10 @@ S2V29_wide:
   dmslogo_draw_logo_kwargs:
     widthscale: 0.75
     axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8
 
 S2V29_structural_epitope:
   conditions:
@@ -85,6 +93,10 @@ S2V29_structural_epitope:
   dmslogo_draw_logo_kwargs:
     widthscale: 0.75
     axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8
     
 S2K146:
   conditions:
@@ -103,6 +115,10 @@ S2K146:
   dmslogo_draw_logo_kwargs:
     widthscale: 0.75
     axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 16
     
     
 S2K146_wide:
@@ -122,3 +138,7 @@ S2K146_wide:
   dmslogo_draw_logo_kwargs:
     widthscale: 0.75
     axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 16

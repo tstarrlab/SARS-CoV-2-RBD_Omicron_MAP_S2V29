@@ -380,7 +380,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8557737/ipykernel_1528759/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8598979/ipykernel_2837846/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -404,7 +404,7 @@ if len(nan_color):
     expr ranges from -1.25 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8557737/ipykernel_1528759/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8598979/ipykernel_2837846/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -650,7 +650,7 @@ for name, specs in escape_profiles_config.items():
     if 'set_ylims' not in dmslogo_facet_plot_kwargs:  # do not overwrite manual y-limits
         dmslogo_facet_plot_kwargs['set_ylims'] = ylims
     else:
-        ylims_nopad = dmslogo_facet_plot_kwags['set_ylims']
+        ylims_nopad = dmslogo_facet_plot_kwargs['set_ylims']
         
     # write the ylimits
     ylims_csv = os.path.join(config['escape_profiles_dir_Wuhan_Hu_1'], f"{name}_stackedlogo_ylims.csv")
