@@ -1,0 +1,23 @@
+LOCUS       RBD_XBB15_seq               603 bp     DNA     linear       09-OCT-2023
+DEFINITION  .
+ACCESSION   urn.local...1c-cq4uxe0
+VERSION     urn.local...1c-cq4uxe0
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+COMMENT     
+COMMENT     
+COMMENT     ApEinfo:methylated:1
+ORIGIN
+        1 aatattacaa acttgtgccc ttttcatgaa gtttttaacg ccaccacatt tgcatctgtt
+       61 tatgcttgga acaggaagag aatcagcaac tgtgttgctg attattctgt catatataat
+      121 ttcgcaccat ttttcgcttt taagtgttat ggagtgtctc ctactaaatt aaatgatctc
+      181 tgctttacta atgtctatgc agattcattt gtaattagag gtaatgaagt cagccaaatc
+      241 gctccagggc aaactggaaa tattgctgat tataattata aattaccaga tgattttaca
+      301 ggctgcgtta tagcttggaa ttctaacaag cttgattcta agcctagtgg taattataat
+      361 tacctgtata gattgtttag gaagtctaag ctcaaacctt ttgagagaga tatttcaact
+      421 gaaatctatc aggccggtaa caaaccttgt aatggtgttg caggtcctaa ttgttactct
+      481 cctttacaat catatggttt ccgacccact tatggtgttg gtcaccaacc atacagagta
+      541 gtagtacttt cttttgaact tctacatgca ccagcaactg tttgtggacc taaaaagtct
+      601 act     
+//

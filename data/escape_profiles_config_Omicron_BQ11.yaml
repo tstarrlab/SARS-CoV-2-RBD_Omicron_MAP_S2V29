@@ -98,6 +98,29 @@ S2V29_structural_epitope:
     frac: 0.05
     min_ymax: 8
     
+S2V29_wide_single_nt:
+  conditions:
+    S2V29_v37_2_52: S2V29 v37.2 - BQ11
+  plot_auto_identified_sites: False
+  add_sites: [407, 416, 419, 456, 459, 475]
+  exclude_sites: []
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: False
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8
+  single_nt_only: ./data/RBD_BQ11_seq.gb
+    
 S2K146:
   conditions:
     S2K146_222: S2K146 - BQ11

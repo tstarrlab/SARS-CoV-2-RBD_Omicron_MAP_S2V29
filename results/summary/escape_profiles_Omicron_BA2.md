@@ -375,7 +375,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA2/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8598980/ipykernel_2115479/3605770365.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8649953/ipykernel_1046161/3605770365.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -399,7 +399,7 @@ if len(nan_color):
     expr ranges from -0.95 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA2/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8598980/ipykernel_2115479/3605770365.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8649953/ipykernel_1046161/3605770365.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -525,9 +525,10 @@ for name, specs in escape_profiles_config.items():
             raise ValueError('single_nt_only plotting requires re-computation of the site metric, so it must be the '
                              'simple sum of the mutation metric')
         nt_seq = str(Bio.SeqIO.read(specs['single_nt_only'], 'genbank').seq)
+        df = df.assign(site_one_index=lambda x: x['site'] - int(config['site_number_offset']))
         df = (
             df
-            .assign(codon=lambda x: x['site'].map(lambda r: nt_seq[3 * (r - 1): 3 * r]),
+            .assign(codon=lambda x: x['site_one_index'].map(lambda r: nt_seq[3 * (r - 1): 3 * r]),
                     codon_aa=lambda x: x['codon'].map(dms_variants.constants.CODON_TO_AA),
                     single_nt_accessible=lambda x: x.apply(
                                 lambda row: dms_variants.utils.single_nt_accessible(row['codon'],
@@ -692,7 +693,7 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 15 profiles using 16 CPUs...
+    Drawing 18 profiles using 16 CPUs...
     
     Plotted profile 1 to:
      results/escape_profiles/Omicron_BA2/S2V29_stackedlogo.pdf
@@ -767,8 +768,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 7 to:
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_stackedlogo.png.
 
 
 
@@ -779,8 +780,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 8 to:
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_color_by_bind_stackedlogo.png.
 
 
 
@@ -791,8 +792,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 9 to:
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_wide_single_nt_color_by_expr_stackedlogo.png.
 
 
 
@@ -803,8 +804,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 10 to:
-     results/escape_profiles/Omicron_BA2/S2K146_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2K146_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_stackedlogo.png.
 
 
 
@@ -815,8 +816,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 11 to:
-     results/escape_profiles/Omicron_BA2/S2K146_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2K146_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_bind_stackedlogo.png.
 
 
 
@@ -827,8 +828,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 12 to:
-     results/escape_profiles/Omicron_BA2/S2K146_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2K146_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_structural_epitope_color_by_expr_stackedlogo.png.
 
 
 
@@ -839,8 +840,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 13 to:
-     results/escape_profiles/Omicron_BA2/S2K146_wide_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2K146_wide_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2K146_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2K146_stackedlogo.png.
 
 
 
@@ -851,8 +852,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 14 to:
-     results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Omicron_BA2/S2K146_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2K146_color_by_bind_stackedlogo.png.
 
 
 
@@ -863,13 +864,49 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 15 to:
+     results/escape_profiles/Omicron_BA2/S2K146_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2K146_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_29.png)
+    
+
+
+    
+    Plotted profile 16 to:
+     results/escape_profiles/Omicron_BA2/S2K146_wide_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2K146_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_31.png)
+    
+
+
+    
+    Plotted profile 17 to:
+     results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_33.png)
+    
+
+
+    
+    Plotted profile 18 to:
      results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_expr_stackedlogo.pdf
      results/escape_profiles/Omicron_BA2/S2K146_wide_color_by_expr_stackedlogo.png.
 
 
 
     
-![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_29.png)
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_35.png)
     
 
 

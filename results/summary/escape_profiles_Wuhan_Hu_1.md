@@ -380,7 +380,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8598979/ipykernel_2837846/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8650240/ipykernel_28746/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -404,7 +404,7 @@ if len(nan_color):
     expr ranges from -1.25 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8598979/ipykernel_2837846/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/8650240/ipykernel_28746/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -530,9 +530,10 @@ for name, specs in escape_profiles_config.items():
             raise ValueError('single_nt_only plotting requires re-computation of the site metric, so it must be the '
                              'simple sum of the mutation metric')
         nt_seq = str(Bio.SeqIO.read(specs['single_nt_only'], 'genbank').seq)
+        df = df.assign(site_one_index=lambda x: x['site'] - int(config['site_number_offset']))
         df = (
             df
-            .assign(codon=lambda x: x['site'].map(lambda r: nt_seq[3 * (r - 1): 3 * r]),
+            .assign(codon=lambda x: x['site_one_index'].map(lambda r: nt_seq[3 * (r - 1): 3 * r]),
                     codon_aa=lambda x: x['codon'].map(dms_variants.constants.CODON_TO_AA),
                     single_nt_accessible=lambda x: x.apply(
                                 lambda row: dms_variants.utils.single_nt_accessible(row['codon'],
@@ -697,7 +698,7 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 15 profiles using 16 CPUs...
+    Drawing 18 profiles using 16 CPUs...
 
 
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
@@ -815,8 +816,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 10 to:
-     results/escape_profiles/Wuhan_Hu_1/S2K146_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2K146_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_stackedlogo.png.
 
 
 
@@ -827,8 +828,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 11 to:
-     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_bind_stackedlogo.png.
 
 
 
@@ -839,8 +840,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 12 to:
-     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_expr_stackedlogo.png.
 
 
 
@@ -851,8 +852,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 13 to:
-     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/S2K146_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2K146_stackedlogo.png.
 
 
 
@@ -863,8 +864,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 14 to:
-     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_bind_stackedlogo.png.
 
 
 
@@ -875,13 +876,49 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 15 to:
+     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2K146_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_31.png)
+    
+
+
+    
+    Plotted profile 16 to:
+     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_33.png)
+    
+
+
+    
+    Plotted profile 17 to:
+     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_35.png)
+    
+
+
+    
+    Plotted profile 18 to:
      results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_expr_stackedlogo.pdf
      results/escape_profiles/Wuhan_Hu_1/S2K146_wide_color_by_expr_stackedlogo.png.
 
 
 
     
-![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_31.png)
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_37.png)
     
 
 
