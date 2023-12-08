@@ -19,3 +19,11 @@ results/counts/*/counts_to_cells_csv.csv filter=lfs diff=lfs merge=lfs -text
 results/counts/*/variant_counts.csv.gz filter=lfs diff=lfs merge=lfs -text
 results/escape_scores/escape_fracs_*.csv filter=lfs diff=lfs merge=lfs -text
 results/escape_scores/scores_*.csv filter=lfs diff=lfs merge=lfs -text
+results/counts/Omicron_BQ11/counts_to_cells_csv.csv filter=lfs diff=lfs merge=lfs -text
+results/counts/Omicron_XBB15/counts_to_cells_csv.csv filter=lfs diff=lfs merge=lfs -text
+results/counts/Omicron_BQ11/variant_counts.csv.gz filter=lfs diff=lfs merge=lfs -text
+results/counts/Omicron_XBB15/variant_counts.csv.gz filter=lfs diff=lfs merge=lfs -text
+results/escape_scores/escape_fracs_Omicron_BQ11.csv filter=lfs diff=lfs merge=lfs -text
+results/escape_scores/escape_fracs_Omicron_XBB15.csv filter=lfs diff=lfs merge=lfs -text
+results/escape_scores/scores_Omicron_BQ11.csv filter=lfs diff=lfs merge=lfs -text
+results/escape_scores/scores_Omicron_XBB15.csv filter=lfs diff=lfs merge=lfs -text

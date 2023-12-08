@@ -36,6 +36,16 @@ results/counts/Omicron_BA2/*
 !results/counts/Omicron_BA2/variant_counts.csv.gz
 !results/counts/Omicron_BA2/counts_to_cells_csv.csv
 
+!results/counts/Omicron_BQ11/
+results/counts/Omicron_BQ11/*
+!results/counts/Omicron_BQ11/variant_counts.csv.gz
+!results/counts/Omicron_BQ11/counts_to_cells_csv.csv
+
+!results/counts/Omicron_XBB15/
+results/counts/Omicron_XBB15/*
+!results/counts/Omicron_XBB15/variant_counts.csv.gz
+!results/counts/Omicron_XBB15/counts_to_cells_csv.csv
+
 !results/escape_scores
 results/escape_scores/*
 !results/escape_scores/scores_*
@@ -54,5 +64,13 @@ results/supp_data/Omicron_BA1/*
 !results/supp_data/Omicron_BA2/
 results/supp_data/Omicron_BA2/*
 !results/supp_data/Omicron_BA2/*.csv
+
+!results/supp_data/Omicron_BQ11/
+results/supp_data/Omicron_BQ11/*
+!results/supp_data/Omicron_BQ11/*.csv
+
+!results/supp_data/Omicron_XBB15/
+results/supp_data/Omicron_XBB15/*
+!results/supp_data/Omicron_XBB15/*.csv
 
 data/spikeprot*
