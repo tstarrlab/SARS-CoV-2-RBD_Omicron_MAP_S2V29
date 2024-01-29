@@ -211,13 +211,18 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 7xb0 to data/pdbs/7xb0_BA2.pdb
-    Making mappings for 2 conditions.
+    Making mappings for 3 conditions.
     Mapping to the following chains: B
       Writing B-factor re-assigned PDBs for S2K146_60 to:
         results/pdb_outputs/Omicron_BA2/S2K146_60_7xb0_total_escape.pdb
         results/pdb_outputs/Omicron_BA2/S2K146_60_7xb0_max_escape.pdb
         results/pdb_outputs/Omicron_BA2/S2K146_60_7xb0_norm_total_escape.pdb
         results/pdb_outputs/Omicron_BA2/S2K146_60_7xb0_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for S2V29_33 to:
+        results/pdb_outputs/Omicron_BA2/S2V29_33_7xb0_total_escape.pdb
+        results/pdb_outputs/Omicron_BA2/S2V29_33_7xb0_max_escape.pdb
+        results/pdb_outputs/Omicron_BA2/S2V29_33_7xb0_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_BA2/S2V29_33_7xb0_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2V29_v37_2_45 to:
         results/pdb_outputs/Omicron_BA2/S2V29_v37_2_45_7xb0_total_escape.pdb
         results/pdb_outputs/Omicron_BA2/S2V29_v37_2_45_7xb0_max_escape.pdb

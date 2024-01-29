@@ -176,6 +176,11 @@ display(HTML(
       <td>24.1</td>
       <td>25.1</td>
     </tr>
+    <tr>
+      <th>expt4-S2V29-42-abneg</th>
+      <td>16.0</td>
+      <td>14.2</td>
+    </tr>
   </tbody>
 </table>
 
@@ -677,6 +682,30 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>expt1-S2K146-222-abneg</td>
       <td>0.224</td>
       <td>896000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_42</td>
+      <td>lib57</td>
+      <td>S2V29</td>
+      <td>42</td>
+      <td>230615</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt4-S2V29-42-abneg</td>
+      <td>0.132</td>
+      <td>528000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_42</td>
+      <td>lib58</td>
+      <td>S2V29</td>
+      <td>42</td>
+      <td>230615</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt4-S2V29-42-abneg</td>
+      <td>0.128</td>
+      <td>512000.0</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -1658,7 +1687,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 153192 scores.
+    Read 229788 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1875,8 +1904,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    5450
-    11032
+    8175
+    16548
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 

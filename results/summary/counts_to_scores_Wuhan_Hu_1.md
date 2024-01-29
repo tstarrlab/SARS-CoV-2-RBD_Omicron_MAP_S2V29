@@ -156,6 +156,16 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
+      <th>exptREF-none-0-ref</th>
+      <td>986.9</td>
+      <td>1332.2</td>
+    </tr>
+    <tr>
+      <th>expt1-S2V29-65-abneg</th>
+      <td>5.7</td>
+      <td>6.1</td>
+    </tr>
+    <tr>
       <th>exptREF3-none-0-ref</th>
       <td>575.5</td>
       <td>511.2</td>
@@ -210,6 +220,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
     
 
 
+
+    
+![png](counts_to_scores_Wuhan_Hu_1_files/counts_to_scores_Wuhan_Hu_1_23_2.png)
+    
+
+
 Now similar plots but showing mutation frequency across the gene:
 
 
@@ -237,6 +253,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
 
     
 ![png](counts_to_scores_Wuhan_Hu_1_files/counts_to_scores_Wuhan_Hu_1_25_1.png)
+    
+
+
+
+    
+![png](counts_to_scores_Wuhan_Hu_1_files/counts_to_scores_Wuhan_Hu_1_25_2.png)
     
 
 
@@ -363,7 +385,15 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">lib12</th>
+      <th rowspan="3" valign="top">lib12</th>
+      <th>exptREF-none-0-ref</th>
+      <td>0.0003</td>
+      <td>Wuhan_Hu_1</td>
+      <td>GAAACAAATTTCTATA</td>
+      <td>V52G</td>
+      <td>GTA52GGT</td>
+    </tr>
+    <tr>
       <th>exptREF3-none-0-ref</th>
       <td>0.0003</td>
       <td>Wuhan_Hu_1</td>
@@ -380,7 +410,15 @@ display(HTML(
       <td>GTA52GGT</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">lib13</th>
+      <th rowspan="3" valign="top">lib13</th>
+      <th>exptREF-none-0-ref</th>
+      <td>0.0003</td>
+      <td>Wuhan_Hu_1</td>
+      <td>TACCAGCAGTACGGTC</td>
+      <td>T85M</td>
+      <td>ACG85ATG</td>
+    </tr>
+    <tr>
       <th>exptREF3-none-0-ref</th>
       <td>0.0003</td>
       <td>Wuhan_Hu_1</td>
@@ -513,50 +551,50 @@ display(HTML(counts_by_class.head().to_html(index=False)))
   <tbody>
     <tr>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>wildtype</td>
-      <td>0.000018</td>
-      <td>230613</td>
+      <td>0.000020</td>
+      <td>221130</td>
       <td>none</td>
       <td>0</td>
       <td>reference</td>
     </tr>
     <tr>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>synonymous</td>
-      <td>0.000019</td>
-      <td>230613</td>
+      <td>0.000021</td>
+      <td>221130</td>
       <td>none</td>
       <td>0</td>
       <td>reference</td>
     </tr>
     <tr>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>1 nonsynonymous</td>
       <td>0.000022</td>
-      <td>230613</td>
+      <td>221130</td>
       <td>none</td>
       <td>0</td>
       <td>reference</td>
     </tr>
     <tr>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>&gt;1 nonsynonymous</td>
-      <td>0.000025</td>
-      <td>230613</td>
+      <td>0.000023</td>
+      <td>221130</td>
       <td>none</td>
       <td>0</td>
       <td>reference</td>
     </tr>
     <tr>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>stop</td>
-      <td>0.000027</td>
-      <td>230613</td>
+      <td>0.000025</td>
+      <td>221130</td>
       <td>none</td>
       <td>0</td>
       <td>reference</td>
@@ -676,6 +714,30 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>expt2-S2K146-50-abneg</td>
       <td>0.0160</td>
       <td>64000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_65</td>
+      <td>lib12</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>221130</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt1-S2V29-65-abneg</td>
+      <td>0.0136</td>
+      <td>54400.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_65</td>
+      <td>lib13</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>221130</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt1-S2V29-65-abneg</td>
+      <td>0.0128</td>
+      <td>51200.0</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -1657,7 +1719,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 126361 scores.
+    Read 192358 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1872,8 +1934,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    3802
-    10034
+    5749
+    15078
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 

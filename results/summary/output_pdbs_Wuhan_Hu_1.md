@@ -211,13 +211,18 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 6m0j to data/pdbs/6M0J.pdb
-    Making mappings for 2 conditions.
+    Making mappings for 3 conditions.
     Mapping to the following chains: E
       Writing B-factor re-assigned PDBs for S2K146_50 to:
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_total_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_max_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_norm_total_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for S2V29_65 to:
+        results/pdb_outputs/Wuhan_Hu_1/S2V29_65_6m0j_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/S2V29_65_6m0j_max_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/S2V29_65_6m0j_norm_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/S2V29_65_6m0j_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2V29_v37_2_91 to:
         results/pdb_outputs/Wuhan_Hu_1/S2V29_v37_2_91_6m0j_total_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2V29_v37_2_91_6m0j_max_escape.pdb

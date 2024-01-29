@@ -142,6 +142,74 @@ display(HTML(barcode_runs.to_html(index=False)))
   </thead>
   <tbody>
     <tr>
+      <td>221130</td>
+      <td>exptREF</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib12</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF-none-0-ref</td>
+      <td>ab_selection</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF-none-0-ref_lib12</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF-none-0-ref_lib12_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF-none-0-ref_lib12_fates.csv</td>
+    </tr>
+    <tr>
+      <td>221130</td>
+      <td>exptREF</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib13</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF-none-0-ref</td>
+      <td>ab_selection</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF-none-0-ref_lib13</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF-none-0-ref_lib13_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF-none-0-ref_lib13_fates.csv</td>
+    </tr>
+    <tr>
+      <td>221130</td>
+      <td>expt1</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib12</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt1-S2V29-65-abneg</td>
+      <td>ab_selection</td>
+      <td>54400.0</td>
+      <td>0.0136</td>
+      <td>expt1-S2V29-65-abneg_lib12</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-S2V29-65-abneg_lib12_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-S2V29-65-abneg_lib12_fates.csv</td>
+    </tr>
+    <tr>
+      <td>221130</td>
+      <td>expt1</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib13</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt1-S2V29-65-abneg</td>
+      <td>ab_selection</td>
+      <td>51200.0</td>
+      <td>0.0128</td>
+      <td>expt1-S2V29-65-abneg_lib13</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-S2V29-65-abneg_lib13_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-S2V29-65-abneg_lib13_fates.csv</td>
+    </tr>
+    <tr>
       <td>230613</td>
       <td>exptREF3</td>
       <td>Wuhan_Hu_1</td>
@@ -332,33 +400,33 @@ display(HTML(fates.head().to_html(index=False)))
   <tbody>
     <tr>
       <td>GAAACAAATTTCTATA</td>
-      <td>7721</td>
+      <td>13201</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
-      <td>GAAACCATCGATATTC</td>
-      <td>6352</td>
+      <td>CGTAACATTTACATAT</td>
+      <td>10128</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
-      <td>TATCCCGAACCATCGA</td>
-      <td>6224</td>
+      <td>CTCACTCACCAATACG</td>
+      <td>9486</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
-      <td>TTAACTAAGAAGGAGA</td>
-      <td>5966</td>
+      <td>GACTATCGAATTATTG</td>
+      <td>9455</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
-      <td>TGATGCCGTAACTGTC</td>
-      <td>5913</td>
+      <td>AGTACTAATAGAACCC</td>
+      <td>9250</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
   </tbody>
 </table>
@@ -380,33 +448,33 @@ display(HTML(fates.head().to_html(index=False)))
   <tbody>
     <tr>
       <td>valid barcode</td>
-      <td>26812919</td>
+      <td>45980910</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
-    </tr>
-    <tr>
-      <td>invalid barcode</td>
-      <td>8664085</td>
-      <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
       <td>low quality barcode</td>
-      <td>2547718</td>
+      <td>17242765</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
+    </tr>
+    <tr>
+      <td>invalid barcode</td>
+      <td>14524429</td>
+      <td>lib12</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
       <td>unparseable barcode</td>
-      <td>885066</td>
+      <td>6624840</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
     <tr>
       <td>failed chastity filter</td>
       <td>0</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
     </tr>
   </tbody>
 </table>
@@ -470,6 +538,23 @@ display(HTML(fates
   </thead>
   <tbody>
     <tr>
+      <th rowspan="2" valign="top">expt1-S2V29-65-abneg</th>
+      <th>lib12</th>
+      <td>0.0e+00</td>
+      <td>8.5e+04</td>
+      <td>9.8e+04</td>
+      <td>4.0e+04</td>
+      <td>2.7e+05</td>
+    </tr>
+    <tr>
+      <th>lib13</th>
+      <td>0.0e+00</td>
+      <td>6.4e+04</td>
+      <td>8.8e+04</td>
+      <td>3.3e+04</td>
+      <td>2.6e+05</td>
+    </tr>
+    <tr>
       <th rowspan="2" valign="top">expt2-S2K146-50-abneg</th>
       <th>lib12</th>
       <td>0.0e+00</td>
@@ -502,6 +587,23 @@ display(HTML(fates
       <td>5.9e+04</td>
       <td>1.8e+04</td>
       <td>6.3e+05</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">exptREF-none-0-ref</th>
+      <th>lib12</th>
+      <td>0.0e+00</td>
+      <td>1.5e+07</td>
+      <td>1.7e+07</td>
+      <td>6.6e+06</td>
+      <td>4.6e+07</td>
+    </tr>
+    <tr>
+      <th>lib13</th>
+      <td>0.0e+00</td>
+      <td>1.5e+07</td>
+      <td>2.0e+07</td>
+      <td>7.9e+06</td>
+      <td>5.6e+07</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">exptREF2-none-0-ref</th>
@@ -617,9 +719,9 @@ display(HTML(variants.variant_count_df.head().to_html(index=False)))
     <tr>
       <td>Wuhan_Hu_1</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
+      <td>exptREF-none-0-ref</td>
       <td>GAAACAAATTTCTATA</td>
-      <td>7721</td>
+      <td>13201</td>
       <td>16</td>
       <td>GTA52GGT</td>
       <td>V52G</td>
@@ -629,48 +731,48 @@ display(HTML(variants.variant_count_df.head().to_html(index=False)))
     <tr>
       <td>Wuhan_Hu_1</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
-      <td>GAAACCATCGATATTC</td>
-      <td>6352</td>
-      <td>11</td>
-      <td>GTA52AGA</td>
-      <td>V52R</td>
+      <td>exptREF-none-0-ref</td>
+      <td>CGTAACATTTACATAT</td>
+      <td>10128</td>
+      <td>14</td>
+      <td>ACT15TAT</td>
+      <td>T15Y</td>
       <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <td>Wuhan_Hu_1</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
-      <td>TATCCCGAACCATCGA</td>
-      <td>6224</td>
-      <td>29</td>
-      <td>TAT93ATG</td>
-      <td>Y93M</td>
+      <td>exptREF-none-0-ref</td>
+      <td>CTCACTCACCAATACG</td>
+      <td>9486</td>
+      <td>15</td>
+      <td>TTC44AGA</td>
+      <td>F44R</td>
       <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <td>Wuhan_Hu_1</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
-      <td>TTAACTAAGAAGGAGA</td>
-      <td>5966</td>
-      <td>11</td>
-      <td>AGT69CAA</td>
-      <td>S69Q</td>
+      <td>exptREF-none-0-ref</td>
+      <td>GACTATCGAATTATTG</td>
+      <td>9455</td>
+      <td>10</td>
+      <td>AAG48TCT</td>
+      <td>K48S</td>
       <td>1</td>
       <td>1</td>
     </tr>
     <tr>
       <td>Wuhan_Hu_1</td>
       <td>lib12</td>
-      <td>exptREF3-none-0-ref</td>
-      <td>TGATGCCGTAACTGTC</td>
-      <td>5913</td>
-      <td>13</td>
-      <td>CGT127GAT</td>
-      <td>R127D</td>
+      <td>exptREF-none-0-ref</td>
+      <td>AGTACTAATAGAACCC</td>
+      <td>9250</td>
+      <td>15</td>
+      <td>ATA88TGT</td>
+      <td>I88C</td>
       <td>1</td>
       <td>1</td>
     </tr>

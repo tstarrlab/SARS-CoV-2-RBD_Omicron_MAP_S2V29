@@ -211,13 +211,18 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 8iov to data/pdbs/8iov_XBB1.pdb
-    Making mappings for 2 conditions.
+    Making mappings for 3 conditions.
     Mapping to the following chains: B
       Writing B-factor re-assigned PDBs for S2K146_266 to:
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_total_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_max_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_norm_total_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for S2V29_59 to:
+        results/pdb_outputs/Omicron_XBB15/S2V29_59_8iov_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/S2V29_59_8iov_max_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/S2V29_59_8iov_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/S2V29_59_8iov_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2V29_v37_2_42 to:
         results/pdb_outputs/Omicron_XBB15/S2V29_v37_2_42_8iov_total_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2V29_v37_2_42_8iov_max_escape.pdb

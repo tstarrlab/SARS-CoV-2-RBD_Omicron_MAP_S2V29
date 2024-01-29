@@ -333,7 +333,7 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_XBB15'], index=False)
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>24</td>
+      <td>25</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>

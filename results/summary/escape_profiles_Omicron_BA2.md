@@ -375,7 +375,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA2/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8649953/ipykernel_1046161/3605770365.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/137453/ipykernel_3811167/3605770365.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -399,7 +399,7 @@ if len(nan_color):
     expr ranges from -0.95 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA2/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/8649953/ipykernel_1046161/3605770365.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/137453/ipykernel_3811167/3605770365.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -693,7 +693,7 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 18 profiles using 16 CPUs...
+    Drawing 21 profiles using 16 CPUs...
     
     Plotted profile 1 to:
      results/escape_profiles/Omicron_BA2/S2V29_stackedlogo.pdf
@@ -907,6 +907,42 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
 ![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_35.png)
+    
+
+
+    
+    Plotted profile 19 to:
+     results/escape_profiles/Omicron_BA2/S2V29_parent_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_parent_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_37.png)
+    
+
+
+    
+    Plotted profile 20 to:
+     results/escape_profiles/Omicron_BA2/S2V29_parent_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_parent_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_39.png)
+    
+
+
+    
+    Plotted profile 21 to:
+     results/escape_profiles/Omicron_BA2/S2V29_parent_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA2/S2V29_parent_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA2_files/escape_profiles_Omicron_BA2_26_41.png)
     
 
 

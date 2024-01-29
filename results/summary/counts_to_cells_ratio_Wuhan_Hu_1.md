@@ -105,6 +105,54 @@ counts_cells.to_csv(config['counts_to_cells_csv_Wuhan_Hu_1'], index=False, float
   </thead>
   <tbody>
     <tr>
+      <td>exptREF-none-0-ref, lib12</td>
+      <td>221130</td>
+      <td>exptREF</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>NaN</td>
+      <td>4.6e+07</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>exptREF-none-0-ref, lib13</td>
+      <td>221130</td>
+      <td>exptREF</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>NaN</td>
+      <td>5.6e+07</td>
+      <td>NaN</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <td>expt1-S2V29-65-abneg, lib12</td>
+      <td>221130</td>
+      <td>expt1</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>abneg</td>
+      <td>5.4e+04</td>
+      <td>2.7e+05</td>
+      <td>4.9</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>expt1-S2V29-65-abneg, lib13</td>
+      <td>221130</td>
+      <td>expt1</td>
+      <td>S2V29</td>
+      <td>65</td>
+      <td>abneg</td>
+      <td>5.1e+04</td>
+      <td>2.6e+05</td>
+      <td>5</td>
+      <td>False</td>
+    </tr>
+    <tr>
       <td>exptREF3-none-0-ref, lib12</td>
       <td>230613</td>
       <td>exptREF3</td>
@@ -113,54 +161,6 @@ counts_cells.to_csv(config['counts_to_cells_csv_Wuhan_Hu_1'], index=False, float
       <td>ref</td>
       <td>NaN</td>
       <td>2.7e+07</td>
-      <td>NaN</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <td>exptREF3-none-0-ref, lib13</td>
-      <td>230613</td>
-      <td>exptREF3</td>
-      <td>none</td>
-      <td>0</td>
-      <td>ref</td>
-      <td>NaN</td>
-      <td>2.2e+07</td>
-      <td>NaN</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <td>expt3-S2V29_v37_2-91-abneg, lib12</td>
-      <td>230613</td>
-      <td>expt3</td>
-      <td>S2V29_v37_2</td>
-      <td>91</td>
-      <td>abneg</td>
-      <td>1.6e+05</td>
-      <td>4.9e+05</td>
-      <td>3</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt3-S2V29_v37_2-91-abneg, lib13</td>
-      <td>230613</td>
-      <td>expt3</td>
-      <td>S2V29_v37_2</td>
-      <td>91</td>
-      <td>abneg</td>
-      <td>2.5e+05</td>
-      <td>6.3e+05</td>
-      <td>2.5</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>exptREF2-none-0-ref, lib12</td>
-      <td>230512</td>
-      <td>exptREF2</td>
-      <td>none</td>
-      <td>0</td>
-      <td>ref</td>
-      <td>NaN</td>
-      <td>5.6e+07</td>
       <td>NaN</td>
       <td>True</td>
     </tr>
@@ -225,7 +225,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/8549521/ipykernel_426908/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -238,7 +238,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/8549521/ipykernel_426908/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -251,7 +251,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/8549521/ipykernel_426908/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

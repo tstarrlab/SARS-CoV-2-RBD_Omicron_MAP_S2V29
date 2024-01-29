@@ -329,7 +329,7 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
   <tbody>
     <tr>
       <th>default</th>
-      <td>4</td>
+      <td>6</td>
     </tr>
     <tr>
       <th>sensitive</th>
@@ -378,8 +378,8 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
       <td>0.3209</td>
       <td>default</td>
       <td>0.011995</td>
-      <td>2.351</td>
-      <td>0.119950</td>
+      <td>2.3510</td>
+      <td>0.11995</td>
       <td>True</td>
       <td>0.23510</td>
       <td>True</td>
@@ -397,8 +397,8 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
       <td>0.7583</td>
       <td>default</td>
       <td>0.011995</td>
-      <td>2.351</td>
-      <td>0.119950</td>
+      <td>2.3510</td>
+      <td>0.11995</td>
       <td>True</td>
       <td>0.23510</td>
       <td>True</td>
@@ -416,8 +416,8 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
       <td>0.4223</td>
       <td>default</td>
       <td>0.011995</td>
-      <td>2.351</td>
-      <td>0.119950</td>
+      <td>2.3510</td>
+      <td>0.11995</td>
       <td>True</td>
       <td>0.23510</td>
       <td>True</td>
@@ -435,8 +435,8 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
       <td>0.8394</td>
       <td>default</td>
       <td>0.011995</td>
-      <td>2.351</td>
-      <td>0.119950</td>
+      <td>2.3510</td>
+      <td>0.11995</td>
       <td>True</td>
       <td>0.23510</td>
       <td>True</td>
@@ -448,22 +448,22 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
     </tr>
     <tr>
       <th>4</th>
-      <td>S2K146_50</td>
+      <td>S2V29_65</td>
       <td>347</td>
-      <td>0.1543</td>
-      <td>0.1502</td>
-      <td>sensitive</td>
-      <td>0.011995</td>
-      <td>2.351</td>
-      <td>0.059975</td>
+      <td>0.4892</td>
+      <td>0.4780</td>
+      <td>default</td>
+      <td>0.035725</td>
+      <td>0.5823</td>
+      <td>0.35725</td>
       <td>True</td>
-      <td>0.11755</td>
+      <td>0.05823</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>6</td>
+      <td>3</td>
     </tr>
   </tbody>
 </table>

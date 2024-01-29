@@ -333,11 +333,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BQ11'], index=False)
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>23</td>
+      <td>25</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>31</td>
+      <td>32</td>
     </tr>
   </tbody>
 </table>

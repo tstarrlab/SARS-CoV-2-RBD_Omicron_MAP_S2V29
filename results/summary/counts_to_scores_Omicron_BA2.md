@@ -175,6 +175,16 @@ display(HTML(
       <td>16.8</td>
       <td>18.7</td>
     </tr>
+    <tr>
+      <th>exptREF-none-0-ref</th>
+      <td>445.2</td>
+      <td>343.5</td>
+    </tr>
+    <tr>
+      <th>expt3-S2V29-33-abneg</th>
+      <td>16.5</td>
+      <td>14.5</td>
+    </tr>
   </tbody>
 </table>
 
@@ -210,6 +220,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
     
 
 
+
+    
+![png](counts_to_scores_Omicron_BA2_files/counts_to_scores_Omicron_BA2_23_2.png)
+    
+
+
 Now similar plots but showing mutation frequency across the gene:
 
 
@@ -237,6 +253,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
 
     
 ![png](counts_to_scores_Omicron_BA2_files/counts_to_scores_Omicron_BA2_25_1.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_BA2_files/counts_to_scores_Omicron_BA2_25_2.png)
     
 
 
@@ -363,7 +385,7 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">lib24</th>
+      <th rowspan="3" valign="top">lib24</th>
       <th>exptREF3-none-0-ref</th>
       <td>0.0001</td>
       <td>Omicron_BA2</td>
@@ -380,7 +402,15 @@ display(HTML(
       <td>AAT13ATG</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">lib25</th>
+      <th>exptREF-none-0-ref</th>
+      <td>0.0001</td>
+      <td>Omicron_BA2</td>
+      <td>TATAAAGCACATGCAG</td>
+      <td>N13M</td>
+      <td>AAT13ATG</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">lib25</th>
       <th>exptREF3-none-0-ref</th>
       <td>0.0001</td>
       <td>Omicron_BA2</td>
@@ -390,6 +420,14 @@ display(HTML(
     </tr>
     <tr>
       <th>exptREF2-none-0-ref</th>
+      <td>0.0001</td>
+      <td>Omicron_BA2</td>
+      <td>GACAATGTTCACGTAA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>exptREF-none-0-ref</th>
       <td>0.0001</td>
       <td>Omicron_BA2</td>
       <td>GACAATGTTCACGTAA</td>
@@ -676,6 +714,30 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>expt7-S2K146-60-abneg</td>
       <td>0.1181</td>
       <td>472400.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_33</td>
+      <td>lib24</td>
+      <td>S2V29</td>
+      <td>33</td>
+      <td>221130</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt3-S2V29-33-abneg</td>
+      <td>0.0791</td>
+      <td>316400.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>S2V29_33</td>
+      <td>lib25</td>
+      <td>S2V29</td>
+      <td>33</td>
+      <td>221130</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt3-S2V29-33-abneg</td>
+      <td>0.0732</td>
+      <td>292800.0</td>
       <td>NaN</td>
     </tr>
     <tr>
@@ -1657,7 +1719,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 186022 scores.
+    Read 289094 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1869,8 +1931,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    4208
-    8416
+    6312
+    12624
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 

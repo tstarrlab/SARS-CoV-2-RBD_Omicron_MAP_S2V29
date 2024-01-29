@@ -164,3 +164,26 @@ S2K146_wide:
     quantile: 0.5
     frac: 0.05
     min_ymax: 16
+    
+    
+S2V29_parent:
+  conditions:
+    S2V29_65: S2V29 - WH1
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: [347, 407, 416, 419, 421, 455, 456, 475]
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: True
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 6.2

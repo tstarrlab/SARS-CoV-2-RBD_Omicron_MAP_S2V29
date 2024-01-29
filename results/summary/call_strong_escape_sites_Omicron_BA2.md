@@ -329,15 +329,15 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA2'], index=False)
   <tbody>
     <tr>
       <th>default</th>
-      <td>10</td>
+      <td>12</td>
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>13</td>
+      <td>14</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>13</td>
+      <td>14</td>
     </tr>
   </tbody>
 </table>

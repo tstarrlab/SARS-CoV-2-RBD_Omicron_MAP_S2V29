@@ -70,6 +70,7 @@ print('Making supplementary data for the following condition sets:\n  ' + '\n  '
     Making supplementary data for the following condition sets:
       S2V29
       S2K146
+      S2V29_parent
 
 
 Read the escape fractions
@@ -208,12 +209,23 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
     Saving plot to results/supp_data/Wuhan_Hu_1/S2K146-mutation-corr.pdf
     
-    Plotting correlations of site escape for S2V29
+    Plotting correlations of mutation escape for S2V29_parent
 
 
 
     
 ![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_5.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/S2V29_parent-mutation-corr.pdf
+    
+    Plotting correlations of site escape for S2V29
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_7.png)
     
 
 
@@ -224,11 +236,22 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
     
-![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_7.png)
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_9.png)
     
 
 
     Saving plot to results/supp_data/Wuhan_Hu_1/S2K146-site-corr.pdf
+    
+    Plotting correlations of site escape for S2V29_parent
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_11.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/S2V29_parent-site-corr.pdf
 
 
 ## Raw data files
@@ -274,6 +297,9 @@ for set_name, condition_set in condition_sets.items():
     
     Raw data for S2K146:
     Writing to results/supp_data/Wuhan_Hu_1/S2K146_raw_data.csv
+    
+    Raw data for S2V29_parent:
+    Writing to results/supp_data/Wuhan_Hu_1/S2V29_parent_raw_data.csv
 
 
 ## Data for `dms-view`:
@@ -458,6 +484,7 @@ for set_name, condition_set in condition_sets.items():
 
     Writing `dms-view` input file for S2V29 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/S2V29_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2K146 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/S2K146_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for S2V29_parent mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/S2V29_parent_6m0j_dms-view_data.csv
 
 
 

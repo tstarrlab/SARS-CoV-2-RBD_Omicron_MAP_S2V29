@@ -211,13 +211,18 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 8if2 to data/pdbs/8if2_BQ11.pdb
-    Making mappings for 2 conditions.
+    Making mappings for 3 conditions.
     Mapping to the following chains: B
       Writing B-factor re-assigned PDBs for S2K146_222 to:
         results/pdb_outputs/Omicron_BQ11/S2K146_222_8if2_total_escape.pdb
         results/pdb_outputs/Omicron_BQ11/S2K146_222_8if2_max_escape.pdb
         results/pdb_outputs/Omicron_BQ11/S2K146_222_8if2_norm_total_escape.pdb
         results/pdb_outputs/Omicron_BQ11/S2K146_222_8if2_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for S2V29_42 to:
+        results/pdb_outputs/Omicron_BQ11/S2V29_42_8if2_total_escape.pdb
+        results/pdb_outputs/Omicron_BQ11/S2V29_42_8if2_max_escape.pdb
+        results/pdb_outputs/Omicron_BQ11/S2V29_42_8if2_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_BQ11/S2V29_42_8if2_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2V29_v37_2_52 to:
         results/pdb_outputs/Omicron_BQ11/S2V29_v37_2_52_8if2_total_escape.pdb
         results/pdb_outputs/Omicron_BQ11/S2V29_v37_2_52_8if2_max_escape.pdb
