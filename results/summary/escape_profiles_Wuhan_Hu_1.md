@@ -34,6 +34,8 @@ from plotnine import *
 import pdb_prot_align.colorschemes
 
 import yaml
+
+%matplotlib inline
 ```
 
 Versions of key software:
@@ -380,7 +382,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/137452/ipykernel_1172157/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/576710/ipykernel_2828006/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -404,7 +406,7 @@ if len(nan_color):
     expr ranges from -1.25 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/137452/ipykernel_1172157/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/576710/ipykernel_2828006/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -708,8 +710,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 1 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_stackedlogo.png.
 
 
 
@@ -720,8 +722,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 2 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_color_by_bind_stackedlogo.png.
 
 
 
@@ -732,8 +734,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 3 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_color_by_expr_stackedlogo.png.
 
 
 
@@ -744,8 +746,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 4 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_stackedlogo.png.
 
 
 
@@ -756,8 +758,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 5 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_color_by_bind_stackedlogo.png.
 
 
 
@@ -768,8 +770,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 6 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_color_by_expr_stackedlogo.png.
 
 
 
@@ -780,8 +782,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 7 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_stackedlogo.png.
 
 
 
@@ -792,8 +794,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 8 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_color_by_bind_stackedlogo.png.
 
 
 
@@ -804,8 +806,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 9 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_structural_epitope_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_structural_epitope_color_by_expr_stackedlogo.png.
 
 
 
@@ -816,8 +818,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 10 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_stackedlogo.png.
 
 
 
@@ -828,8 +830,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 11 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_bind_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_bind_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_color_by_bind_stackedlogo.png.
 
 
 
@@ -840,8 +842,8 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
     Plotted profile 12 to:
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_expr_stackedlogo.pdf
-     results/escape_profiles/Wuhan_Hu_1/S2V29_wide_single_nt_color_by_expr_stackedlogo.png.
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/VIR7229_wide_single_nt_color_by_expr_stackedlogo.png.
 
 
 

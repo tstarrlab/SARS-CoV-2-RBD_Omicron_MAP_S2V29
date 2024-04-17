@@ -22,6 +22,8 @@ import pandas as pd
 from plotnine import *
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read the configuration file:
@@ -68,7 +70,7 @@ print('Making supplementary data for the following condition sets:\n  ' + '\n  '
 ```
 
     Making supplementary data for the following condition sets:
-      S2V29
+      VIR7229
       S2K146
       S2V29_parent
 
@@ -187,7 +189,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 ```
 
     
-    Plotting correlations of mutation escape for S2V29
+    Plotting correlations of mutation escape for VIR7229
 
 
 
@@ -196,7 +198,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
     
 
 
-    Saving plot to results/supp_data/Omicron_BQ11/S2V29-mutation-corr.pdf
+    Saving plot to results/supp_data/Omicron_BQ11/VIR7229-mutation-corr.pdf
     
     Plotting correlations of mutation escape for S2K146
 
@@ -220,7 +222,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
     Saving plot to results/supp_data/Omicron_BQ11/S2V29_parent-mutation-corr.pdf
     
-    Plotting correlations of site escape for S2V29
+    Plotting correlations of site escape for VIR7229
 
 
 
@@ -229,7 +231,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
     
 
 
-    Saving plot to results/supp_data/Omicron_BQ11/S2V29-site-corr.pdf
+    Saving plot to results/supp_data/Omicron_BQ11/VIR7229-site-corr.pdf
     
     Plotting correlations of site escape for S2K146
 
@@ -292,8 +294,8 @@ for set_name, condition_set in condition_sets.items():
 ```
 
     
-    Raw data for S2V29:
-    Writing to results/supp_data/Omicron_BQ11/S2V29_raw_data.csv
+    Raw data for VIR7229:
+    Writing to results/supp_data/Omicron_BQ11/VIR7229_raw_data.csv
     
     Raw data for S2K146:
     Writing to results/supp_data/Omicron_BQ11/S2K146_raw_data.csv
@@ -482,7 +484,7 @@ for set_name, condition_set in condition_sets.items():
         df.to_csv(csv_file, index=False, float_format='%.4g')
 ```
 
-    Writing `dms-view` input file for S2V29 mapped to PDB 6m0j to results/supp_data/Omicron_BQ11/S2V29_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for VIR7229 mapped to PDB 6m0j to results/supp_data/Omicron_BQ11/VIR7229_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2K146 mapped to PDB 6m0j to results/supp_data/Omicron_BQ11/S2K146_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2V29_parent mapped to PDB 6m0j to results/supp_data/Omicron_BQ11/S2V29_parent_6m0j_dms-view_data.csv
 

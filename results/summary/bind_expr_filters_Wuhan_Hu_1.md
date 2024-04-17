@@ -19,6 +19,8 @@ from plotnine import *
 from dms_variants.constants import CBPALETTE
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read config file
@@ -355,6 +357,12 @@ p.save(plotfile, verbose=False)
 
 
 
+    
+![png](bind_expr_filters_Wuhan_Hu_1_files/bind_expr_filters_Wuhan_Hu_1_13_3.png)
+    
+
+
+
 ```python
 x_min=-4.5
 x_max=0.5
@@ -396,6 +404,12 @@ p.save(plotfile, verbose=False)
 
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 510 rows containing non-finite values.
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:411: PlotnineWarning: geom_histogram : Removed 20 rows containing missing values.
+
+
+
+    
+![png](bind_expr_filters_Wuhan_Hu_1_files/bind_expr_filters_Wuhan_Hu_1_14_3.png)
+    
 
 
 Things I want to know:
@@ -628,6 +642,12 @@ p.save(plotfile, verbose=False)
 
 
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 31 rows containing non-finite values.
+
+
+
+    
+![png](bind_expr_filters_Wuhan_Hu_1_files/bind_expr_filters_Wuhan_Hu_1_18_4.png)
+    
 
 
 ### Get the bind and expr scores that correspond to the 5th percentile of mutations observed at least 50x in GISAID

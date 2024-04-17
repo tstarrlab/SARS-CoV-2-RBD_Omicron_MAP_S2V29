@@ -32,9 +32,9 @@
 #   dmslogo_draw_logo_kwargs -> any keyword arguments to dmslogo.draw_logo
 #   dmslogo_draw_line_kwargs -> any keyword arguments to dmslogo.draw_line
 
-S2V29:
+VIR7229:
   conditions:
-    S2V29_v37_2_52: S2V29 v37.2 - BQ11
+    S2V29_v37_2_52: VIR7229 - BQ11
   plot_auto_identified_sites: sensitive_max_mut
   add_sites: []
   exclude_sites: []
@@ -54,9 +54,9 @@ S2V29:
     frac: 0.05
     min_ymax: 8
 
-S2V29_wide:
+VIR7229_wide:
   conditions:
-    S2V29_v37_2_52: S2V29 v37.2 - BQ11
+    S2V29_v37_2_52: VIR7229 - BQ11
   plot_auto_identified_sites: False
   add_sites: [407, 416, 419, 456, 459, 475]
   exclude_sites: []
@@ -76,9 +76,9 @@ S2V29_wide:
     frac: 0.05
     min_ymax: 8
 
-S2V29_structural_epitope:
+VIR7229_structural_epitope:
   conditions:
-    S2V29_v37_2_52: S2V29 v37.2 - BQ11
+    S2V29_v37_2_52: VIR7229 - BQ11
   plot_auto_identified_sites: default
   add_sites: [403, 405, 409, 415, 416, 417, 418, 420, 421, 453, 454, 455, 456, 457, 458, 459, 460, 473, 474, 475, 476, 477, 487, 489, 493, 505]
   exclude_sites: []
@@ -98,9 +98,9 @@ S2V29_structural_epitope:
     frac: 0.05
     min_ymax: 8
     
-S2V29_wide_single_nt:
+VIR7229_wide_single_nt:
   conditions:
-    S2V29_v37_2_52: S2V29 v37.2 - BQ11
+    S2V29_v37_2_52: VIR7229 - BQ11
   plot_auto_identified_sites: False
   add_sites: [407, 416, 419, 456, 459, 475]
   exclude_sites: []

@@ -16,6 +16,8 @@ import pandas as pd
 from plotnine import *
 
 import yaml
+
+%matplotlib inline
 ```
 
 Versions of key software:
@@ -490,6 +492,12 @@ p = (ggplot(strong_sites
 
 _ = p.draw()
 ```
+
+
+    
+![png](call_strong_escape_sites_Wuhan_Hu_1_files/call_strong_escape_sites_Wuhan_Hu_1_19_0.png)
+    
+
 
 
 ```python
