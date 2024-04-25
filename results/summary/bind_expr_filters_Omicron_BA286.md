@@ -113,7 +113,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>-</td>
       <td>-0.11</td>
-      <td>-0.38</td>
+      <td>-0.52</td>
     </tr>
     <tr>
       <td>Omicron_BA286</td>
@@ -122,7 +122,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>A</td>
       <td>-0.25</td>
-      <td>-0.36</td>
+      <td>-0.47</td>
     </tr>
     <tr>
       <td>Omicron_BA286</td>
@@ -131,7 +131,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>C</td>
       <td>-0.39</td>
-      <td>-0.69</td>
+      <td>-0.77</td>
     </tr>
     <tr>
       <td>Omicron_BA286</td>
@@ -140,7 +140,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>D</td>
       <td>-0.41</td>
-      <td>-0.31</td>
+      <td>-0.55</td>
     </tr>
     <tr>
       <td>Omicron_BA286</td>
@@ -149,7 +149,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>E</td>
       <td>0.03</td>
-      <td>-0.22</td>
+      <td>-0.38</td>
     </tr>
   </tbody>
 </table>
@@ -395,14 +395,14 @@ print(f"Saving plot to {plotfile}")
 p.save(plotfile, verbose=False)
 ```
 
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 244 rows containing non-finite values.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 250 rows containing non-finite values.
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:411: PlotnineWarning: geom_histogram : Removed 20 rows containing missing values.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 250 rows containing non-finite values.
 
 
     Saving plot to results/bind_expr_filters/Omicron_BA286/count-score-histogram.pdf
 
 
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 244 rows containing non-finite values.
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:411: PlotnineWarning: geom_histogram : Removed 20 rows containing missing values.
 
 
@@ -572,7 +572,7 @@ for metric in ['bind', 'expr']:
       <td>23.0</td>
       <td>0.000081</td>
       <td>delta_expr</td>
-      <td>-1.15</td>
+      <td>-1.22</td>
       <td>&gt;=50</td>
     </tr>
     <tr>
@@ -584,19 +584,7 @@ for metric in ['bind', 'expr']:
       <td>11.0</td>
       <td>0.000065</td>
       <td>delta_expr</td>
-      <td>-1.01</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>P</td>
-      <td>P373L</td>
-      <td>373</td>
-      <td>L</td>
-      <td>285.0</td>
-      <td>30.0</td>
-      <td>0.000148</td>
-      <td>delta_expr</td>
-      <td>-0.81</td>
+      <td>-1.10</td>
       <td>&gt;=50</td>
     </tr>
     <tr>
@@ -608,7 +596,43 @@ for metric in ['bind', 'expr']:
       <td>32.0</td>
       <td>0.000166</td>
       <td>delta_expr</td>
-      <td>-0.79</td>
+      <td>-1.09</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P521L</td>
+      <td>521</td>
+      <td>L</td>
+      <td>50.0</td>
+      <td>13.0</td>
+      <td>0.000026</td>
+      <td>delta_expr</td>
+      <td>-1.06</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P373L</td>
+      <td>373</td>
+      <td>L</td>
+      <td>285.0</td>
+      <td>30.0</td>
+      <td>0.000148</td>
+      <td>delta_expr</td>
+      <td>-1.03</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P507S</td>
+      <td>507</td>
+      <td>S</td>
+      <td>59.0</td>
+      <td>12.0</td>
+      <td>0.000031</td>
+      <td>delta_expr</td>
+      <td>-1.02</td>
       <td>&gt;=50</td>
     </tr>
     <tr>
@@ -620,7 +644,127 @@ for metric in ['bind', 'expr']:
       <td>18.0</td>
       <td>0.000029</td>
       <td>delta_expr</td>
-      <td>-0.77</td>
+      <td>-0.99</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A411V</td>
+      <td>411</td>
+      <td>V</td>
+      <td>53.0</td>
+      <td>12.0</td>
+      <td>0.000027</td>
+      <td>delta_expr</td>
+      <td>-0.96</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>Q414H</td>
+      <td>414</td>
+      <td>H</td>
+      <td>678.0</td>
+      <td>14.0</td>
+      <td>0.000351</td>
+      <td>delta_expr</td>
+      <td>-0.94</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P499L</td>
+      <td>499</td>
+      <td>L</td>
+      <td>83.0</td>
+      <td>13.0</td>
+      <td>0.000043</td>
+      <td>delta_expr</td>
+      <td>-0.91</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T356E</td>
+      <td>356</td>
+      <td>E</td>
+      <td>116.0</td>
+      <td>8.0</td>
+      <td>0.000060</td>
+      <td>delta_expr</td>
+      <td>-0.90</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P463S</td>
+      <td>463</td>
+      <td>S</td>
+      <td>403.0</td>
+      <td>29.0</td>
+      <td>0.000209</td>
+      <td>delta_expr</td>
+      <td>-0.89</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P426S</td>
+      <td>426</td>
+      <td>S</td>
+      <td>205.0</td>
+      <td>13.0</td>
+      <td>0.000106</td>
+      <td>delta_expr</td>
+      <td>-0.88</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A419S</td>
+      <td>419</td>
+      <td>S</td>
+      <td>313.0</td>
+      <td>35.0</td>
+      <td>0.000162</td>
+      <td>delta_expr</td>
+      <td>-0.83</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>K378M</td>
+      <td>378</td>
+      <td>M</td>
+      <td>81.0</td>
+      <td>2.0</td>
+      <td>0.000042</td>
+      <td>delta_expr</td>
+      <td>-0.83</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>S349P</td>
+      <td>349</td>
+      <td>P</td>
+      <td>109.0</td>
+      <td>14.0</td>
+      <td>0.000056</td>
+      <td>delta_expr</td>
+      <td>-0.80</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P491S</td>
+      <td>491</td>
+      <td>S</td>
+      <td>98.0</td>
+      <td>18.0</td>
+      <td>0.000051</td>
+      <td>delta_expr</td>
+      <td>-0.78</td>
       <td>&gt;=50</td>
     </tr>
   </tbody>
@@ -722,31 +866,31 @@ display(HTML(df.to_html(index=False)))
       <td>50</td>
       <td>1.0</td>
       <td>-2.0270</td>
-      <td>-0.8540</td>
+      <td>-1.0922</td>
     </tr>
     <tr>
       <td>50</td>
       <td>2.5</td>
       <td>-1.5265</td>
-      <td>-0.7475</td>
+      <td>-1.0255</td>
     </tr>
     <tr>
       <td>50</td>
       <td>5.0</td>
       <td>-1.0480</td>
-      <td>-0.6510</td>
+      <td>-0.9130</td>
     </tr>
     <tr>
       <td>50</td>
       <td>10.0</td>
       <td>-0.7380</td>
-      <td>-0.5320</td>
+      <td>-0.7500</td>
     </tr>
     <tr>
       <td>50</td>
       <td>25.0</td>
       <td>-0.4250</td>
-      <td>-0.3450</td>
+      <td>-0.4500</td>
     </tr>
   </tbody>
 </table>
@@ -957,10 +1101,10 @@ print(f'Total number of possible mutations to non-disulfide sites: {total_muts_n
 
     BA286 SSM mutations that 
     pass bind: 3315 
-    pass expr: 2857 
-    pass both: 2707 
-    pass both and not disulfide: 2631
-    Pass bind, expr, not disulfide, and not WT: 2438
+    pass expr: 2438 
+    pass both: 2358 
+    pass both and not disulfide: 2307
+    Pass bind, expr, not disulfide, and not WT: 2114
     Total number of possible mutations to non-disulfide sites: 3835
 
 

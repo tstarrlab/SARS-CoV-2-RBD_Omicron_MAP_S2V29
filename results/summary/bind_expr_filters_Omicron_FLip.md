@@ -113,7 +113,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>-</td>
       <td>0.02</td>
-      <td>-0.33</td>
+      <td>-0.24</td>
     </tr>
     <tr>
       <td>Omicron_FLip</td>
@@ -122,7 +122,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>A</td>
       <td>-0.10</td>
-      <td>0.02</td>
+      <td>-0.36</td>
     </tr>
     <tr>
       <td>Omicron_FLip</td>
@@ -131,7 +131,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>C</td>
       <td>-0.27</td>
-      <td>-0.50</td>
+      <td>-0.72</td>
     </tr>
     <tr>
       <td>Omicron_FLip</td>
@@ -140,7 +140,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>D</td>
       <td>0.14</td>
-      <td>-0.13</td>
+      <td>-0.29</td>
     </tr>
     <tr>
       <td>Omicron_FLip</td>
@@ -149,7 +149,7 @@ display(HTML(dms_scores.head().to_html(index=False)))
       <td>331</td>
       <td>E</td>
       <td>-0.17</td>
-      <td>-0.23</td>
+      <td>-0.46</td>
     </tr>
   </tbody>
 </table>
@@ -395,14 +395,14 @@ print(f"Saving plot to {plotfile}")
 p.save(plotfile, verbose=False)
 ```
 
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 186 rows containing non-finite values.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 185 rows containing non-finite values.
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:411: PlotnineWarning: geom_histogram : Removed 20 rows containing missing values.
 
 
     Saving plot to results/bind_expr_filters/Omicron_FLip/count-score-histogram.pdf
 
 
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 186 rows containing non-finite values.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:333: PlotnineWarning: stat_bin : Removed 185 rows containing non-finite values.
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/plotnine/layer.py:411: PlotnineWarning: geom_histogram : Removed 20 rows containing missing values.
 
 
@@ -512,18 +512,6 @@ for metric in ['bind', 'expr']:
   </thead>
   <tbody>
     <tr>
-      <td>A</td>
-      <td>A372P</td>
-      <td>372</td>
-      <td>P</td>
-      <td>67.0</td>
-      <td>4.0</td>
-      <td>0.000035</td>
-      <td>delta_expr</td>
-      <td>-0.86</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
       <td>V</td>
       <td>V401L</td>
       <td>401</td>
@@ -532,7 +520,91 @@ for metric in ['bind', 'expr']:
       <td>32.0</td>
       <td>0.000166</td>
       <td>delta_expr</td>
-      <td>-0.84</td>
+      <td>-1.27</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A372P</td>
+      <td>372</td>
+      <td>P</td>
+      <td>67.0</td>
+      <td>4.0</td>
+      <td>0.000035</td>
+      <td>delta_expr</td>
+      <td>-1.26</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A411V</td>
+      <td>411</td>
+      <td>V</td>
+      <td>53.0</td>
+      <td>12.0</td>
+      <td>0.000027</td>
+      <td>delta_expr</td>
+      <td>-1.04</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>G413V</td>
+      <td>413</td>
+      <td>V</td>
+      <td>56.0</td>
+      <td>18.0</td>
+      <td>0.000029</td>
+      <td>delta_expr</td>
+      <td>-0.89</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>S494L</td>
+      <td>494</td>
+      <td>L</td>
+      <td>893.0</td>
+      <td>49.0</td>
+      <td>0.000462</td>
+      <td>delta_expr</td>
+      <td>-0.89</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P373L</td>
+      <td>373</td>
+      <td>L</td>
+      <td>285.0</td>
+      <td>30.0</td>
+      <td>0.000148</td>
+      <td>delta_expr</td>
+      <td>-0.80</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A352V</td>
+      <td>352</td>
+      <td>V</td>
+      <td>156.0</td>
+      <td>23.0</td>
+      <td>0.000081</td>
+      <td>delta_expr</td>
+      <td>-0.78</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P499L</td>
+      <td>499</td>
+      <td>L</td>
+      <td>83.0</td>
+      <td>13.0</td>
+      <td>0.000043</td>
+      <td>delta_expr</td>
+      <td>-0.77</td>
       <td>&gt;=50</td>
     </tr>
   </tbody>
@@ -634,31 +706,31 @@ display(HTML(df.to_html(index=False)))
       <td>50</td>
       <td>1.0</td>
       <td>-1.5696</td>
-      <td>-0.7580</td>
+      <td>-1.0796</td>
     </tr>
     <tr>
       <td>50</td>
       <td>2.5</td>
       <td>-1.2145</td>
-      <td>-0.6535</td>
+      <td>-0.8405</td>
     </tr>
     <tr>
       <td>50</td>
       <td>5.0</td>
       <td>-0.9170</td>
-      <td>-0.5380</td>
+      <td>-0.7100</td>
     </tr>
     <tr>
       <td>50</td>
       <td>10.0</td>
       <td>-0.5580</td>
-      <td>-0.3780</td>
+      <td>-0.4000</td>
     </tr>
     <tr>
       <td>50</td>
       <td>25.0</td>
       <td>-0.2350</td>
-      <td>-0.2000</td>
+      <td>-0.1800</td>
     </tr>
   </tbody>
 </table>
@@ -869,10 +941,10 @@ print(f'Total number of possible mutations to non-disulfide sites: {total_muts_n
 
     FLip SSM mutations that 
     pass bind: 3635 
-    pass expr: 2782 
-    pass both: 2724 
-    pass both and not disulfide: 2668
-    Pass bind, expr, not disulfide, and not WT: 2475
+    pass expr: 2631 
+    pass both: 2578 
+    pass both and not disulfide: 2530
+    Pass bind, expr, not disulfide, and not WT: 2337
     Total number of possible mutations to non-disulfide sites: 3854
 
 
@@ -905,7 +977,7 @@ print(round(100-stats.percentileofscore((dms_scores
     This percentage of all variants seen >=50x in GISAID are retained by the binding filter of -3.0
     100.0
     This percentage of all variants seen >=50x in GISAID are retained by the expression filter of -0.75
-    98.9
+    95.1
 
 
 

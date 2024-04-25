@@ -377,7 +377,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/599545/ipykernel_476074/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/696156/ipykernel_33900/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -398,10 +398,10 @@ if len(nan_color):
 
     Saving DMS color scheme to results/escape_profiles/Omicron_FLip/escape_profiles_dms_colors.csv
     
-    expr ranges from -0.75 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_horizontal.pdf
+    expr ranges from -1.27 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/599545/ipykernel_476074/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/696156/ipykernel_33900/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -411,7 +411,7 @@ if len(nan_color):
 
 
     
-    expr ranges from -0.75 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_vertical.pdf
+    expr ranges from -1.27 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_vertical.pdf
 
 
 
