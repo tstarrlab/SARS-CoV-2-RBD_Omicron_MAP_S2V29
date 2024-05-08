@@ -64,11 +64,11 @@ display(HTML(new_filter_df.to_html(index=False)))
   <tbody>
     <tr>
       <td>delta_bind</td>
-      <td>-3.0</td>
+      <td>-3.00</td>
     </tr>
     <tr>
       <td>delta_expr</td>
-      <td>-1.0</td>
+      <td>-0.75</td>
     </tr>
   </tbody>
 </table>
@@ -543,7 +543,7 @@ for metric in ['bind', 'expr']:
 </table>
 
 
-    Mutations with >=50 GISAID counts but with expr score < -1
+    Mutations with >=50 GISAID counts but with expr score < -0.75
 
 
 
@@ -633,6 +633,138 @@ for metric in ['bind', 'expr']:
       <td>0.000031</td>
       <td>delta_expr</td>
       <td>-1.02</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>G413V</td>
+      <td>413</td>
+      <td>V</td>
+      <td>56.0</td>
+      <td>18.0</td>
+      <td>0.000029</td>
+      <td>delta_expr</td>
+      <td>-0.99</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A411V</td>
+      <td>411</td>
+      <td>V</td>
+      <td>53.0</td>
+      <td>12.0</td>
+      <td>0.000027</td>
+      <td>delta_expr</td>
+      <td>-0.96</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>Q</td>
+      <td>Q414H</td>
+      <td>414</td>
+      <td>H</td>
+      <td>678.0</td>
+      <td>14.0</td>
+      <td>0.000351</td>
+      <td>delta_expr</td>
+      <td>-0.94</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P499L</td>
+      <td>499</td>
+      <td>L</td>
+      <td>83.0</td>
+      <td>13.0</td>
+      <td>0.000043</td>
+      <td>delta_expr</td>
+      <td>-0.91</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>T356E</td>
+      <td>356</td>
+      <td>E</td>
+      <td>116.0</td>
+      <td>8.0</td>
+      <td>0.000060</td>
+      <td>delta_expr</td>
+      <td>-0.90</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P463S</td>
+      <td>463</td>
+      <td>S</td>
+      <td>403.0</td>
+      <td>29.0</td>
+      <td>0.000209</td>
+      <td>delta_expr</td>
+      <td>-0.89</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P426S</td>
+      <td>426</td>
+      <td>S</td>
+      <td>205.0</td>
+      <td>13.0</td>
+      <td>0.000106</td>
+      <td>delta_expr</td>
+      <td>-0.88</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>A419S</td>
+      <td>419</td>
+      <td>S</td>
+      <td>313.0</td>
+      <td>35.0</td>
+      <td>0.000162</td>
+      <td>delta_expr</td>
+      <td>-0.83</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>K378M</td>
+      <td>378</td>
+      <td>M</td>
+      <td>81.0</td>
+      <td>2.0</td>
+      <td>0.000042</td>
+      <td>delta_expr</td>
+      <td>-0.83</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>S349P</td>
+      <td>349</td>
+      <td>P</td>
+      <td>109.0</td>
+      <td>14.0</td>
+      <td>0.000056</td>
+      <td>delta_expr</td>
+      <td>-0.80</td>
+      <td>&gt;=50</td>
+    </tr>
+    <tr>
+      <td>P</td>
+      <td>P491S</td>
+      <td>491</td>
+      <td>S</td>
+      <td>98.0</td>
+      <td>18.0</td>
+      <td>0.000051</td>
+      <td>delta_expr</td>
+      <td>-0.78</td>
       <td>&gt;=50</td>
     </tr>
   </tbody>
@@ -969,10 +1101,10 @@ print(f'Total number of possible mutations to non-disulfide sites: {total_muts_n
 
     BA286 SSM mutations that 
     pass bind: 3315 
-    pass expr: 2915 
-    pass both: 2757 
-    pass both and not disulfide: 2677
-    Pass bind, expr, not disulfide, and not WT: 2484
+    pass expr: 2438 
+    pass both: 2358 
+    pass both and not disulfide: 2307
+    Pass bind, expr, not disulfide, and not WT: 2114
     Total number of possible mutations to non-disulfide sites: 3835
 
 
@@ -1004,7 +1136,7 @@ print(round(100-stats.percentileofscore((dms_scores
 
     This percentage of all variants seen >=50x in GISAID are retained by the binding filter of -3.0
     nan
-    This percentage of all variants seen >=50x in GISAID are retained by the expression filter of -1
+    This percentage of all variants seen >=50x in GISAID are retained by the expression filter of -0.75
     nan
 
 

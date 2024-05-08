@@ -111,11 +111,11 @@ display(HTML(escape_fracs.head().to_html(index=False)))
     <tr>
       <td>S2V29_36</td>
       <td>331</td>
-      <td>0.147264</td>
+      <td>0.115916</td>
       <td>0.01578</td>
       <td>5.161211</td>
       <td>0.7315</td>
-      <td>0.028533</td>
+      <td>0.022459</td>
       <td>0.021572</td>
     </tr>
     <tr>
@@ -131,12 +131,12 @@ display(HTML(escape_fracs.head().to_html(index=False)))
     <tr>
       <td>S2V29_36</td>
       <td>333</td>
-      <td>0.234822</td>
-      <td>0.06480</td>
+      <td>0.131617</td>
+      <td>0.02327</td>
       <td>5.161211</td>
       <td>0.7315</td>
-      <td>0.045497</td>
-      <td>0.088585</td>
+      <td>0.025501</td>
+      <td>0.031811</td>
     </tr>
     <tr>
       <td>S2V29_36</td>

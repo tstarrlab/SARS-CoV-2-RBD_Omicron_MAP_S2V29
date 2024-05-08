@@ -111,41 +111,41 @@ display(HTML(escape_fracs.head().to_html(index=False)))
     <tr>
       <td>S2K146_121</td>
       <td>331</td>
-      <td>0.199254</td>
-      <td>0.02629</td>
-      <td>14.6561</td>
+      <td>0.162659</td>
+      <td>0.02429</td>
+      <td>13.882</td>
       <td>0.9109</td>
-      <td>0.013595</td>
-      <td>0.028862</td>
+      <td>0.011717</td>
+      <td>0.026666</td>
     </tr>
     <tr>
       <td>S2K146_121</td>
       <td>332</td>
       <td>0.127321</td>
       <td>0.03150</td>
-      <td>14.6561</td>
+      <td>13.882</td>
       <td>0.9109</td>
-      <td>0.008687</td>
+      <td>0.009172</td>
       <td>0.034581</td>
     </tr>
     <tr>
       <td>S2K146_121</td>
       <td>333</td>
-      <td>0.213591</td>
-      <td>0.03018</td>
-      <td>14.6561</td>
+      <td>0.143046</td>
+      <td>0.02566</td>
+      <td>13.882</td>
       <td>0.9109</td>
-      <td>0.014574</td>
-      <td>0.033132</td>
+      <td>0.010304</td>
+      <td>0.028170</td>
     </tr>
     <tr>
       <td>S2K146_121</td>
       <td>334</td>
       <td>0.212989</td>
       <td>0.03237</td>
-      <td>14.6561</td>
+      <td>13.882</td>
       <td>0.9109</td>
-      <td>0.014532</td>
+      <td>0.015343</td>
       <td>0.035536</td>
     </tr>
     <tr>
@@ -153,9 +153,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>335</td>
       <td>0.199128</td>
       <td>0.03761</td>
-      <td>14.6561</td>
+      <td>13.882</td>
       <td>0.9109</td>
-      <td>0.013587</td>
+      <td>0.014344</td>
       <td>0.041289</td>
     </tr>
   </tbody>

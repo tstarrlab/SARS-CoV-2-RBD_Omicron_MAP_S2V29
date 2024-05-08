@@ -335,11 +335,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_FLip'], index=False)
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>36</td>
+      <td>34</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>54</td>
+      <td>47</td>
     </tr>
   </tbody>
 </table>
@@ -376,96 +376,96 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_FLip'], index=False)
       <th>0</th>
       <td>S2K146_717</td>
       <td>453</td>
-      <td>5.549</td>
+      <td>4.900</td>
       <td>0.7831</td>
       <td>default</td>
-      <td>0.51545</td>
-      <td>16.66</td>
-      <td>5.1545</td>
+      <td>0.457</td>
+      <td>14.06</td>
+      <td>4.57</td>
       <td>True</td>
-      <td>1.666</td>
+      <td>1.406</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>13</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>1</th>
       <td>S2K146_717</td>
-      <td>456</td>
-      <td>13.900</td>
-      <td>0.9403</td>
+      <td>455</td>
+      <td>5.153</td>
+      <td>0.9221</td>
       <td>default</td>
-      <td>0.51545</td>
-      <td>16.66</td>
-      <td>5.1545</td>
+      <td>0.457</td>
+      <td>14.06</td>
+      <td>4.57</td>
       <td>True</td>
-      <td>1.666</td>
+      <td>1.406</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>13</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>2</th>
+      <td>S2K146_717</td>
+      <td>456</td>
+      <td>12.750</td>
+      <td>0.9403</td>
+      <td>default</td>
+      <td>0.457</td>
+      <td>14.06</td>
+      <td>4.57</td>
+      <td>True</td>
+      <td>1.406</td>
+      <td>True</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>3</th>
       <td>S2K146_717</td>
       <td>472</td>
       <td>12.870</td>
       <td>0.9450</td>
       <td>default</td>
-      <td>0.51545</td>
-      <td>16.66</td>
-      <td>5.1545</td>
+      <td>0.457</td>
+      <td>14.06</td>
+      <td>4.57</td>
       <td>True</td>
-      <td>1.666</td>
-      <td>True</td>
-      <td>0</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>S2K146_717</td>
-      <td>473</td>
-      <td>13.710</td>
-      <td>0.9181</td>
-      <td>default</td>
-      <td>0.51545</td>
-      <td>16.66</td>
-      <td>5.1545</td>
-      <td>True</td>
-      <td>1.666</td>
+      <td>1.406</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>13</td>
+      <td>15</td>
     </tr>
     <tr>
       <th>4</th>
       <td>S2K146_717</td>
-      <td>474</td>
-      <td>9.702</td>
-      <td>0.9019</td>
+      <td>473</td>
+      <td>11.990</td>
+      <td>0.9181</td>
       <td>default</td>
-      <td>0.51545</td>
-      <td>16.66</td>
-      <td>5.1545</td>
+      <td>0.457</td>
+      <td>14.06</td>
+      <td>4.57</td>
       <td>True</td>
-      <td>1.666</td>
+      <td>1.406</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>13</td>
+      <td>15</td>
     </tr>
   </tbody>
 </table>

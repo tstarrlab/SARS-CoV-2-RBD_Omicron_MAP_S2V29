@@ -98,8 +98,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004829</td>
-      <td>0.1993</td>
-      <td>0.009963</td>
+      <td>0.1627</td>
+      <td>0.009568</td>
       <td>2</td>
       <td>25</td>
     </tr>
@@ -111,23 +111,10 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.005414</td>
-      <td>0.1993</td>
-      <td>0.009963</td>
+      <td>0.1627</td>
+      <td>0.009568</td>
       <td>2</td>
       <td>25</td>
-    </tr>
-    <tr>
-      <td>S2K146_121</td>
-      <td>331</td>
-      <td>N</td>
-      <td>C</td>
-      <td>E</td>
-      <td>331</td>
-      <td>0.004664</td>
-      <td>0.1993</td>
-      <td>0.009963</td>
-      <td>2</td>
-      <td>30</td>
     </tr>
     <tr>
       <td>S2K146_121</td>
@@ -137,8 +124,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.016100</td>
-      <td>0.1993</td>
-      <td>0.009963</td>
+      <td>0.1627</td>
+      <td>0.009568</td>
       <td>2</td>
       <td>30</td>
     </tr>
@@ -150,10 +137,23 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004020</td>
-      <td>0.1993</td>
-      <td>0.009963</td>
+      <td>0.1627</td>
+      <td>0.009568</td>
       <td>2</td>
       <td>31</td>
+    </tr>
+    <tr>
+      <td>S2K146_121</td>
+      <td>331</td>
+      <td>N</td>
+      <td>G</td>
+      <td>E</td>
+      <td>331</td>
+      <td>0.008748</td>
+      <td>0.1627</td>
+      <td>0.009568</td>
+      <td>2</td>
+      <td>42</td>
     </tr>
   </tbody>
 </table>
@@ -376,14 +376,14 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
       <th>0</th>
       <td>S2K146_121</td>
       <td>453</td>
-      <td>3.616</td>
+      <td>2.898</td>
       <td>0.7566</td>
       <td>default</td>
-      <td>0.1558</td>
-      <td>14.66</td>
-      <td>1.558</td>
+      <td>0.1438</td>
+      <td>13.88</td>
+      <td>1.438</td>
       <td>True</td>
-      <td>1.466</td>
+      <td>1.388</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -398,11 +398,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
       <td>4.625</td>
       <td>0.8410</td>
       <td>default</td>
-      <td>0.1558</td>
-      <td>14.66</td>
-      <td>1.558</td>
+      <td>0.1438</td>
+      <td>13.88</td>
+      <td>1.438</td>
       <td>True</td>
-      <td>1.466</td>
+      <td>1.388</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -417,11 +417,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
       <td>12.720</td>
       <td>0.8366</td>
       <td>default</td>
-      <td>0.1558</td>
-      <td>14.66</td>
-      <td>1.558</td>
+      <td>0.1438</td>
+      <td>13.88</td>
+      <td>1.438</td>
       <td>True</td>
-      <td>1.466</td>
+      <td>1.388</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -436,11 +436,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
       <td>10.910</td>
       <td>0.7796</td>
       <td>default</td>
-      <td>0.1558</td>
-      <td>14.66</td>
-      <td>1.558</td>
+      <td>0.1438</td>
+      <td>13.88</td>
+      <td>1.438</td>
       <td>True</td>
-      <td>1.466</td>
+      <td>1.388</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -455,11 +455,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
       <td>7.069</td>
       <td>0.8142</td>
       <td>default</td>
-      <td>0.1558</td>
-      <td>14.66</td>
-      <td>1.558</td>
+      <td>0.1438</td>
+      <td>13.88</td>
+      <td>1.438</td>
       <td>True</td>
-      <td>1.466</td>
+      <td>1.388</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>

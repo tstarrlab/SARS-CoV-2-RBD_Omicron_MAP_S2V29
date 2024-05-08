@@ -1055,7 +1055,7 @@ print('Here is what that dataframe looks like:')
 display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False)))
 ```
 
-    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-1.
+    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-0.75.
     Here is what that dataframe looks like:
 
 
@@ -1225,7 +1225,7 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
 ```
 
     3635 of 4221 mutations have adequate bind.
-    2761 of 4221 mutations have adequate expr.
+    2631 of 4221 mutations have adequate expr.
 
 
 
@@ -1680,7 +1680,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 240162 scores.
+    Read 228495 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1829,10 +1829,10 @@ else:
 
     Excluding mutations where the wildtype identity is a cysteine
     Specifically, excluding: ['C195-' 'C195A' 'C195D' 'C195E' 'C195F' 'C195G' 'C195H' 'C195I' 'C195K'
-     'C195L' 'C195M' 'C195N' 'C195P' 'C195Q' 'C195R' 'C195S' 'C195T' 'C195V'
-     'C195W' 'C195Y' 'C31-' 'C31D' 'C31E' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F'
-     'C61G' 'C61H' 'C61I' 'C61K' 'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R'
-     'C61S' 'C61T' 'C61V' 'C61W' 'C61Y' 'C6N']
+     'C195L' 'C195M' 'C195N' 'C195P' 'C195Q' 'C195S' 'C195T' 'C195V' 'C195W'
+     'C195Y' 'C31-' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F' 'C61G' 'C61H' 'C61I'
+     'C61K' 'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R' 'C61S' 'C61T' 'C61V'
+     'C61W' 'C61Y']
 
 
 We need to compute the escape scores (calculated as [here](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores)) back to escape fractions. We define a function to do this depending on the score type:
@@ -1898,8 +1898,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    7374
-    14748
+    7011
+    14022
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -2043,8 +2043,8 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>S2K146_717</td>
       <td>average</td>
       <td>3</td>
-      <td>0.022555</td>
-      <td>0.451103</td>
+      <td>0.022256</td>
+      <td>0.422870</td>
     </tr>
     <tr>
       <td>S2K146_717</td>

@@ -1027,7 +1027,7 @@ print('Here is what that dataframe looks like:')
 display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(index=False)))
 ```
 
-    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-1.
+    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-0.75.
     Here is what that dataframe looks like:
 
 
@@ -4783,7 +4783,7 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
 ```
 
     3314 of 4200 mutations have adequate bind.
-    2914 of 4200 mutations have adequate expr.
+    2437 of 4200 mutations have adequate expr.
 
 
 
@@ -4902,14 +4902,14 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>lib92</td>
       <td>exptREF-none-0-ref</td>
       <td>expt8-S2V29-36-abneg</td>
-      <td>CCGATGCATAAACGAT</td>
-      <td>0.045731</td>
-      <td>1.067691e-05</td>
-      <td>14571</td>
-      <td>198</td>
-      <td>TTG131TTT</td>
+      <td>GTATAAGACAGAAGAG</td>
+      <td>0.006827</td>
+      <td>1.531027e-06</td>
+      <td>14998</td>
+      <td>30</td>
+      <td>GGT146AAA</td>
       <td>1</td>
-      <td>L131F</td>
+      <td>G146K</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -5147,28 +5147,6 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
     </tr>
     <tr>
-      <th>5</th>
-      <td>S2V29_36</td>
-      <td>Omicron_BA286</td>
-      <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>GTATAAGACAGAAGAG</td>
-      <td>0.006827</td>
-      <td>1.531027e-06</td>
-      <td>14998</td>
-      <td>30</td>
-      <td>GGT146AAA</td>
-      <td>1</td>
-      <td>G146K</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
       <th>6</th>
       <td>S2V29_36</td>
       <td>Omicron_BA286</td>
@@ -5234,11 +5212,33 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
       <td>True</td>
     </tr>
+    <tr>
+      <th>12</th>
+      <td>S2V29_36</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>exptREF-none-0-ref</td>
+      <td>expt8-S2V29-36-abneg</td>
+      <td>TTGCGTTCGGTGAAGG</td>
+      <td>0.002998</td>
+      <td>7.197201e-07</td>
+      <td>13996</td>
+      <td>12</td>
+      <td>TTC159TGT</td>
+      <td>1</td>
+      <td>F159C</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
   </tbody>
 </table>
 
 
-    Read 187386 scores.
+    Read 159636 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -5324,41 +5324,41 @@ display(HTML(effects_df.head().to_html()))
       <th>0</th>
       <td>S2V29_36</td>
       <td>lib92</td>
-      <td>A105C</td>
-      <td>0.012775</td>
-      <td>20</td>
+      <td>A105I</td>
+      <td>0.007985</td>
+      <td>19</td>
     </tr>
     <tr>
       <th>1</th>
       <td>S2V29_36</td>
       <td>lib92</td>
-      <td>A105F</td>
-      <td>0.007096</td>
-      <td>22</td>
+      <td>A105S</td>
+      <td>0.005138</td>
+      <td>20</td>
     </tr>
     <tr>
       <th>2</th>
       <td>S2V29_36</td>
       <td>lib92</td>
-      <td>A105H</td>
-      <td>0.003540</td>
+      <td>A105T</td>
+      <td>0.021114</td>
       <td>15</td>
     </tr>
     <tr>
       <th>3</th>
       <td>S2V29_36</td>
       <td>lib92</td>
-      <td>A105I</td>
-      <td>0.007985</td>
+      <td>A105V</td>
+      <td>0.008595</td>
       <td>19</td>
     </tr>
     <tr>
       <th>4</th>
       <td>S2V29_36</td>
       <td>lib92</td>
-      <td>A105M</td>
-      <td>0.046156</td>
-      <td>18</td>
+      <td>A105W</td>
+      <td>0.004693</td>
+      <td>27</td>
     </tr>
   </tbody>
 </table>
@@ -5386,14 +5386,11 @@ else:
 ```
 
     Excluding mutations where the wildtype identity is a cysteine
-    Specifically, excluding: ['C102I' 'C102M' 'C194-' 'C194A' 'C194D' 'C194E' 'C194F' 'C194G' 'C194H'
-     'C194I' 'C194K' 'C194L' 'C194M' 'C194N' 'C194P' 'C194Q' 'C194R' 'C194S'
-     'C194T' 'C194V' 'C194W' 'C194Y' 'C31-' 'C31A' 'C31D' 'C31E' 'C31F' 'C31G'
-     'C31H' 'C31I' 'C31K' 'C31M' 'C31N' 'C31P' 'C31Q' 'C31R' 'C31S' 'C31T'
-     'C31W' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F' 'C61G' 'C61H' 'C61I' 'C61K'
-     'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R' 'C61S' 'C61T' 'C61V' 'C61W'
-     'C61Y' 'C6A' 'C6D' 'C6F' 'C6G' 'C6H' 'C6K' 'C6L' 'C6M' 'C6N' 'C6Q' 'C6S'
-     'C6T' 'C6W']
+    Specifically, excluding: ['C194-' 'C194A' 'C194D' 'C194E' 'C194F' 'C194G' 'C194H' 'C194I' 'C194L'
+     'C194M' 'C194N' 'C194P' 'C194Q' 'C194S' 'C194T' 'C194V' 'C194W' 'C194Y'
+     'C31-' 'C31D' 'C31F' 'C31P' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F' 'C61G'
+     'C61H' 'C61I' 'C61K' 'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R' 'C61S'
+     'C61T' 'C61V' 'C61Y' 'C6F' 'C6N']
 
 
 We need to compute the escape scores (calculated as [here](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores)) back to escape fractions. We define a function to do this depending on the score type:
@@ -5459,8 +5456,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    4966
-    9936
+    4228
+    8456
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -5590,8 +5587,8 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>S2V29_36</td>
       <td>average</td>
       <td>1</td>
-      <td>0.007364</td>
-      <td>0.147279</td>
+      <td>0.007245</td>
+      <td>0.115927</td>
     </tr>
     <tr>
       <td>S2V29_36</td>
@@ -5604,8 +5601,8 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>S2V29_36</td>
       <td>average</td>
       <td>3</td>
-      <td>0.011741</td>
-      <td>0.234815</td>
+      <td>0.008774</td>
+      <td>0.131614</td>
     </tr>
     <tr>
       <td>S2V29_36</td>
@@ -5778,8 +5775,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004016</td>
-      <td>0.147279</td>
-      <td>0.007364</td>
+      <td>0.115927</td>
+      <td>0.007245</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -5794,26 +5791,10 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.011084</td>
-      <td>0.147279</td>
-      <td>0.007364</td>
+      <td>0.115927</td>
+      <td>0.007245</td>
       <td>2</td>
       <td>20</td>
-    </tr>
-    <tr>
-      <td>S2V29_36</td>
-      <td>average</td>
-      <td>S2V29_36</td>
-      <td>1</td>
-      <td>331</td>
-      <td>N</td>
-      <td>C</td>
-      <td>E</td>
-      <td>331</td>
-      <td>0.009714</td>
-      <td>0.147279</td>
-      <td>0.007364</td>
-      <td>2</td>
-      <td>36</td>
     </tr>
     <tr>
       <td>S2V29_36</td>
@@ -5826,8 +5807,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004846</td>
-      <td>0.147279</td>
-      <td>0.007364</td>
+      <td>0.115927</td>
+      <td>0.007245</td>
       <td>2</td>
       <td>18</td>
     </tr>
@@ -5842,10 +5823,26 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004962</td>
-      <td>0.147279</td>
-      <td>0.007364</td>
+      <td>0.115927</td>
+      <td>0.007245</td>
       <td>2</td>
       <td>29</td>
+    </tr>
+    <tr>
+      <td>S2V29_36</td>
+      <td>average</td>
+      <td>S2V29_36</td>
+      <td>1</td>
+      <td>331</td>
+      <td>N</td>
+      <td>G</td>
+      <td>E</td>
+      <td>331</td>
+      <td>0.008418</td>
+      <td>0.115927</td>
+      <td>0.007245</td>
+      <td>2</td>
+      <td>27</td>
     </tr>
   </tbody>
 </table>

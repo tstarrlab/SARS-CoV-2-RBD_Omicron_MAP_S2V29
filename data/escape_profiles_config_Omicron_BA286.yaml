@@ -120,3 +120,47 @@ S2V29_parent:
     quantile: 0.5
     frac: 0.05
     min_ymax: 6.2
+    
+SA55:
+  conditions:
+    SA55_33: SA55 - BA.2.86
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: True
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8
+    
+Omi42:
+  conditions:
+    Omi42_73: Omi-42 - BA.2.86
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: True
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 8

@@ -90,11 +90,11 @@ escape_score_min_bind_mut_Omicron_XBB15: -3.0
 escape_score_min_expr_mut_Omicron_XBB15: -1.25
 
 escape_score_min_bind_mut_Omicron_BA286: -3.0
-escape_score_min_expr_mut_Omicron_BA286: -1
+escape_score_min_expr_mut_Omicron_BA286: -0.75
 escape_score_min_bind_mut_Omicron_EG5: -3.0
-escape_score_min_expr_mut_Omicron_EG5: -1
+escape_score_min_expr_mut_Omicron_EG5: -0.75
 escape_score_min_bind_mut_Omicron_FLip: -3.0
-escape_score_min_expr_mut_Omicron_FLip: -1
+escape_score_min_expr_mut_Omicron_FLip: -0.75
 
 #for YlOrBr scaling of bind phenotype, what should be the floor where YlOrBr reaches its minimum yellow coloring?
 escape_score_bind_Yl_threshold: -2
