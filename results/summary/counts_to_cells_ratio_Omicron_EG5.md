@@ -138,8 +138,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_EG5'], index=False, floa
       <td>39</td>
       <td>abneg</td>
       <td>2e+05</td>
-      <td>1.1e+06</td>
-      <td>5.4</td>
+      <td>9.5e+05</td>
+      <td>4.9</td>
       <td>False</td>
     </tr>
     <tr>
@@ -150,8 +150,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_EG5'], index=False, floa
       <td>39</td>
       <td>abneg</td>
       <td>1.8e+05</td>
-      <td>3.7e+04</td>
-      <td>0.21</td>
+      <td>1.2e+06</td>
+      <td>6.7</td>
       <td>False</td>
     </tr>
     <tr>
@@ -162,8 +162,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_EG5'], index=False, floa
       <td>80</td>
       <td>abneg</td>
       <td>3.5e+05</td>
-      <td>5.4e+05</td>
-      <td>1.5</td>
+      <td>1.6e+06</td>
+      <td>4.6</td>
       <td>False</td>
     </tr>
   </tbody>
@@ -227,7 +227,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/577035/ipykernel_376371/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245117/ipykernel_2271253/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -240,7 +240,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/577035/ipykernel_376371/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245117/ipykernel_2271253/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -253,7 +253,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/577035/ipykernel_376371/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245117/ipykernel_2271253/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -300,66 +300,6 @@ display(HTML(
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>expt1-S2V29_v37_2-39-abneg, lib95</td>
-      <td>240305</td>
-      <td>expt1</td>
-      <td>S2V29_v37_2</td>
-      <td>39</td>
-      <td>abneg</td>
-      <td>1.8e+05</td>
-      <td>3.7e+04</td>
-      <td>0.21</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt2-S2V29-80-abneg, lib94</td>
-      <td>240305</td>
-      <td>expt2</td>
-      <td>S2V29</td>
-      <td>80</td>
-      <td>abneg</td>
-      <td>3.5e+05</td>
-      <td>5.4e+05</td>
-      <td>1.5</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt2-S2V29-80-abneg, lib95</td>
-      <td>240305</td>
-      <td>expt2</td>
-      <td>S2V29</td>
-      <td>80</td>
-      <td>abneg</td>
-      <td>3.6e+05</td>
-      <td>4e+03</td>
-      <td>0.011</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt3-S2K146-121-abneg, lib94</td>
-      <td>240305</td>
-      <td>expt3</td>
-      <td>S2K146</td>
-      <td>121</td>
-      <td>abneg</td>
-      <td>7e+05</td>
-      <td>1.6e+02</td>
-      <td>0.00022</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt3-S2K146-121-abneg, lib95</td>
-      <td>240305</td>
-      <td>expt3</td>
-      <td>S2K146</td>
-      <td>121</td>
-      <td>abneg</td>
-      <td>6.8e+05</td>
-      <td>5.5e+02</td>
-      <td>0.0008</td>
-      <td>False</td>
-    </tr>
   </tbody>
 </table>
 

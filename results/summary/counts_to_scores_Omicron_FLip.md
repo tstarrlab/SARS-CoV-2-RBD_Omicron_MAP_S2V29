@@ -165,18 +165,18 @@ display(HTML(
     </tr>
     <tr>
       <th>expt4-S2V29_v37_2-89-abneg</th>
-      <td>0.0</td>
-      <td>3.0</td>
+      <td>34.4</td>
+      <td>32.4</td>
     </tr>
     <tr>
       <th>expt5-S2V29-290-abneg</th>
-      <td>0.0</td>
-      <td>2.9</td>
+      <td>73.7</td>
+      <td>72.2</td>
     </tr>
     <tr>
       <th>expt6-S2K146-717-abneg</th>
-      <td>0.0</td>
-      <td>38.0</td>
+      <td>81.7</td>
+      <td>76.4</td>
     </tr>
   </tbody>
 </table>
@@ -770,10 +770,10 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GCATGTGCTGAGGGTT</td>
-      <td>0.006863</td>
-      <td>0.000094</td>
+      <td>0.020338</td>
+      <td>0.000002</td>
       <td>35723</td>
-      <td>0</td>
+      <td>242</td>
       <td>ACT193TAT</td>
       <td>1</td>
       <td>T193Y</td>
@@ -787,10 +787,10 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>CAACCCTGGACGGGCT</td>
-      <td>0.023794</td>
-      <td>0.000377</td>
+      <td>0.364865</td>
+      <td>0.000040</td>
       <td>30911</td>
-      <td>1</td>
+      <td>3764</td>
       <td>TTG95CAA</td>
       <td>1</td>
       <td>L95Q</td>
@@ -804,10 +804,10 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TAAGGTAGCAGGGCTA</td>
-      <td>0.008662</td>
-      <td>0.000150</td>
+      <td>0.025985</td>
+      <td>0.000003</td>
       <td>28305</td>
-      <td>0</td>
+      <td>245</td>
       <td>GCT22AAT</td>
       <td>1</td>
       <td>A22N</td>
@@ -821,10 +821,10 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TTAGAACCGTATGTCT</td>
-      <td>0.032156</td>
-      <td>0.000689</td>
+      <td>0.016831</td>
+      <td>0.000002</td>
       <td>22873</td>
-      <td>1</td>
+      <td>128</td>
       <td>AAT24GCT</td>
       <td>1</td>
       <td>N24A</td>
@@ -838,10 +838,10 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GGTATAATTATTGTTT</td>
-      <td>0.011179</td>
-      <td>0.000250</td>
+      <td>0.030532</td>
+      <td>0.000004</td>
       <td>21931</td>
-      <td>0</td>
+      <td>223</td>
       <td>AAG148AAT</td>
       <td>1</td>
       <td>K148N</td>
@@ -932,10 +932,10 @@ escape_scores.head()
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GCATGTGCTGAGGGTT</td>
-      <td>0.006863</td>
-      <td>0.000094</td>
+      <td>0.020338</td>
+      <td>0.000002</td>
       <td>35723</td>
-      <td>0</td>
+      <td>242</td>
       <td>ACT193TAT</td>
       <td>1</td>
       <td>T193Y</td>
@@ -951,10 +951,10 @@ escape_scores.head()
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>CAACCCTGGACGGGCT</td>
-      <td>0.023794</td>
-      <td>0.000377</td>
+      <td>0.364865</td>
+      <td>0.000040</td>
       <td>30911</td>
-      <td>1</td>
+      <td>3764</td>
       <td>TTG95CAA</td>
       <td>1</td>
       <td>L95Q</td>
@@ -970,10 +970,10 @@ escape_scores.head()
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TAAGGTAGCAGGGCTA</td>
-      <td>0.008662</td>
-      <td>0.000150</td>
+      <td>0.025985</td>
+      <td>0.000003</td>
       <td>28305</td>
-      <td>0</td>
+      <td>245</td>
       <td>GCT22AAT</td>
       <td>1</td>
       <td>A22N</td>
@@ -989,10 +989,10 @@ escape_scores.head()
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TTAGAACCGTATGTCT</td>
-      <td>0.032156</td>
-      <td>0.000689</td>
+      <td>0.016831</td>
+      <td>0.000002</td>
       <td>22873</td>
-      <td>1</td>
+      <td>128</td>
       <td>AAT24GCT</td>
       <td>1</td>
       <td>N24A</td>
@@ -1008,10 +1008,10 @@ escape_scores.head()
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GGTATAATTATTGTTT</td>
-      <td>0.011179</td>
-      <td>0.000250</td>
+      <td>0.030532</td>
+      <td>0.000004</td>
       <td>21931</td>
-      <td>0</td>
+      <td>223</td>
       <td>AAG148AAT</td>
       <td>1</td>
       <td>K148N</td>
@@ -1055,7 +1055,7 @@ print('Here is what that dataframe looks like:')
 display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False)))
 ```
 
-    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-0.75.
+    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-1.
     Here is what that dataframe looks like:
 
 
@@ -1099,11 +1099,11 @@ display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False
       <td>10.57</td>
       <td>10.36</td>
       <td>NaN</td>
-      <td>7.81</td>
-      <td>-0.33</td>
-      <td>14</td>
+      <td>8.40</td>
+      <td>-0.24</td>
+      <td>21</td>
       <td>2</td>
-      <td>7.11</td>
+      <td>8.28</td>
       <td>8.52</td>
       <td>1</td>
       <td>N1-</td>
@@ -1121,11 +1121,11 @@ display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False
       <td>10.53</td>
       <td>10.18</td>
       <td>NaN</td>
-      <td>8.17</td>
-      <td>0.02</td>
-      <td>14</td>
+      <td>8.28</td>
+      <td>-0.36</td>
+      <td>19</td>
       <td>2</td>
-      <td>7.91</td>
+      <td>8.13</td>
       <td>8.43</td>
       <td>1</td>
       <td>N1A</td>
@@ -1143,11 +1143,11 @@ display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False
       <td>10.20</td>
       <td>10.16</td>
       <td>NaN</td>
-      <td>7.64</td>
-      <td>-0.50</td>
-      <td>25</td>
+      <td>7.93</td>
+      <td>-0.72</td>
+      <td>39</td>
       <td>2</td>
-      <td>7.25</td>
+      <td>7.82</td>
       <td>8.03</td>
       <td>1</td>
       <td>N1C</td>
@@ -1165,11 +1165,11 @@ display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False
       <td>10.80</td>
       <td>10.38</td>
       <td>NaN</td>
-      <td>8.02</td>
-      <td>-0.13</td>
-      <td>15</td>
+      <td>8.36</td>
+      <td>-0.29</td>
+      <td>24</td>
       <td>2</td>
-      <td>7.57</td>
+      <td>8.24</td>
       <td>8.47</td>
       <td>1</td>
       <td>N1D</td>
@@ -1187,11 +1187,11 @@ display(HTML(mut_bind_expr.query('delta_bind > -2.5').head().to_html(index=False
       <td>10.47</td>
       <td>10.10</td>
       <td>NaN</td>
-      <td>7.92</td>
-      <td>-0.23</td>
-      <td>15</td>
+      <td>8.18</td>
+      <td>-0.46</td>
+      <td>25</td>
       <td>2</td>
-      <td>7.59</td>
+      <td>8.12</td>
       <td>8.24</td>
       <td>1</td>
       <td>N1E</td>
@@ -1225,7 +1225,7 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
 ```
 
     3635 of 4221 mutations have adequate bind.
-    2782 of 4221 mutations have adequate expr.
+    2761 of 4221 mutations have adequate expr.
 
 
 
@@ -1261,10 +1261,10 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>CAACCCTGGACGGGCT</td>
-      <td>0.023794</td>
-      <td>0.000377</td>
+      <td>0.364865</td>
+      <td>0.000040</td>
       <td>30911</td>
-      <td>1</td>
+      <td>3764</td>
       <td>TTG95CAA</td>
       <td>1</td>
       <td>L95Q</td>
@@ -1282,10 +1282,10 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>CACTTATCACTAAAAC</td>
-      <td>0.014706</td>
-      <td>0.000433</td>
+      <td>0.636081</td>
+      <td>0.000138</td>
       <td>16671</td>
-      <td>0</td>
+      <td>3539</td>
       <td>GGC117TAT AGA179ATA</td>
       <td>2</td>
       <td>G117Y R179I</td>
@@ -1303,10 +1303,10 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TACTGTTTTGTTCTCA</td>
-      <td>0.016984</td>
-      <td>0.000577</td>
+      <td>0.109273</td>
+      <td>0.000024</td>
       <td>14435</td>
-      <td>0</td>
+      <td>526</td>
       <td>TCC69AAT</td>
       <td>1</td>
       <td>S69N</td>
@@ -1324,10 +1324,10 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>ACGAAAATTGCCAATT</td>
-      <td>0.017717</td>
-      <td>0.000628</td>
+      <td>0.409508</td>
+      <td>0.000101</td>
       <td>13838</td>
-      <td>0</td>
+      <td>1891</td>
       <td>TAC93GCT</td>
       <td>1</td>
       <td>Y93A</td>
@@ -1345,10 +1345,10 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GAGCGATAGATTGCAG</td>
-      <td>0.018550</td>
-      <td>0.000688</td>
+      <td>0.717808</td>
+      <td>0.000202</td>
       <td>13216</td>
-      <td>0</td>
+      <td>3166</td>
       <td>ATT80AAT</td>
       <td>1</td>
       <td>I80N</td>
@@ -1393,7 +1393,7 @@ else:
 ```
 
     Here are the number of mutations that pass the bind, express, and disulfide filters:
-    3000
+    2759
     There are these many possible mutations (excluding wildtype and disulfides!):
     3667
 
@@ -1574,10 +1574,10 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GCATGTGCTGAGGGTT</td>
-      <td>0.006863</td>
-      <td>0.000094</td>
+      <td>0.020338</td>
+      <td>0.000002</td>
       <td>35723</td>
-      <td>0</td>
+      <td>242</td>
       <td>ACT193TAT</td>
       <td>1</td>
       <td>T193Y</td>
@@ -1596,10 +1596,10 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TAAGGTAGCAGGGCTA</td>
-      <td>0.008662</td>
-      <td>0.000150</td>
+      <td>0.025985</td>
+      <td>0.000003</td>
       <td>28305</td>
-      <td>0</td>
+      <td>245</td>
       <td>GCT22AAT</td>
       <td>1</td>
       <td>A22N</td>
@@ -1618,10 +1618,10 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TTAGAACCGTATGTCT</td>
-      <td>0.032156</td>
-      <td>0.000689</td>
+      <td>0.016831</td>
+      <td>0.000002</td>
       <td>22873</td>
-      <td>1</td>
+      <td>128</td>
       <td>AAT24GCT</td>
       <td>1</td>
       <td>N24A</td>
@@ -1640,10 +1640,10 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>GGTATAATTATTGTTT</td>
-      <td>0.011179</td>
-      <td>0.000250</td>
+      <td>0.030532</td>
+      <td>0.000004</td>
       <td>21931</td>
-      <td>0</td>
+      <td>223</td>
       <td>AAG148AAT</td>
       <td>1</td>
       <td>K148N</td>
@@ -1662,10 +1662,10 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>exptREF-none-0-ref</td>
       <td>expt6-S2K146-717-abneg</td>
       <td>TAAAGCTCAAAGCAAA</td>
-      <td>0.011282</td>
-      <td>0.000255</td>
+      <td>0.015786</td>
+      <td>0.000002</td>
       <td>21730</td>
-      <td>0</td>
+      <td>114</td>
       <td>TTG187---</td>
       <td>1</td>
       <td>L187-</td>
@@ -1680,7 +1680,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 242196 scores.
+    Read 240162 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1767,7 +1767,7 @@ display(HTML(effects_df.head().to_html()))
       <td>S2K146_717</td>
       <td>lib96</td>
       <td>A105C</td>
-      <td>0.583881</td>
+      <td>0.018253</td>
       <td>16</td>
     </tr>
     <tr>
@@ -1775,7 +1775,7 @@ display(HTML(effects_df.head().to_html()))
       <td>S2K146_717</td>
       <td>lib96</td>
       <td>A105F</td>
-      <td>0.440193</td>
+      <td>0.025867</td>
       <td>20</td>
     </tr>
     <tr>
@@ -1783,7 +1783,7 @@ display(HTML(effects_df.head().to_html()))
       <td>S2K146_717</td>
       <td>lib96</td>
       <td>A105H</td>
-      <td>0.294333</td>
+      <td>0.019479</td>
       <td>13</td>
     </tr>
     <tr>
@@ -1791,7 +1791,7 @@ display(HTML(effects_df.head().to_html()))
       <td>S2K146_717</td>
       <td>lib96</td>
       <td>A105I</td>
-      <td>0.444472</td>
+      <td>0.043344</td>
       <td>19</td>
     </tr>
     <tr>
@@ -1799,7 +1799,7 @@ display(HTML(effects_df.head().to_html()))
       <td>S2K146_717</td>
       <td>lib96</td>
       <td>A105M</td>
-      <td>0.509138</td>
+      <td>0.104430</td>
       <td>21</td>
     </tr>
   </tbody>
@@ -1830,9 +1830,9 @@ else:
     Excluding mutations where the wildtype identity is a cysteine
     Specifically, excluding: ['C195-' 'C195A' 'C195D' 'C195E' 'C195F' 'C195G' 'C195H' 'C195I' 'C195K'
      'C195L' 'C195M' 'C195N' 'C195P' 'C195Q' 'C195R' 'C195S' 'C195T' 'C195V'
-     'C195W' 'C195Y' 'C31-' 'C31D' 'C31E' 'C31K' 'C49W' 'C61A' 'C61D' 'C61E'
-     'C61F' 'C61G' 'C61H' 'C61I' 'C61K' 'C61L' 'C61M' 'C61N' 'C61P' 'C61Q'
-     'C61R' 'C61S' 'C61T' 'C61V' 'C61W' 'C61Y' 'C6D' 'C6G' 'C6N' 'C6S']
+     'C195W' 'C195Y' 'C31-' 'C31D' 'C31E' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F'
+     'C61G' 'C61H' 'C61I' 'C61K' 'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R'
+     'C61S' 'C61T' 'C61V' 'C61W' 'C61Y' 'C6N']
 
 
 We need to compute the escape scores (calculated as [here](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores)) back to escape fractions. We define a function to do this depending on the score type:
@@ -1898,8 +1898,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    7425
-    14850
+    7374
+    14748
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -2029,36 +2029,36 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>S2K146_717</td>
       <td>average</td>
       <td>1</td>
-      <td>0.251274</td>
-      <td>5.025483</td>
+      <td>0.023298</td>
+      <td>0.465956</td>
     </tr>
     <tr>
       <td>S2K146_717</td>
       <td>average</td>
       <td>2</td>
-      <td>0.229430</td>
-      <td>4.588591</td>
+      <td>0.018835</td>
+      <td>0.376708</td>
     </tr>
     <tr>
       <td>S2K146_717</td>
       <td>average</td>
       <td>3</td>
-      <td>0.234620</td>
-      <td>4.692391</td>
+      <td>0.022555</td>
+      <td>0.451103</td>
     </tr>
     <tr>
       <td>S2K146_717</td>
       <td>average</td>
       <td>4</td>
-      <td>0.238141</td>
-      <td>4.524676</td>
+      <td>0.024008</td>
+      <td>0.480167</td>
     </tr>
     <tr>
       <td>S2K146_717</td>
       <td>average</td>
       <td>5</td>
-      <td>0.231857</td>
-      <td>4.637150</td>
+      <td>0.016973</td>
+      <td>0.339460</td>
     </tr>
   </tbody>
 </table>
@@ -2214,9 +2214,9 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_FLip'], index=False, f
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.220967</td>
-      <td>5.025483</td>
-      <td>0.251274</td>
+      <td>0.007660</td>
+      <td>0.465956</td>
+      <td>0.023298</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -2230,9 +2230,9 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_FLip'], index=False, f
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.243312</td>
-      <td>5.025483</td>
-      <td>0.251274</td>
+      <td>0.032842</td>
+      <td>0.465956</td>
+      <td>0.023298</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -2246,9 +2246,9 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_FLip'], index=False, f
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.225625</td>
-      <td>5.025483</td>
-      <td>0.251274</td>
+      <td>0.029870</td>
+      <td>0.465956</td>
+      <td>0.023298</td>
       <td>2</td>
       <td>37</td>
     </tr>
@@ -2262,9 +2262,9 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_FLip'], index=False, f
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.275088</td>
-      <td>5.025483</td>
-      <td>0.251274</td>
+      <td>0.064091</td>
+      <td>0.465956</td>
+      <td>0.023298</td>
       <td>2</td>
       <td>23</td>
     </tr>
@@ -2278,9 +2278,9 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_FLip'], index=False, f
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.232770</td>
-      <td>5.025483</td>
-      <td>0.251274</td>
+      <td>0.016383</td>
+      <td>0.465956</td>
+      <td>0.023298</td>
       <td>2</td>
       <td>24</td>
     </tr>

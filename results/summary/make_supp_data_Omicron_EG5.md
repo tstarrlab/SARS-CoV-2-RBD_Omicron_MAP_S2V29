@@ -71,6 +71,8 @@ print('Making supplementary data for the following condition sets:\n  ' + '\n  '
 
     Making supplementary data for the following condition sets:
       VIR7229
+      S2K146
+      S2V29_parent
 
 
 Read the escape fractions
@@ -198,7 +200,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
     Saving plot to results/supp_data/Omicron_EG5/VIR7229-mutation-corr.pdf
     
-    Plotting correlations of site escape for VIR7229
+    Plotting correlations of mutation escape for S2K146
 
 
 
@@ -207,7 +209,51 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
     
 
 
+    Saving plot to results/supp_data/Omicron_EG5/S2K146-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for S2V29_parent
+
+
+
+    
+![png](make_supp_data_Omicron_EG5_files/make_supp_data_Omicron_EG5_16_5.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_EG5/S2V29_parent-mutation-corr.pdf
+    
+    Plotting correlations of site escape for VIR7229
+
+
+
+    
+![png](make_supp_data_Omicron_EG5_files/make_supp_data_Omicron_EG5_16_7.png)
+    
+
+
     Saving plot to results/supp_data/Omicron_EG5/VIR7229-site-corr.pdf
+    
+    Plotting correlations of site escape for S2K146
+
+
+
+    
+![png](make_supp_data_Omicron_EG5_files/make_supp_data_Omicron_EG5_16_9.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_EG5/S2K146-site-corr.pdf
+    
+    Plotting correlations of site escape for S2V29_parent
+
+
+
+    
+![png](make_supp_data_Omicron_EG5_files/make_supp_data_Omicron_EG5_16_11.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_EG5/S2V29_parent-site-corr.pdf
 
 
 ## Raw data files
@@ -250,6 +296,12 @@ for set_name, condition_set in condition_sets.items():
     
     Raw data for VIR7229:
     Writing to results/supp_data/Omicron_EG5/VIR7229_raw_data.csv
+    
+    Raw data for S2K146:
+    Writing to results/supp_data/Omicron_EG5/S2K146_raw_data.csv
+    
+    Raw data for S2V29_parent:
+    Writing to results/supp_data/Omicron_EG5/S2V29_parent_raw_data.csv
 
 
 ## Data for `dms-view`:
@@ -325,9 +377,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>-</td>
       <td>331</td>
-      <td>0.2668</td>
-      <td>5.294</td>
-      <td>0.3516</td>
+      <td>0.004829</td>
+      <td>0.1993</td>
+      <td>0.02629</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -340,9 +392,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>A</td>
       <td>331</td>
-      <td>0.2703</td>
-      <td>5.294</td>
-      <td>0.3516</td>
+      <td>0.005414</td>
+      <td>0.1993</td>
+      <td>0.02629</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -355,9 +407,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>C</td>
       <td>331</td>
-      <td>0.2843</td>
-      <td>5.294</td>
-      <td>0.3516</td>
+      <td>0.004664</td>
+      <td>0.1993</td>
+      <td>0.02629</td>
       <td>#9c3503</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -370,9 +422,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>D</td>
       <td>331</td>
-      <td>0.2261</td>
-      <td>5.294</td>
-      <td>0.3516</td>
+      <td>0.016100</td>
+      <td>0.1993</td>
+      <td>0.02629</td>
       <td>#7a2b05</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -385,9 +437,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2750</td>
-      <td>5.294</td>
-      <td>0.3516</td>
+      <td>0.004020</td>
+      <td>0.1993</td>
+      <td>0.02629</td>
       <td>#6a2605</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -433,6 +485,8 @@ for set_name, condition_set in condition_sets.items():
 ```
 
     Writing `dms-view` input file for VIR7229 mapped to PDB 6m0j to results/supp_data/Omicron_EG5/VIR7229_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for S2K146 mapped to PDB 6m0j to results/supp_data/Omicron_EG5/S2K146_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for S2V29_parent mapped to PDB 6m0j to results/supp_data/Omicron_EG5/S2V29_parent_6m0j_dms-view_data.csv
 
 
 

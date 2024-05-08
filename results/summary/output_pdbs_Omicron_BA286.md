@@ -111,11 +111,11 @@ display(HTML(escape_fracs.head().to_html(index=False)))
     <tr>
       <td>S2V29_36</td>
       <td>331</td>
-      <td>0.136854</td>
+      <td>0.147264</td>
       <td>0.01578</td>
       <td>5.161211</td>
       <td>0.7315</td>
-      <td>0.026516</td>
+      <td>0.028533</td>
       <td>0.021572</td>
     </tr>
     <tr>

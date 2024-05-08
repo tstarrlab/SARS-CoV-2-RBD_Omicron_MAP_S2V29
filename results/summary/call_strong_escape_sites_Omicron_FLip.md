@@ -97,9 +97,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2210</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.00766</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -110,9 +110,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2433</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.03284</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -123,9 +123,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2256</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.02987</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>37</td>
     </tr>
@@ -136,9 +136,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2751</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.06409</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>23</td>
     </tr>
@@ -149,9 +149,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2328</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.01638</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>24</td>
     </tr>
@@ -330,8 +330,16 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_FLip'], index=False)
   </thead>
   <tbody>
     <tr>
+      <th>default</th>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>sensitive</th>
+      <td>36</td>
+    </tr>
+    <tr>
       <th>sensitive_max_mut</th>
-      <td>55</td>
+      <td>54</td>
     </tr>
   </tbody>
 </table>
@@ -367,97 +375,97 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_FLip'], index=False)
     <tr>
       <th>0</th>
       <td>S2K146_717</td>
-      <td>351</td>
-      <td>2.0260</td>
-      <td>0.6061</td>
-      <td>sensitive_max_mut</td>
-      <td>4.3425</td>
-      <td>11.25</td>
-      <td>21.7125</td>
-      <td>False</td>
-      <td>0.5625</td>
+      <td>453</td>
+      <td>5.549</td>
+      <td>0.7831</td>
+      <td>default</td>
+      <td>0.51545</td>
+      <td>16.66</td>
+      <td>5.1545</td>
+      <td>True</td>
+      <td>1.666</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>49</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>1</th>
       <td>S2K146_717</td>
-      <td>396</td>
-      <td>4.0720</td>
-      <td>0.5198</td>
-      <td>sensitive_max_mut</td>
-      <td>4.3425</td>
-      <td>11.25</td>
-      <td>21.7125</td>
-      <td>False</td>
-      <td>0.5625</td>
+      <td>456</td>
+      <td>13.900</td>
+      <td>0.9403</td>
+      <td>default</td>
+      <td>0.51545</td>
+      <td>16.66</td>
+      <td>5.1545</td>
+      <td>True</td>
+      <td>1.666</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>49</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>2</th>
       <td>S2K146_717</td>
-      <td>401</td>
-      <td>1.0530</td>
-      <td>0.5455</td>
-      <td>sensitive_max_mut</td>
-      <td>4.3425</td>
-      <td>11.25</td>
-      <td>21.7125</td>
-      <td>False</td>
-      <td>0.5625</td>
+      <td>472</td>
+      <td>12.870</td>
+      <td>0.9450</td>
+      <td>default</td>
+      <td>0.51545</td>
+      <td>16.66</td>
+      <td>5.1545</td>
+      <td>True</td>
+      <td>1.666</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>49</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>3</th>
       <td>S2K146_717</td>
-      <td>402</td>
-      <td>0.9531</td>
-      <td>0.5121</td>
-      <td>sensitive_max_mut</td>
-      <td>4.3425</td>
-      <td>11.25</td>
-      <td>21.7125</td>
-      <td>False</td>
-      <td>0.5625</td>
+      <td>473</td>
+      <td>13.710</td>
+      <td>0.9181</td>
+      <td>default</td>
+      <td>0.51545</td>
+      <td>16.66</td>
+      <td>5.1545</td>
+      <td>True</td>
+      <td>1.666</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>49</td>
+      <td>13</td>
     </tr>
     <tr>
       <th>4</th>
       <td>S2K146_717</td>
-      <td>403</td>
-      <td>4.7320</td>
-      <td>0.5097</td>
-      <td>sensitive_max_mut</td>
-      <td>4.3425</td>
-      <td>11.25</td>
-      <td>21.7125</td>
-      <td>False</td>
-      <td>0.5625</td>
+      <td>474</td>
+      <td>9.702</td>
+      <td>0.9019</td>
+      <td>default</td>
+      <td>0.51545</td>
+      <td>16.66</td>
+      <td>5.1545</td>
+      <td>True</td>
+      <td>1.666</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>49</td>
+      <td>13</td>
     </tr>
   </tbody>
 </table>

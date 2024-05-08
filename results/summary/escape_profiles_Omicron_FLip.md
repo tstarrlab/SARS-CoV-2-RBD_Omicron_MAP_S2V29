@@ -139,9 +139,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2210</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.00766</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -152,9 +152,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2433</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.03284</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>21</td>
     </tr>
@@ -165,9 +165,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2256</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.02987</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>37</td>
     </tr>
@@ -178,9 +178,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2751</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.06409</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>23</td>
     </tr>
@@ -191,9 +191,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2328</td>
-      <td>5.025</td>
-      <td>0.2513</td>
+      <td>0.01638</td>
+      <td>0.466</td>
+      <td>0.0233</td>
       <td>2</td>
       <td>24</td>
     </tr>
@@ -377,7 +377,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696156/ipykernel_33900/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/13245063/ipykernel_2718510/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -398,10 +398,10 @@ if len(nan_color):
 
     Saving DMS color scheme to results/escape_profiles/Omicron_FLip/escape_profiles_dms_colors.csv
     
-    expr ranges from -1.27 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_horizontal.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696156/ipykernel_33900/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/13245063/ipykernel_2718510/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -411,7 +411,7 @@ if len(nan_color):
 
 
     
-    expr ranges from -1.27 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_vertical.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_vertical.pdf
 
 
 

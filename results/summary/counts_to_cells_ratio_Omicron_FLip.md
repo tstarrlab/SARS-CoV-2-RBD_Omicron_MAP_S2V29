@@ -138,8 +138,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_FLip'], index=False, flo
       <td>89</td>
       <td>abneg</td>
       <td>4.4e+05</td>
-      <td>2.4e+02</td>
-      <td>0.00053</td>
+      <td>2.4e+06</td>
+      <td>5.5</td>
       <td>False</td>
     </tr>
     <tr>
@@ -150,8 +150,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_FLip'], index=False, flo
       <td>89</td>
       <td>abneg</td>
       <td>3.8e+05</td>
-      <td>2.1e+05</td>
-      <td>0.54</td>
+      <td>2.2e+06</td>
+      <td>5.8</td>
       <td>False</td>
     </tr>
     <tr>
@@ -162,8 +162,8 @@ counts_cells.to_csv(config['counts_to_cells_csv_Omicron_FLip'], index=False, flo
       <td>290</td>
       <td>abneg</td>
       <td>9.2e+05</td>
-      <td>3.2e+02</td>
-      <td>0.00035</td>
+      <td>5.2e+06</td>
+      <td>5.7</td>
       <td>False</td>
     </tr>
   </tbody>
@@ -227,7 +227,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/577037/ipykernel_2833748/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245058/ipykernel_2717971/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -240,7 +240,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/577037/ipykernel_2833748/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245058/ipykernel_2717971/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -253,7 +253,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/577037/ipykernel_2833748/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/13245058/ipykernel_2717971/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -300,66 +300,6 @@ display(HTML(
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>expt4-S2V29_v37_2-89-abneg, lib96</td>
-      <td>230615</td>
-      <td>expt4</td>
-      <td>S2V29_v37_2</td>
-      <td>89</td>
-      <td>abneg</td>
-      <td>4.4e+05</td>
-      <td>2.4e+02</td>
-      <td>0.00053</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt4-S2V29_v37_2-89-abneg, lib97</td>
-      <td>230615</td>
-      <td>expt4</td>
-      <td>S2V29_v37_2</td>
-      <td>89</td>
-      <td>abneg</td>
-      <td>3.8e+05</td>
-      <td>2.1e+05</td>
-      <td>0.54</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt5-S2V29-290-abneg, lib96</td>
-      <td>230615</td>
-      <td>expt5</td>
-      <td>S2V29</td>
-      <td>290</td>
-      <td>abneg</td>
-      <td>9.2e+05</td>
-      <td>3.2e+02</td>
-      <td>0.00035</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt5-S2V29-290-abneg, lib97</td>
-      <td>230615</td>
-      <td>expt5</td>
-      <td>S2V29</td>
-      <td>290</td>
-      <td>abneg</td>
-      <td>9.3e+05</td>
-      <td>2e+05</td>
-      <td>0.21</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>expt6-S2K146-717-abneg, lib96</td>
-      <td>230615</td>
-      <td>expt6</td>
-      <td>S2K146</td>
-      <td>717</td>
-      <td>abneg</td>
-      <td>1.1e+06</td>
-      <td>1.5e+02</td>
-      <td>0.00014</td>
-      <td>False</td>
-    </tr>
   </tbody>
 </table>
 

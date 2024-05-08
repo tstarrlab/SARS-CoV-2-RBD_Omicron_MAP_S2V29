@@ -97,9 +97,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2668</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004829</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>25</td>
     </tr>
@@ -110,9 +110,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2703</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.005414</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>25</td>
     </tr>
@@ -123,9 +123,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2843</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004664</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>30</td>
     </tr>
@@ -136,9 +136,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2261</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.016100</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>30</td>
     </tr>
@@ -149,9 +149,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2750</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004020</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -330,12 +330,16 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
   </thead>
   <tbody>
     <tr>
+      <th>default</th>
+      <td>20</td>
+    </tr>
+    <tr>
       <th>sensitive</th>
-      <td>1</td>
+      <td>28</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>3</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>
@@ -370,79 +374,98 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_EG5'], index=False)
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2V29_v37_2_39</td>
-      <td>456</td>
-      <td>1.903</td>
-      <td>0.4807</td>
-      <td>sensitive</td>
-      <td>0.3746</td>
-      <td>1.903</td>
-      <td>1.873</td>
+      <td>S2K146_121</td>
+      <td>453</td>
+      <td>3.616</td>
+      <td>0.7566</td>
+      <td>default</td>
+      <td>0.1558</td>
+      <td>14.66</td>
+      <td>1.558</td>
       <td>True</td>
-      <td>0.09515</td>
+      <td>1.466</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>1</td>
+      <td>19</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>S2V29_v37_2_39</td>
-      <td>421</td>
-      <td>1.205</td>
-      <td>0.5668</td>
-      <td>sensitive_max_mut</td>
-      <td>0.3746</td>
-      <td>1.903</td>
-      <td>1.873</td>
-      <td>False</td>
-      <td>0.09515</td>
+      <td>S2K146_121</td>
+      <td>455</td>
+      <td>4.625</td>
+      <td>0.8410</td>
+      <td>default</td>
+      <td>0.1558</td>
+      <td>14.66</td>
+      <td>1.558</td>
+      <td>True</td>
+      <td>1.466</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
-      <td>True</td>
-      <td>3</td>
+      <td>19</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>S2V29_v37_2_39</td>
+      <td>S2K146_121</td>
       <td>456</td>
-      <td>1.903</td>
-      <td>0.4807</td>
-      <td>sensitive_max_mut</td>
-      <td>0.3746</td>
-      <td>1.903</td>
-      <td>1.873</td>
+      <td>12.720</td>
+      <td>0.8366</td>
+      <td>default</td>
+      <td>0.1558</td>
+      <td>14.66</td>
+      <td>1.558</td>
       <td>True</td>
-      <td>0.09515</td>
+      <td>1.466</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>3</td>
+      <td>19</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>S2V29_v37_2_39</td>
-      <td>459</td>
-      <td>1.053</td>
-      <td>0.5779</td>
-      <td>sensitive_max_mut</td>
-      <td>0.3746</td>
-      <td>1.903</td>
-      <td>1.873</td>
-      <td>False</td>
-      <td>0.09515</td>
+      <td>S2K146_121</td>
+      <td>472</td>
+      <td>10.910</td>
+      <td>0.7796</td>
+      <td>default</td>
+      <td>0.1558</td>
+      <td>14.66</td>
+      <td>1.558</td>
+      <td>True</td>
+      <td>1.466</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
+      <td>False</td>
       <td>True</td>
+      <td>19</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>S2K146_121</td>
+      <td>473</td>
+      <td>7.069</td>
+      <td>0.8142</td>
+      <td>default</td>
+      <td>0.1558</td>
+      <td>14.66</td>
+      <td>1.558</td>
       <td>True</td>
-      <td>3</td>
+      <td>1.466</td>
+      <td>True</td>
+      <td>0</td>
+      <td>True</td>
+      <td>False</td>
+      <td>True</td>
+      <td>19</td>
     </tr>
   </tbody>
 </table>

@@ -139,9 +139,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2668</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004829</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>25</td>
     </tr>
@@ -152,9 +152,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2703</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.005414</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>25</td>
     </tr>
@@ -165,9 +165,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2843</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004664</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>30</td>
     </tr>
@@ -178,9 +178,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2261</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.016100</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>30</td>
     </tr>
@@ -191,9 +191,9 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2750</td>
-      <td>5.294</td>
-      <td>0.2647</td>
+      <td>0.004020</td>
+      <td>0.1993</td>
+      <td>0.009963</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -377,7 +377,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_EG5/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696143/ipykernel_32789/375458195.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/13245126/ipykernel_2272092/375458195.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -398,10 +398,10 @@ if len(nan_color):
 
     Saving DMS color scheme to results/escape_profiles/Omicron_EG5/escape_profiles_dms_colors.csv
     
-    expr ranges from -1.28 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_EG5/expr_scalebar_horizontal.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_EG5/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696143/ipykernel_32789/375458195.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/13245126/ipykernel_2272092/375458195.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -411,7 +411,7 @@ if len(nan_color):
 
 
     
-    expr ranges from -1.28 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_EG5/expr_scalebar_vertical.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_EG5/expr_scalebar_vertical.pdf
 
 
 
@@ -695,7 +695,14 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 9 profiles using 16 CPUs...
+    Drawing 18 profiles using 16 CPUs...
+
+
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
+    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
+
+
     
     Plotted profile 1 to:
      results/escape_profiles/Omicron_EG5/VIR7229_stackedlogo.pdf
@@ -704,7 +711,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_1.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_3.png)
     
 
 
@@ -716,7 +723,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_3.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_5.png)
     
 
 
@@ -728,7 +735,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_5.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_7.png)
     
 
 
@@ -740,7 +747,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_7.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_9.png)
     
 
 
@@ -752,7 +759,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_9.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_11.png)
     
 
 
@@ -764,7 +771,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_11.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_13.png)
     
 
 
@@ -776,7 +783,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_13.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_15.png)
     
 
 
@@ -788,7 +795,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_15.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_17.png)
     
 
 
@@ -800,7 +807,115 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_17.png)
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_19.png)
+    
+
+
+    
+    Plotted profile 10 to:
+     results/escape_profiles/Omicron_EG5/S2K146_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_21.png)
+    
+
+
+    
+    Plotted profile 11 to:
+     results/escape_profiles/Omicron_EG5/S2K146_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_23.png)
+    
+
+
+    
+    Plotted profile 12 to:
+     results/escape_profiles/Omicron_EG5/S2K146_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_25.png)
+    
+
+
+    
+    Plotted profile 13 to:
+     results/escape_profiles/Omicron_EG5/S2K146_wide_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_27.png)
+    
+
+
+    
+    Plotted profile 14 to:
+     results/escape_profiles/Omicron_EG5/S2K146_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_29.png)
+    
+
+
+    
+    Plotted profile 15 to:
+     results/escape_profiles/Omicron_EG5/S2K146_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2K146_wide_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_31.png)
+    
+
+
+    
+    Plotted profile 16 to:
+     results/escape_profiles/Omicron_EG5/S2V29_parent_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2V29_parent_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_33.png)
+    
+
+
+    
+    Plotted profile 17 to:
+     results/escape_profiles/Omicron_EG5/S2V29_parent_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2V29_parent_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_35.png)
+    
+
+
+    
+    Plotted profile 18 to:
+     results/escape_profiles/Omicron_EG5/S2V29_parent_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_EG5/S2V29_parent_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_EG5_files/escape_profiles_Omicron_EG5_26_37.png)
     
 
 

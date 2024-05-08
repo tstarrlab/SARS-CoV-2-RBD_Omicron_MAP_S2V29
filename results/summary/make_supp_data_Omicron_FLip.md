@@ -377,9 +377,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>-</td>
       <td>331</td>
-      <td>0.2210</td>
-      <td>5.025</td>
-      <td>0.3393</td>
+      <td>0.00766</td>
+      <td>0.466</td>
+      <td>0.06409</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -392,9 +392,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>A</td>
       <td>331</td>
-      <td>0.2433</td>
-      <td>5.025</td>
-      <td>0.3393</td>
+      <td>0.03284</td>
+      <td>0.466</td>
+      <td>0.06409</td>
       <td>#742905</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -407,9 +407,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>C</td>
       <td>331</td>
-      <td>0.2256</td>
-      <td>5.025</td>
-      <td>0.3393</td>
+      <td>0.02987</td>
+      <td>0.466</td>
+      <td>0.06409</td>
       <td>#913104</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -422,9 +422,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>D</td>
       <td>331</td>
-      <td>0.2751</td>
-      <td>5.025</td>
-      <td>0.3393</td>
+      <td>0.06409</td>
+      <td>0.466</td>
+      <td>0.06409</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -437,9 +437,9 @@ display(HTML(dms_view_df.head().to_html(index=False)))
       <td>N</td>
       <td>E</td>
       <td>331</td>
-      <td>0.2328</td>
-      <td>5.025</td>
-      <td>0.3393</td>
+      <td>0.01638</td>
+      <td>0.466</td>
+      <td>0.06409</td>
       <td>#7f2c04</td>
       <td>NaN</td>
       <td>NaN</td>

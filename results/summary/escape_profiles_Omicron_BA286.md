@@ -140,8 +140,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004016</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -153,8 +153,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.011080</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>20</td>
     </tr>
@@ -166,8 +166,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.009714</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>36</td>
     </tr>
@@ -179,8 +179,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004846</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>18</td>
     </tr>
@@ -192,8 +192,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004962</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>29</td>
     </tr>
@@ -253,8 +253,8 @@ escape_fracs.head()
       <td>E</td>
       <td>331</td>
       <td>0.004016</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -267,8 +267,8 @@ escape_fracs.head()
       <td>E</td>
       <td>331</td>
       <td>0.011080</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>20</td>
     </tr>
@@ -281,8 +281,8 @@ escape_fracs.head()
       <td>E</td>
       <td>331</td>
       <td>0.009714</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>36</td>
     </tr>
@@ -295,8 +295,8 @@ escape_fracs.head()
       <td>E</td>
       <td>331</td>
       <td>0.004846</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>18</td>
     </tr>
@@ -309,8 +309,8 @@ escape_fracs.head()
       <td>E</td>
       <td>331</td>
       <td>0.004962</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>29</td>
     </tr>
@@ -495,7 +495,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696149/ipykernel_2075438/3818419764.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/729190/ipykernel_2596781/3818419764.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -516,10 +516,10 @@ if len(nan_color):
 
     Saving DMS color scheme to results/escape_profiles/Omicron_BA286/escape_profiles_dms_colors.csv
     
-    expr ranges from -1.14 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/expr_scalebar_horizontal.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696149/ipykernel_2075438/3818419764.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/729190/ipykernel_2596781/3818419764.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -529,7 +529,7 @@ if len(nan_color):
 
 
     
-    expr ranges from -1.14 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/expr_scalebar_vertical.pdf
+    expr ranges from -1.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/expr_scalebar_vertical.pdf
 
 
 

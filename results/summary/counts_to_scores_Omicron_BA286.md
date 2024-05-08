@@ -1027,7 +1027,7 @@ print('Here is what that dataframe looks like:')
 display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(index=False)))
 ```
 
-    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-0.75.
+    Reading ACE2-binding and expression for mutations from results/prior_DMS_data/mutant_ACE2binding_expression.csv, and filtering for variants that have single mutations that only have mutations with binding >=-3.0 and expression >=-1.
     Here is what that dataframe looks like:
 
 
@@ -1071,11 +1071,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.70</td>
       <td>8.06</td>
       <td>NaN</td>
-      <td>6.84</td>
-      <td>-0.50</td>
-      <td>36</td>
+      <td>6.98</td>
+      <td>-0.61</td>
+      <td>45</td>
       <td>2</td>
-      <td>6.67</td>
+      <td>6.96</td>
       <td>7.01</td>
       <td>151</td>
       <td>K151-</td>
@@ -1093,11 +1093,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.31</td>
       <td>9.85</td>
       <td>NaN</td>
-      <td>7.53</td>
-      <td>0.20</td>
-      <td>28</td>
+      <td>7.79</td>
+      <td>0.19</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.18</td>
+      <td>7.69</td>
       <td>7.88</td>
       <td>151</td>
       <td>K151A</td>
@@ -1115,11 +1115,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.90</td>
       <td>9.41</td>
       <td>NaN</td>
-      <td>7.16</td>
-      <td>-0.17</td>
-      <td>21</td>
+      <td>7.36</td>
+      <td>-0.24</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.95</td>
+      <td>7.34</td>
       <td>7.38</td>
       <td>151</td>
       <td>K151C</td>
@@ -1137,11 +1137,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.29</td>
       <td>9.94</td>
       <td>NaN</td>
-      <td>7.63</td>
-      <td>0.29</td>
-      <td>26</td>
+      <td>7.86</td>
+      <td>0.27</td>
+      <td>37</td>
       <td>2</td>
-      <td>7.27</td>
+      <td>7.74</td>
       <td>7.99</td>
       <td>151</td>
       <td>K151D</td>
@@ -1159,11 +1159,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.31</td>
       <td>9.74</td>
       <td>NaN</td>
-      <td>7.60</td>
-      <td>0.26</td>
-      <td>20</td>
+      <td>7.87</td>
+      <td>0.28</td>
+      <td>31</td>
       <td>2</td>
-      <td>7.22</td>
+      <td>7.77</td>
       <td>7.97</td>
       <td>151</td>
       <td>K151E</td>
@@ -1181,11 +1181,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.28</td>
       <td>9.84</td>
       <td>NaN</td>
-      <td>7.22</td>
-      <td>-0.12</td>
-      <td>15</td>
+      <td>7.64</td>
+      <td>0.05</td>
+      <td>19</td>
       <td>2</td>
-      <td>6.81</td>
+      <td>7.67</td>
       <td>7.62</td>
       <td>151</td>
       <td>K151F</td>
@@ -1203,11 +1203,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.14</td>
       <td>9.63</td>
       <td>NaN</td>
-      <td>7.39</td>
-      <td>0.05</td>
-      <td>38</td>
+      <td>7.56</td>
+      <td>-0.03</td>
+      <td>55</td>
       <td>2</td>
-      <td>7.16</td>
+      <td>7.51</td>
       <td>7.61</td>
       <td>151</td>
       <td>K151G</td>
@@ -1225,11 +1225,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.31</td>
       <td>9.77</td>
       <td>NaN</td>
-      <td>7.48</td>
-      <td>0.15</td>
-      <td>15</td>
+      <td>7.70</td>
+      <td>0.11</td>
+      <td>25</td>
       <td>2</td>
-      <td>7.16</td>
+      <td>7.59</td>
       <td>7.81</td>
       <td>151</td>
       <td>K151H</td>
@@ -1247,11 +1247,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.19</td>
       <td>10.00</td>
       <td>NaN</td>
-      <td>7.71</td>
-      <td>0.38</td>
-      <td>10</td>
+      <td>7.83</td>
+      <td>0.23</td>
+      <td>17</td>
       <td>2</td>
-      <td>7.52</td>
+      <td>7.75</td>
       <td>7.90</td>
       <td>151</td>
       <td>K151I</td>
@@ -1269,11 +1269,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>151</td>
       <td>K151K</td>
@@ -1291,11 +1291,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.26</td>
       <td>9.84</td>
       <td>NaN</td>
-      <td>7.54</td>
-      <td>0.21</td>
-      <td>29</td>
+      <td>7.78</td>
+      <td>0.18</td>
+      <td>37</td>
       <td>2</td>
-      <td>7.27</td>
+      <td>7.73</td>
       <td>7.82</td>
       <td>151</td>
       <td>K151L</td>
@@ -1313,11 +1313,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.29</td>
       <td>9.84</td>
       <td>NaN</td>
-      <td>7.42</td>
-      <td>0.08</td>
-      <td>23</td>
+      <td>7.77</td>
+      <td>0.17</td>
+      <td>35</td>
       <td>2</td>
-      <td>6.98</td>
+      <td>7.68</td>
       <td>7.85</td>
       <td>151</td>
       <td>K151M</td>
@@ -1335,11 +1335,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.41</td>
       <td>9.75</td>
       <td>NaN</td>
-      <td>7.45</td>
-      <td>0.12</td>
-      <td>22</td>
+      <td>7.87</td>
+      <td>0.27</td>
+      <td>35</td>
       <td>2</td>
-      <td>6.95</td>
+      <td>7.78</td>
       <td>7.95</td>
       <td>151</td>
       <td>K151N</td>
@@ -1357,11 +1357,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.24</td>
       <td>9.57</td>
       <td>NaN</td>
-      <td>7.33</td>
-      <td>0.00</td>
-      <td>17</td>
+      <td>7.73</td>
+      <td>0.13</td>
+      <td>23</td>
       <td>2</td>
-      <td>6.98</td>
+      <td>7.77</td>
       <td>7.68</td>
       <td>151</td>
       <td>K151P</td>
@@ -1379,11 +1379,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.36</td>
       <td>10.09</td>
       <td>NaN</td>
-      <td>7.60</td>
-      <td>0.27</td>
-      <td>20</td>
+      <td>7.75</td>
+      <td>0.16</td>
+      <td>33</td>
       <td>2</td>
-      <td>7.22</td>
+      <td>7.52</td>
       <td>7.99</td>
       <td>151</td>
       <td>K151Q</td>
@@ -1401,11 +1401,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.36</td>
       <td>9.48</td>
       <td>NaN</td>
-      <td>7.23</td>
-      <td>-0.10</td>
-      <td>22</td>
+      <td>7.55</td>
+      <td>-0.04</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.92</td>
+      <td>7.55</td>
       <td>7.54</td>
       <td>151</td>
       <td>K151R</td>
@@ -1423,11 +1423,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.12</td>
       <td>9.98</td>
       <td>NaN</td>
-      <td>7.44</td>
-      <td>0.11</td>
-      <td>21</td>
+      <td>7.84</td>
+      <td>0.25</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.99</td>
+      <td>7.78</td>
       <td>7.90</td>
       <td>151</td>
       <td>K151S</td>
@@ -1445,11 +1445,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.38</td>
       <td>9.88</td>
       <td>NaN</td>
-      <td>7.68</td>
-      <td>0.34</td>
-      <td>14</td>
+      <td>8.04</td>
+      <td>0.44</td>
+      <td>25</td>
       <td>2</td>
-      <td>7.11</td>
+      <td>7.84</td>
       <td>8.24</td>
       <td>151</td>
       <td>K151T</td>
@@ -1467,11 +1467,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.39</td>
       <td>9.87</td>
       <td>NaN</td>
-      <td>7.63</td>
-      <td>0.30</td>
-      <td>24</td>
+      <td>7.82</td>
+      <td>0.22</td>
+      <td>33</td>
       <td>2</td>
-      <td>7.29</td>
+      <td>7.65</td>
       <td>7.98</td>
       <td>151</td>
       <td>K151V</td>
@@ -1489,11 +1489,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.22</td>
       <td>9.54</td>
       <td>NaN</td>
-      <td>7.17</td>
-      <td>-0.16</td>
-      <td>27</td>
+      <td>7.34</td>
+      <td>-0.25</td>
+      <td>39</td>
       <td>2</td>
-      <td>6.93</td>
+      <td>7.27</td>
       <td>7.42</td>
       <td>151</td>
       <td>K151W</td>
@@ -1511,11 +1511,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.46</td>
       <td>9.99</td>
       <td>NaN</td>
-      <td>7.38</td>
-      <td>0.04</td>
-      <td>12</td>
+      <td>7.78</td>
+      <td>0.18</td>
+      <td>20</td>
       <td>2</td>
-      <td>6.93</td>
+      <td>7.72</td>
       <td>7.83</td>
       <td>151</td>
       <td>K151Y</td>
@@ -1533,11 +1533,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.27</td>
       <td>7.04</td>
       <td>NaN</td>
-      <td>6.78</td>
-      <td>-0.56</td>
-      <td>21</td>
+      <td>6.81</td>
+      <td>-0.78</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>6.69</td>
       <td>6.94</td>
       <td>152</td>
       <td>G152-</td>
@@ -1555,11 +1555,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.24</td>
       <td>9.86</td>
       <td>NaN</td>
-      <td>7.31</td>
-      <td>-0.02</td>
-      <td>19</td>
+      <td>7.59</td>
+      <td>0.00</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.96</td>
+      <td>7.52</td>
       <td>7.66</td>
       <td>152</td>
       <td>G152A</td>
@@ -1577,11 +1577,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.38</td>
       <td>8.68</td>
       <td>NaN</td>
-      <td>7.12</td>
-      <td>-0.22</td>
-      <td>20</td>
+      <td>7.14</td>
+      <td>-0.45</td>
+      <td>28</td>
       <td>2</td>
-      <td>7.04</td>
+      <td>7.08</td>
       <td>7.20</td>
       <td>152</td>
       <td>G152C</td>
@@ -1599,11 +1599,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.43</td>
       <td>9.62</td>
       <td>NaN</td>
-      <td>7.40</td>
-      <td>0.07</td>
-      <td>17</td>
+      <td>7.85</td>
+      <td>0.25</td>
+      <td>23</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.71</td>
       <td>7.98</td>
       <td>152</td>
       <td>G152D</td>
@@ -1621,11 +1621,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.29</td>
       <td>9.84</td>
       <td>NaN</td>
-      <td>7.35</td>
-      <td>0.02</td>
-      <td>14</td>
+      <td>7.68</td>
+      <td>0.09</td>
+      <td>17</td>
       <td>2</td>
-      <td>6.92</td>
+      <td>7.58</td>
       <td>7.78</td>
       <td>152</td>
       <td>G152E</td>
@@ -1643,11 +1643,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.05</td>
       <td>9.50</td>
       <td>NaN</td>
-      <td>7.06</td>
-      <td>-0.27</td>
-      <td>19</td>
+      <td>7.43</td>
+      <td>-0.16</td>
+      <td>25</td>
       <td>2</td>
-      <td>6.65</td>
+      <td>7.39</td>
       <td>7.48</td>
       <td>152</td>
       <td>G152F</td>
@@ -1665,11 +1665,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>152</td>
       <td>G152G</td>
@@ -1687,11 +1687,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.07</td>
       <td>9.41</td>
       <td>NaN</td>
-      <td>7.03</td>
-      <td>-0.30</td>
-      <td>22</td>
+      <td>7.20</td>
+      <td>-0.39</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.67</td>
+      <td>7.00</td>
       <td>7.40</td>
       <td>152</td>
       <td>G152H</td>
@@ -1709,11 +1709,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.05</td>
       <td>9.58</td>
       <td>NaN</td>
-      <td>7.27</td>
-      <td>-0.06</td>
-      <td>15</td>
+      <td>7.47</td>
+      <td>-0.12</td>
+      <td>19</td>
       <td>2</td>
-      <td>6.96</td>
+      <td>7.36</td>
       <td>7.58</td>
       <td>152</td>
       <td>G152I</td>
@@ -1731,11 +1731,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.23</td>
       <td>9.64</td>
       <td>NaN</td>
-      <td>6.98</td>
-      <td>-0.35</td>
-      <td>21</td>
+      <td>7.08</td>
+      <td>-0.51</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.66</td>
+      <td>6.86</td>
       <td>7.31</td>
       <td>152</td>
       <td>G152K</td>
@@ -1753,11 +1753,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.95</td>
       <td>9.40</td>
       <td>NaN</td>
-      <td>7.21</td>
-      <td>-0.12</td>
-      <td>22</td>
+      <td>7.45</td>
+      <td>-0.14</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.80</td>
+      <td>7.27</td>
       <td>7.62</td>
       <td>152</td>
       <td>G152L</td>
@@ -1775,11 +1775,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.28</td>
       <td>9.58</td>
       <td>NaN</td>
-      <td>7.32</td>
-      <td>-0.01</td>
-      <td>18</td>
+      <td>7.47</td>
+      <td>-0.12</td>
+      <td>28</td>
       <td>2</td>
-      <td>7.04</td>
+      <td>7.34</td>
       <td>7.60</td>
       <td>152</td>
       <td>G152M</td>
@@ -1797,11 +1797,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.13</td>
       <td>9.67</td>
       <td>NaN</td>
-      <td>7.20</td>
-      <td>-0.13</td>
-      <td>24</td>
+      <td>7.50</td>
+      <td>-0.09</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.90</td>
+      <td>7.49</td>
       <td>7.51</td>
       <td>152</td>
       <td>G152N</td>
@@ -1819,11 +1819,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.30</td>
       <td>8.61</td>
       <td>NaN</td>
-      <td>6.95</td>
-      <td>-0.39</td>
-      <td>23</td>
+      <td>6.99</td>
+      <td>-0.61</td>
+      <td>32</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>6.90</td>
       <td>7.07</td>
       <td>152</td>
       <td>G152P</td>
@@ -1841,11 +1841,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.14</td>
       <td>9.69</td>
       <td>NaN</td>
-      <td>7.36</td>
-      <td>0.03</td>
-      <td>22</td>
+      <td>7.65</td>
+      <td>0.05</td>
+      <td>32</td>
       <td>2</td>
-      <td>7.03</td>
+      <td>7.60</td>
       <td>7.69</td>
       <td>152</td>
       <td>G152Q</td>
@@ -1863,11 +1863,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.14</td>
       <td>9.40</td>
       <td>NaN</td>
-      <td>7.16</td>
-      <td>-0.17</td>
-      <td>25</td>
+      <td>7.31</td>
+      <td>-0.28</td>
+      <td>36</td>
       <td>2</td>
-      <td>6.87</td>
+      <td>7.17</td>
       <td>7.44</td>
       <td>152</td>
       <td>G152R</td>
@@ -1885,11 +1885,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.26</td>
       <td>9.74</td>
       <td>NaN</td>
-      <td>7.18</td>
-      <td>-0.15</td>
-      <td>26</td>
+      <td>7.52</td>
+      <td>-0.07</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.87</td>
+      <td>7.54</td>
       <td>7.50</td>
       <td>152</td>
       <td>G152S</td>
@@ -1907,11 +1907,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.35</td>
       <td>9.86</td>
       <td>NaN</td>
-      <td>7.42</td>
-      <td>0.09</td>
-      <td>14</td>
+      <td>7.70</td>
+      <td>0.11</td>
+      <td>24</td>
       <td>2</td>
-      <td>7.07</td>
+      <td>7.63</td>
       <td>7.77</td>
       <td>152</td>
       <td>G152T</td>
@@ -1929,11 +1929,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.19</td>
       <td>9.65</td>
       <td>NaN</td>
-      <td>7.51</td>
-      <td>0.17</td>
-      <td>22</td>
+      <td>7.69</td>
+      <td>0.09</td>
+      <td>31</td>
       <td>2</td>
-      <td>7.20</td>
+      <td>7.56</td>
       <td>7.81</td>
       <td>152</td>
       <td>G152V</td>
@@ -1951,11 +1951,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.80</td>
       <td>9.55</td>
       <td>NaN</td>
-      <td>7.10</td>
-      <td>-0.24</td>
-      <td>24</td>
+      <td>7.13</td>
+      <td>-0.47</td>
+      <td>37</td>
       <td>2</td>
-      <td>6.80</td>
+      <td>6.86</td>
       <td>7.39</td>
       <td>152</td>
       <td>G152W</td>
@@ -1973,11 +1973,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.02</td>
       <td>9.42</td>
       <td>NaN</td>
-      <td>7.13</td>
-      <td>-0.20</td>
-      <td>21</td>
+      <td>7.33</td>
+      <td>-0.27</td>
+      <td>26</td>
       <td>2</td>
-      <td>6.77</td>
+      <td>7.16</td>
       <td>7.49</td>
       <td>152</td>
       <td>G152Y</td>
@@ -1995,11 +1995,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.73</td>
       <td>7.63</td>
       <td>NaN</td>
-      <td>7.11</td>
-      <td>-0.23</td>
-      <td>27</td>
+      <td>7.18</td>
+      <td>-0.41</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.91</td>
+      <td>7.06</td>
       <td>7.30</td>
       <td>153</td>
       <td>K153-</td>
@@ -2017,11 +2017,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.19</td>
       <td>9.63</td>
       <td>NaN</td>
-      <td>7.48</td>
-      <td>0.14</td>
-      <td>21</td>
+      <td>7.79</td>
+      <td>0.20</td>
+      <td>28</td>
       <td>2</td>
-      <td>7.15</td>
+      <td>7.77</td>
       <td>7.81</td>
       <td>153</td>
       <td>K153A</td>
@@ -2039,11 +2039,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.54</td>
       <td>8.58</td>
       <td>NaN</td>
-      <td>7.24</td>
-      <td>-0.09</td>
-      <td>34</td>
+      <td>7.48</td>
+      <td>-0.12</td>
+      <td>42</td>
       <td>2</td>
-      <td>6.91</td>
+      <td>7.38</td>
       <td>7.58</td>
       <td>153</td>
       <td>K153C</td>
@@ -2061,11 +2061,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.06</td>
       <td>9.43</td>
       <td>NaN</td>
-      <td>7.27</td>
-      <td>-0.06</td>
-      <td>27</td>
+      <td>7.70</td>
+      <td>0.11</td>
+      <td>36</td>
       <td>2</td>
-      <td>6.74</td>
+      <td>7.61</td>
       <td>7.80</td>
       <td>153</td>
       <td>K153D</td>
@@ -2083,11 +2083,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.39</td>
       <td>9.66</td>
       <td>NaN</td>
-      <td>7.79</td>
-      <td>0.45</td>
-      <td>25</td>
+      <td>8.11</td>
+      <td>0.52</td>
+      <td>27</td>
       <td>2</td>
-      <td>7.37</td>
+      <td>8.02</td>
       <td>8.21</td>
       <td>153</td>
       <td>K153E</td>
@@ -2105,11 +2105,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.64</td>
       <td>8.09</td>
       <td>NaN</td>
-      <td>7.06</td>
-      <td>-0.27</td>
-      <td>20</td>
+      <td>7.31</td>
+      <td>-0.28</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.71</td>
+      <td>7.21</td>
       <td>7.41</td>
       <td>153</td>
       <td>K153F</td>
@@ -2127,11 +2127,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.85</td>
       <td>9.26</td>
       <td>NaN</td>
-      <td>7.34</td>
-      <td>0.01</td>
-      <td>27</td>
+      <td>7.63</td>
+      <td>0.04</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.02</td>
+      <td>7.59</td>
       <td>7.66</td>
       <td>153</td>
       <td>K153G</td>
@@ -2149,11 +2149,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.47</td>
       <td>8.62</td>
       <td>NaN</td>
-      <td>7.30</td>
-      <td>-0.03</td>
-      <td>24</td>
+      <td>7.37</td>
+      <td>-0.22</td>
+      <td>29</td>
       <td>2</td>
-      <td>7.26</td>
+      <td>7.40</td>
       <td>7.35</td>
       <td>153</td>
       <td>K153H</td>
@@ -2171,11 +2171,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.24</td>
       <td>8.53</td>
       <td>NaN</td>
-      <td>7.38</td>
-      <td>0.05</td>
-      <td>22</td>
+      <td>7.58</td>
+      <td>-0.01</td>
+      <td>28</td>
       <td>2</td>
-      <td>7.09</td>
+      <td>7.49</td>
       <td>7.67</td>
       <td>153</td>
       <td>K153I</td>
@@ -2193,11 +2193,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>153</td>
       <td>K153K</td>
@@ -2215,11 +2215,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.57</td>
       <td>8.60</td>
       <td>NaN</td>
-      <td>7.57</td>
-      <td>0.24</td>
-      <td>26</td>
+      <td>7.67</td>
+      <td>0.08</td>
+      <td>34</td>
       <td>2</td>
-      <td>7.16</td>
+      <td>7.35</td>
       <td>7.99</td>
       <td>153</td>
       <td>K153L</td>
@@ -2237,11 +2237,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.60</td>
       <td>9.01</td>
       <td>NaN</td>
-      <td>7.27</td>
-      <td>-0.06</td>
-      <td>25</td>
+      <td>7.69</td>
+      <td>0.10</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.68</td>
+      <td>7.53</td>
       <td>7.86</td>
       <td>153</td>
       <td>K153M</td>
@@ -2259,11 +2259,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.01</td>
       <td>9.45</td>
       <td>NaN</td>
-      <td>7.35</td>
-      <td>0.02</td>
-      <td>25</td>
+      <td>7.85</td>
+      <td>0.25</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.75</td>
+      <td>7.75</td>
       <td>7.95</td>
       <td>153</td>
       <td>K153N</td>
@@ -2281,11 +2281,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.65</td>
       <td>9.06</td>
       <td>NaN</td>
-      <td>7.43</td>
-      <td>0.10</td>
-      <td>26</td>
+      <td>7.68</td>
+      <td>0.09</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.95</td>
+      <td>7.45</td>
       <td>7.91</td>
       <td>153</td>
       <td>K153P</td>
@@ -2303,11 +2303,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.29</td>
       <td>9.68</td>
       <td>NaN</td>
-      <td>7.67</td>
-      <td>0.34</td>
-      <td>16</td>
+      <td>7.92</td>
+      <td>0.33</td>
+      <td>21</td>
       <td>2</td>
-      <td>7.17</td>
+      <td>7.68</td>
       <td>8.17</td>
       <td>153</td>
       <td>K153Q</td>
@@ -2325,11 +2325,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.37</td>
       <td>9.77</td>
       <td>NaN</td>
-      <td>7.18</td>
-      <td>-0.15</td>
-      <td>27</td>
+      <td>7.53</td>
+      <td>-0.07</td>
+      <td>40</td>
       <td>2</td>
-      <td>6.80</td>
+      <td>7.50</td>
       <td>7.55</td>
       <td>153</td>
       <td>K153R</td>
@@ -2347,11 +2347,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.24</td>
       <td>9.66</td>
       <td>NaN</td>
-      <td>7.52</td>
-      <td>0.19</td>
-      <td>31</td>
+      <td>7.84</td>
+      <td>0.25</td>
+      <td>41</td>
       <td>2</td>
-      <td>7.11</td>
+      <td>7.74</td>
       <td>7.94</td>
       <td>153</td>
       <td>K153S</td>
@@ -2369,11 +2369,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.17</td>
       <td>9.56</td>
       <td>NaN</td>
-      <td>7.62</td>
-      <td>0.29</td>
-      <td>27</td>
+      <td>7.93</td>
+      <td>0.34</td>
+      <td>41</td>
       <td>2</td>
-      <td>7.15</td>
+      <td>7.78</td>
       <td>8.08</td>
       <td>153</td>
       <td>K153T</td>
@@ -2391,11 +2391,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.37</td>
       <td>8.71</td>
       <td>NaN</td>
-      <td>7.35</td>
-      <td>0.02</td>
-      <td>26</td>
+      <td>7.70</td>
+      <td>0.11</td>
+      <td>40</td>
       <td>2</td>
-      <td>6.78</td>
+      <td>7.47</td>
       <td>7.93</td>
       <td>153</td>
       <td>K153V</td>
@@ -2413,11 +2413,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.28</td>
       <td>8.44</td>
       <td>NaN</td>
-      <td>7.12</td>
-      <td>-0.21</td>
-      <td>27</td>
+      <td>7.30</td>
+      <td>-0.29</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.81</td>
+      <td>7.16</td>
       <td>7.43</td>
       <td>153</td>
       <td>K153W</td>
@@ -2435,11 +2435,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.26</td>
       <td>8.47</td>
       <td>NaN</td>
-      <td>7.17</td>
-      <td>-0.16</td>
-      <td>19</td>
+      <td>7.37</td>
+      <td>-0.22</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.87</td>
+      <td>7.28</td>
       <td>7.47</td>
       <td>153</td>
       <td>K153Y</td>
@@ -2457,11 +2457,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.31</td>
       <td>6.60</td>
       <td>NaN</td>
-      <td>6.84</td>
-      <td>-0.49</td>
-      <td>34</td>
+      <td>6.96</td>
+      <td>-0.64</td>
+      <td>39</td>
       <td>2</td>
-      <td>6.58</td>
+      <td>6.81</td>
       <td>7.11</td>
       <td>154</td>
       <td>G154-</td>
@@ -2479,11 +2479,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.84</td>
       <td>9.32</td>
       <td>NaN</td>
-      <td>7.08</td>
-      <td>-0.25</td>
-      <td>26</td>
+      <td>7.26</td>
+      <td>-0.33</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.77</td>
+      <td>7.13</td>
       <td>7.40</td>
       <td>154</td>
       <td>G154A</td>
@@ -2501,11 +2501,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.41</td>
       <td>7.50</td>
       <td>NaN</td>
-      <td>6.56</td>
-      <td>-0.78</td>
-      <td>37</td>
+      <td>6.62</td>
+      <td>-0.97</td>
+      <td>45</td>
       <td>2</td>
-      <td>6.35</td>
+      <td>6.47</td>
       <td>6.77</td>
       <td>154</td>
       <td>G154C</td>
@@ -2523,11 +2523,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.53</td>
       <td>8.68</td>
       <td>NaN</td>
-      <td>6.90</td>
-      <td>-0.44</td>
-      <td>27</td>
+      <td>7.10</td>
+      <td>-0.49</td>
+      <td>37</td>
       <td>2</td>
-      <td>6.65</td>
+      <td>7.06</td>
       <td>7.15</td>
       <td>154</td>
       <td>G154D</td>
@@ -2545,11 +2545,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.96</td>
       <td>9.48</td>
       <td>NaN</td>
-      <td>6.98</td>
-      <td>-0.35</td>
-      <td>19</td>
+      <td>7.17</td>
+      <td>-0.42</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.70</td>
+      <td>7.07</td>
       <td>7.27</td>
       <td>154</td>
       <td>G154E</td>
@@ -2567,11 +2567,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.80</td>
       <td>8.30</td>
       <td>NaN</td>
-      <td>6.88</td>
-      <td>-0.45</td>
-      <td>20</td>
+      <td>6.91</td>
+      <td>-0.69</td>
+      <td>25</td>
       <td>2</td>
-      <td>6.69</td>
+      <td>6.74</td>
       <td>7.08</td>
       <td>154</td>
       <td>G154F</td>
@@ -2589,11 +2589,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>154</td>
       <td>G154G</td>
@@ -2611,11 +2611,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.91</td>
       <td>8.33</td>
       <td>NaN</td>
-      <td>6.81</td>
-      <td>-0.52</td>
-      <td>23</td>
+      <td>6.72</td>
+      <td>-0.88</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.68</td>
+      <td>6.48</td>
       <td>6.95</td>
       <td>154</td>
       <td>G154H</td>
@@ -2633,11 +2633,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.29</td>
       <td>8.74</td>
       <td>NaN</td>
-      <td>6.86</td>
-      <td>-0.47</td>
-      <td>29</td>
+      <td>6.92</td>
+      <td>-0.67</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.65</td>
+      <td>6.76</td>
       <td>7.08</td>
       <td>154</td>
       <td>G154I</td>
@@ -2655,11 +2655,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.04</td>
       <td>8.48</td>
       <td>NaN</td>
-      <td>6.83</td>
-      <td>-0.50</td>
-      <td>22</td>
+      <td>6.72</td>
+      <td>-0.87</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.85</td>
+      <td>6.63</td>
       <td>6.82</td>
       <td>154</td>
       <td>G154K</td>
@@ -2677,11 +2677,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.10</td>
       <td>8.52</td>
       <td>NaN</td>
-      <td>6.77</td>
-      <td>-0.56</td>
-      <td>24</td>
+      <td>6.78</td>
+      <td>-0.81</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.63</td>
+      <td>6.65</td>
       <td>6.91</td>
       <td>154</td>
       <td>G154L</td>
@@ -2699,11 +2699,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.86</td>
       <td>9.32</td>
       <td>NaN</td>
-      <td>6.90</td>
-      <td>-0.43</td>
-      <td>19</td>
+      <td>7.01</td>
+      <td>-0.59</td>
+      <td>24</td>
       <td>2</td>
-      <td>6.73</td>
+      <td>6.94</td>
       <td>7.07</td>
       <td>154</td>
       <td>G154M</td>
@@ -2721,11 +2721,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.02</td>
       <td>8.44</td>
       <td>NaN</td>
-      <td>6.85</td>
-      <td>-0.48</td>
-      <td>23</td>
+      <td>7.00</td>
+      <td>-0.59</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.64</td>
+      <td>6.94</td>
       <td>7.07</td>
       <td>154</td>
       <td>G154N</td>
@@ -2743,11 +2743,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.22</td>
       <td>7.53</td>
       <td>NaN</td>
-      <td>6.74</td>
-      <td>-0.59</td>
-      <td>28</td>
+      <td>6.80</td>
+      <td>-0.80</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.55</td>
+      <td>6.67</td>
       <td>6.93</td>
       <td>154</td>
       <td>G154P</td>
@@ -2765,11 +2765,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.71</td>
       <td>9.16</td>
       <td>NaN</td>
-      <td>6.86</td>
-      <td>-0.47</td>
-      <td>31</td>
+      <td>7.06</td>
+      <td>-0.54</td>
+      <td>40</td>
       <td>2</td>
-      <td>6.56</td>
+      <td>6.96</td>
       <td>7.15</td>
       <td>154</td>
       <td>G154Q</td>
@@ -2787,11 +2787,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.06</td>
       <td>8.54</td>
       <td>NaN</td>
-      <td>6.73</td>
-      <td>-0.60</td>
-      <td>28</td>
+      <td>6.71</td>
+      <td>-0.89</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.64</td>
+      <td>6.58</td>
       <td>6.83</td>
       <td>154</td>
       <td>G154R</td>
@@ -2809,11 +2809,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.77</td>
       <td>9.29</td>
       <td>NaN</td>
-      <td>7.04</td>
-      <td>-0.29</td>
-      <td>29</td>
+      <td>7.18</td>
+      <td>-0.41</td>
+      <td>39</td>
       <td>2</td>
-      <td>6.78</td>
+      <td>7.06</td>
       <td>7.30</td>
       <td>154</td>
       <td>G154S</td>
@@ -2831,11 +2831,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.70</td>
       <td>8.93</td>
       <td>NaN</td>
-      <td>6.93</td>
-      <td>-0.40</td>
-      <td>23</td>
+      <td>7.09</td>
+      <td>-0.50</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.67</td>
+      <td>7.00</td>
       <td>7.19</td>
       <td>154</td>
       <td>G154T</td>
@@ -2853,11 +2853,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.53</td>
       <td>8.67</td>
       <td>NaN</td>
-      <td>6.96</td>
-      <td>-0.38</td>
-      <td>34</td>
+      <td>6.95</td>
+      <td>-0.64</td>
+      <td>42</td>
       <td>2</td>
-      <td>6.87</td>
+      <td>6.86</td>
       <td>7.04</td>
       <td>154</td>
       <td>G154V</td>
@@ -2875,11 +2875,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.49</td>
       <td>8.12</td>
       <td>NaN</td>
-      <td>6.71</td>
-      <td>-0.62</td>
-      <td>33</td>
+      <td>6.78</td>
+      <td>-0.81</td>
+      <td>42</td>
       <td>2</td>
-      <td>6.55</td>
+      <td>6.69</td>
       <td>6.87</td>
       <td>154</td>
       <td>G154W</td>
@@ -2897,11 +2897,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.56</td>
       <td>8.36</td>
       <td>NaN</td>
-      <td>6.51</td>
-      <td>-0.82</td>
-      <td>21</td>
+      <td>6.64</td>
+      <td>-0.96</td>
+      <td>25</td>
       <td>2</td>
-      <td>6.15</td>
+      <td>6.40</td>
       <td>6.87</td>
       <td>154</td>
       <td>G154Y</td>
@@ -2919,11 +2919,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.02</td>
       <td>6.44</td>
       <td>NaN</td>
-      <td>6.90</td>
-      <td>-0.44</td>
-      <td>25</td>
+      <td>7.04</td>
+      <td>-0.56</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.64</td>
+      <td>6.91</td>
       <td>7.16</td>
       <td>155</td>
       <td>P155-</td>
@@ -2941,11 +2941,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.10</td>
       <td>9.50</td>
       <td>NaN</td>
-      <td>7.15</td>
-      <td>-0.18</td>
-      <td>33</td>
+      <td>7.37</td>
+      <td>-0.23</td>
+      <td>37</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.25</td>
       <td>7.48</td>
       <td>155</td>
       <td>P155A</td>
@@ -2963,11 +2963,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.85</td>
       <td>7.53</td>
       <td>NaN</td>
-      <td>6.74</td>
-      <td>-0.59</td>
-      <td>38</td>
+      <td>6.78</td>
+      <td>-0.81</td>
+      <td>45</td>
       <td>2</td>
-      <td>6.57</td>
+      <td>6.64</td>
       <td>6.92</td>
       <td>155</td>
       <td>P155C</td>
@@ -2985,11 +2985,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.38</td>
       <td>8.71</td>
       <td>NaN</td>
-      <td>7.30</td>
-      <td>-0.03</td>
-      <td>29</td>
+      <td>7.50</td>
+      <td>-0.09</td>
+      <td>48</td>
       <td>2</td>
-      <td>6.94</td>
+      <td>7.34</td>
       <td>7.66</td>
       <td>155</td>
       <td>P155D</td>
@@ -3007,11 +3007,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.39</td>
       <td>8.70</td>
       <td>NaN</td>
-      <td>7.33</td>
-      <td>0.00</td>
-      <td>21</td>
+      <td>7.76</td>
+      <td>0.17</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.89</td>
+      <td>7.75</td>
       <td>7.78</td>
       <td>155</td>
       <td>P155E</td>
@@ -3029,11 +3029,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.47</td>
       <td>10.26</td>
       <td>NaN</td>
-      <td>7.19</td>
-      <td>-0.14</td>
-      <td>33</td>
+      <td>7.43</td>
+      <td>-0.16</td>
+      <td>41</td>
       <td>2</td>
-      <td>6.88</td>
+      <td>7.36</td>
       <td>7.50</td>
       <td>155</td>
       <td>P155F</td>
@@ -3051,11 +3051,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.17</td>
       <td>8.53</td>
       <td>NaN</td>
-      <td>6.91</td>
-      <td>-0.42</td>
-      <td>38</td>
+      <td>7.10</td>
+      <td>-0.49</td>
+      <td>47</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>7.00</td>
       <td>7.20</td>
       <td>155</td>
       <td>P155G</td>
@@ -3073,11 +3073,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.87</td>
       <td>9.34</td>
       <td>NaN</td>
-      <td>6.90</td>
-      <td>-0.43</td>
-      <td>21</td>
+      <td>6.91</td>
+      <td>-0.68</td>
+      <td>23</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>6.85</td>
       <td>6.98</td>
       <td>155</td>
       <td>P155H</td>
@@ -3095,11 +3095,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.17</td>
       <td>9.65</td>
       <td>NaN</td>
-      <td>7.15</td>
-      <td>-0.18</td>
-      <td>21</td>
+      <td>7.44</td>
+      <td>-0.16</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.39</td>
       <td>7.48</td>
       <td>155</td>
       <td>P155I</td>
@@ -3117,11 +3117,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.64</td>
       <td>8.89</td>
       <td>NaN</td>
-      <td>6.89</td>
-      <td>-0.44</td>
-      <td>20</td>
+      <td>6.97</td>
+      <td>-0.62</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.70</td>
+      <td>6.87</td>
       <td>7.08</td>
       <td>155</td>
       <td>P155K</td>
@@ -3139,11 +3139,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.97</td>
       <td>9.37</td>
       <td>NaN</td>
-      <td>7.31</td>
-      <td>-0.03</td>
-      <td>33</td>
+      <td>7.52</td>
+      <td>-0.07</td>
+      <td>42</td>
       <td>2</td>
-      <td>7.09</td>
+      <td>7.52</td>
       <td>7.52</td>
       <td>155</td>
       <td>P155L</td>
@@ -3161,11 +3161,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.68</td>
       <td>9.21</td>
       <td>NaN</td>
-      <td>7.14</td>
-      <td>-0.19</td>
-      <td>33</td>
+      <td>7.34</td>
+      <td>-0.25</td>
+      <td>36</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.22</td>
       <td>7.46</td>
       <td>155</td>
       <td>P155M</td>
@@ -3183,11 +3183,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.54</td>
       <td>8.81</td>
       <td>NaN</td>
-      <td>7.06</td>
-      <td>-0.27</td>
-      <td>24</td>
+      <td>7.33</td>
+      <td>-0.26</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.72</td>
+      <td>7.27</td>
       <td>7.40</td>
       <td>155</td>
       <td>P155N</td>
@@ -3205,11 +3205,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>155</td>
       <td>P155P</td>
@@ -3227,11 +3227,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.66</td>
       <td>9.18</td>
       <td>NaN</td>
-      <td>7.18</td>
-      <td>-0.16</td>
-      <td>32</td>
+      <td>7.39</td>
+      <td>-0.21</td>
+      <td>46</td>
       <td>2</td>
-      <td>6.89</td>
+      <td>7.31</td>
       <td>7.46</td>
       <td>155</td>
       <td>P155Q</td>
@@ -3249,11 +3249,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.72</td>
       <td>9.04</td>
       <td>NaN</td>
-      <td>6.91</td>
-      <td>-0.42</td>
-      <td>40</td>
+      <td>6.98</td>
+      <td>-0.61</td>
+      <td>46</td>
       <td>2</td>
-      <td>6.71</td>
+      <td>6.85</td>
       <td>7.11</td>
       <td>155</td>
       <td>P155R</td>
@@ -3271,11 +3271,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.74</td>
       <td>9.09</td>
       <td>NaN</td>
-      <td>7.11</td>
-      <td>-0.22</td>
-      <td>34</td>
+      <td>7.31</td>
+      <td>-0.29</td>
+      <td>50</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.21</td>
       <td>7.40</td>
       <td>155</td>
       <td>P155S</td>
@@ -3293,11 +3293,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.65</td>
       <td>9.10</td>
       <td>NaN</td>
-      <td>7.26</td>
-      <td>-0.08</td>
-      <td>25</td>
+      <td>7.41</td>
+      <td>-0.19</td>
+      <td>32</td>
       <td>2</td>
-      <td>7.03</td>
+      <td>7.33</td>
       <td>7.48</td>
       <td>155</td>
       <td>P155T</td>
@@ -3315,11 +3315,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.17</td>
       <td>9.58</td>
       <td>NaN</td>
-      <td>7.25</td>
-      <td>-0.09</td>
-      <td>29</td>
+      <td>7.51</td>
+      <td>-0.08</td>
+      <td>45</td>
       <td>2</td>
-      <td>6.86</td>
+      <td>7.39</td>
       <td>7.64</td>
       <td>155</td>
       <td>P155V</td>
@@ -3337,11 +3337,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.01</td>
       <td>9.50</td>
       <td>NaN</td>
-      <td>7.15</td>
-      <td>-0.18</td>
-      <td>28</td>
+      <td>7.28</td>
+      <td>-0.31</td>
+      <td>44</td>
       <td>2</td>
-      <td>6.98</td>
+      <td>7.25</td>
       <td>7.32</td>
       <td>155</td>
       <td>P155W</td>
@@ -3359,11 +3359,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.86</td>
       <td>9.43</td>
       <td>NaN</td>
-      <td>6.67</td>
-      <td>-0.66</td>
-      <td>26</td>
+      <td>7.19</td>
+      <td>-0.40</td>
+      <td>35</td>
       <td>2</td>
-      <td>5.92</td>
+      <td>6.95</td>
       <td>7.43</td>
       <td>155</td>
       <td>P155Y</td>
@@ -3381,11 +3381,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.41</td>
       <td>5.73</td>
       <td>NaN</td>
-      <td>6.79</td>
-      <td>-0.54</td>
-      <td>21</td>
+      <td>6.83</td>
+      <td>-0.76</td>
+      <td>26</td>
       <td>2</td>
-      <td>6.74</td>
+      <td>6.83</td>
       <td>6.84</td>
       <td>156</td>
       <td>N156-</td>
@@ -3403,11 +3403,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.14</td>
       <td>8.23</td>
       <td>NaN</td>
-      <td>7.26</td>
-      <td>-0.08</td>
-      <td>31</td>
+      <td>7.42</td>
+      <td>-0.18</td>
+      <td>41</td>
       <td>2</td>
-      <td>6.92</td>
+      <td>7.24</td>
       <td>7.59</td>
       <td>156</td>
       <td>N156A</td>
@@ -3425,11 +3425,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.08</td>
       <td>7.55</td>
       <td>NaN</td>
-      <td>7.14</td>
-      <td>-0.19</td>
-      <td>18</td>
+      <td>7.23</td>
+      <td>-0.36</td>
+      <td>25</td>
       <td>2</td>
-      <td>6.92</td>
+      <td>7.09</td>
       <td>7.37</td>
       <td>156</td>
       <td>N156C</td>
@@ -3447,11 +3447,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.69</td>
       <td>9.03</td>
       <td>NaN</td>
-      <td>7.30</td>
-      <td>-0.04</td>
-      <td>19</td>
+      <td>7.70</td>
+      <td>0.11</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.90</td>
+      <td>7.71</td>
       <td>7.69</td>
       <td>156</td>
       <td>N156D</td>
@@ -3469,11 +3469,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.28</td>
       <td>8.60</td>
       <td>NaN</td>
-      <td>7.60</td>
-      <td>0.27</td>
-      <td>24</td>
+      <td>7.82</td>
+      <td>0.23</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.35</td>
+      <td>7.78</td>
       <td>7.85</td>
       <td>156</td>
       <td>N156E</td>
@@ -3491,11 +3491,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.05</td>
       <td>8.00</td>
       <td>NaN</td>
-      <td>7.40</td>
-      <td>0.06</td>
-      <td>21</td>
+      <td>7.56</td>
+      <td>-0.03</td>
+      <td>32</td>
       <td>2</td>
-      <td>7.13</td>
+      <td>7.45</td>
       <td>7.67</td>
       <td>156</td>
       <td>N156F</td>
@@ -3513,11 +3513,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.42</td>
       <td>8.66</td>
       <td>NaN</td>
-      <td>7.48</td>
-      <td>0.15</td>
-      <td>27</td>
+      <td>7.69</td>
+      <td>0.10</td>
+      <td>37</td>
       <td>2</td>
-      <td>7.06</td>
+      <td>7.47</td>
       <td>7.90</td>
       <td>156</td>
       <td>N156G</td>
@@ -3535,11 +3535,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.02</td>
       <td>8.63</td>
       <td>NaN</td>
-      <td>7.01</td>
-      <td>-0.32</td>
-      <td>15</td>
+      <td>7.12</td>
+      <td>-0.47</td>
+      <td>19</td>
       <td>2</td>
-      <td>6.76</td>
+      <td>6.98</td>
       <td>7.26</td>
       <td>156</td>
       <td>N156H</td>
@@ -3557,11 +3557,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.92</td>
       <td>7.79</td>
       <td>NaN</td>
-      <td>6.53</td>
-      <td>-0.80</td>
-      <td>22</td>
+      <td>6.86</td>
+      <td>-0.73</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.16</td>
+      <td>6.81</td>
       <td>6.91</td>
       <td>156</td>
       <td>N156I</td>
@@ -3579,11 +3579,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.37</td>
       <td>8.56</td>
       <td>NaN</td>
-      <td>6.96</td>
-      <td>-0.37</td>
-      <td>21</td>
+      <td>7.02</td>
+      <td>-0.57</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>6.94</td>
       <td>7.10</td>
       <td>156</td>
       <td>N156K</td>
@@ -3601,11 +3601,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.13</td>
       <td>8.27</td>
       <td>NaN</td>
-      <td>7.40</td>
+      <td>7.66</td>
       <td>0.07</td>
-      <td>22</td>
+      <td>32</td>
       <td>2</td>
-      <td>7.10</td>
+      <td>7.62</td>
       <td>7.70</td>
       <td>156</td>
       <td>N156L</td>
@@ -3623,11 +3623,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.39</td>
       <td>8.42</td>
       <td>NaN</td>
-      <td>7.20</td>
-      <td>-0.13</td>
-      <td>25</td>
+      <td>7.48</td>
+      <td>-0.11</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.91</td>
+      <td>7.49</td>
       <td>7.48</td>
       <td>156</td>
       <td>N156M</td>
@@ -3645,11 +3645,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>156</td>
       <td>N156N</td>
@@ -3667,11 +3667,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.08</td>
       <td>6.15</td>
       <td>NaN</td>
-      <td>6.82</td>
-      <td>-0.51</td>
-      <td>15</td>
+      <td>6.97</td>
+      <td>-0.62</td>
+      <td>21</td>
       <td>2</td>
-      <td>6.56</td>
+      <td>6.86</td>
       <td>7.08</td>
       <td>156</td>
       <td>N156P</td>
@@ -3689,11 +3689,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.61</td>
       <td>8.88</td>
       <td>NaN</td>
-      <td>7.35</td>
-      <td>0.02</td>
-      <td>19</td>
+      <td>7.63</td>
+      <td>0.04</td>
+      <td>22</td>
       <td>2</td>
-      <td>6.92</td>
+      <td>7.48</td>
       <td>7.78</td>
       <td>156</td>
       <td>N156Q</td>
@@ -3711,11 +3711,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.74</td>
       <td>8.26</td>
       <td>NaN</td>
-      <td>6.92</td>
-      <td>-0.42</td>
-      <td>24</td>
+      <td>7.04</td>
+      <td>-0.55</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.56</td>
+      <td>6.82</td>
       <td>7.27</td>
       <td>156</td>
       <td>N156R</td>
@@ -3733,11 +3733,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.45</td>
       <td>8.65</td>
       <td>NaN</td>
-      <td>7.35</td>
-      <td>0.02</td>
-      <td>22</td>
+      <td>7.69</td>
+      <td>0.10</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.94</td>
+      <td>7.61</td>
       <td>7.77</td>
       <td>156</td>
       <td>N156S</td>
@@ -3755,11 +3755,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.29</td>
       <td>8.63</td>
       <td>NaN</td>
-      <td>7.34</td>
-      <td>0.01</td>
-      <td>16</td>
+      <td>7.45</td>
+      <td>-0.14</td>
+      <td>25</td>
       <td>2</td>
-      <td>7.07</td>
+      <td>7.29</td>
       <td>7.61</td>
       <td>156</td>
       <td>N156T</td>
@@ -3777,11 +3777,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.21</td>
       <td>7.82</td>
       <td>NaN</td>
-      <td>6.94</td>
-      <td>-0.40</td>
-      <td>23</td>
+      <td>6.97</td>
+      <td>-0.62</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.85</td>
+      <td>6.92</td>
       <td>7.02</td>
       <td>156</td>
       <td>N156V</td>
@@ -3799,11 +3799,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.38</td>
       <td>7.67</td>
       <td>NaN</td>
-      <td>7.08</td>
-      <td>-0.25</td>
-      <td>23</td>
+      <td>7.29</td>
+      <td>-0.30</td>
+      <td>32</td>
       <td>2</td>
-      <td>6.81</td>
+      <td>7.23</td>
       <td>7.36</td>
       <td>156</td>
       <td>N156W</td>
@@ -3821,11 +3821,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.36</td>
       <td>7.95</td>
       <td>NaN</td>
-      <td>7.08</td>
-      <td>-0.25</td>
-      <td>25</td>
+      <td>7.42</td>
+      <td>-0.17</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.56</td>
+      <td>7.25</td>
       <td>7.60</td>
       <td>156</td>
       <td>N156Y</td>
@@ -3843,11 +3843,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.09</td>
       <td>5.19</td>
       <td>NaN</td>
-      <td>6.80</td>
-      <td>-0.53</td>
-      <td>31</td>
+      <td>6.88</td>
+      <td>-0.72</td>
+      <td>38</td>
       <td>2</td>
-      <td>6.64</td>
+      <td>6.79</td>
       <td>6.97</td>
       <td>157</td>
       <td>C157-</td>
@@ -3865,11 +3865,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.30</td>
       <td>5.37</td>
       <td>NaN</td>
-      <td>6.64</td>
-      <td>-0.69</td>
-      <td>26</td>
+      <td>6.78</td>
+      <td>-0.81</td>
+      <td>37</td>
       <td>2</td>
-      <td>6.29</td>
+      <td>6.57</td>
       <td>7.00</td>
       <td>157</td>
       <td>C157A</td>
@@ -3887,11 +3887,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>157</td>
       <td>C157C</td>
@@ -3909,11 +3909,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.81</td>
       <td>5.30</td>
       <td>NaN</td>
-      <td>6.82</td>
-      <td>-0.51</td>
-      <td>20</td>
+      <td>6.85</td>
+      <td>-0.75</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.58</td>
+      <td>6.64</td>
       <td>7.06</td>
       <td>157</td>
       <td>C157D</td>
@@ -3932,10 +3932,10 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.78</td>
       <td>NaN</td>
       <td>6.74</td>
-      <td>-0.59</td>
-      <td>16</td>
+      <td>-0.86</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.63</td>
+      <td>6.61</td>
       <td>6.86</td>
       <td>157</td>
       <td>C157E</td>
@@ -3953,11 +3953,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.61</td>
       <td>5.23</td>
       <td>NaN</td>
-      <td>6.58</td>
-      <td>-0.75</td>
-      <td>19</td>
+      <td>6.68</td>
+      <td>-0.91</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.32</td>
+      <td>6.52</td>
       <td>6.85</td>
       <td>157</td>
       <td>C157F</td>
@@ -3975,11 +3975,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.45</td>
       <td>5.91</td>
       <td>NaN</td>
-      <td>6.72</td>
-      <td>-0.61</td>
-      <td>29</td>
+      <td>6.75</td>
+      <td>-0.85</td>
+      <td>40</td>
       <td>2</td>
-      <td>6.70</td>
+      <td>6.75</td>
       <td>6.74</td>
       <td>157</td>
       <td>C157G</td>
@@ -3997,11 +3997,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.05</td>
       <td>5.42</td>
       <td>NaN</td>
-      <td>6.79</td>
-      <td>-0.54</td>
-      <td>29</td>
+      <td>6.74</td>
+      <td>-0.85</td>
+      <td>35</td>
       <td>2</td>
-      <td>6.71</td>
+      <td>6.59</td>
       <td>6.88</td>
       <td>157</td>
       <td>C157H</td>
@@ -4019,11 +4019,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.26</td>
       <td>5.37</td>
       <td>NaN</td>
-      <td>6.40</td>
-      <td>-0.94</td>
-      <td>25</td>
+      <td>6.58</td>
+      <td>-1.01</td>
+      <td>31</td>
       <td>2</td>
-      <td>6.09</td>
+      <td>6.46</td>
       <td>6.71</td>
       <td>157</td>
       <td>C157I</td>
@@ -4041,11 +4041,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.97</td>
       <td>5.46</td>
       <td>NaN</td>
-      <td>6.79</td>
-      <td>-0.54</td>
-      <td>23</td>
+      <td>6.82</td>
+      <td>-0.77</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>6.68</td>
       <td>6.96</td>
       <td>157</td>
       <td>C157K</td>
@@ -4063,11 +4063,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.81</td>
       <td>5.38</td>
       <td>NaN</td>
-      <td>6.71</td>
-      <td>-0.63</td>
-      <td>23</td>
+      <td>6.66</td>
+      <td>-0.93</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.56</td>
+      <td>6.48</td>
       <td>6.85</td>
       <td>157</td>
       <td>C157L</td>
@@ -4085,11 +4085,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.23</td>
       <td>5.65</td>
       <td>NaN</td>
-      <td>6.71</td>
-      <td>-0.62</td>
-      <td>35</td>
+      <td>6.78</td>
+      <td>-0.81</td>
+      <td>41</td>
       <td>2</td>
-      <td>6.50</td>
+      <td>6.64</td>
       <td>6.92</td>
       <td>157</td>
       <td>C157M</td>
@@ -4107,11 +4107,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.54</td>
       <td>5.58</td>
       <td>NaN</td>
-      <td>6.74</td>
-      <td>-0.59</td>
-      <td>13</td>
+      <td>6.75</td>
+      <td>-0.85</td>
+      <td>18</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>6.64</td>
       <td>6.85</td>
       <td>157</td>
       <td>C157N</td>
@@ -4129,11 +4129,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.85</td>
       <td>5.61</td>
       <td>NaN</td>
-      <td>6.87</td>
-      <td>-0.46</td>
-      <td>37</td>
+      <td>6.79</td>
+      <td>-0.80</td>
+      <td>43</td>
       <td>2</td>
-      <td>6.72</td>
+      <td>6.56</td>
       <td>7.03</td>
       <td>157</td>
       <td>C157P</td>
@@ -4151,11 +4151,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.98</td>
       <td>5.54</td>
       <td>NaN</td>
-      <td>6.81</td>
-      <td>-0.52</td>
-      <td>28</td>
+      <td>6.88</td>
+      <td>-0.71</td>
+      <td>34</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>6.77</td>
       <td>7.00</td>
       <td>157</td>
       <td>C157Q</td>
@@ -4173,11 +4173,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.07</td>
       <td>5.38</td>
       <td>NaN</td>
-      <td>6.63</td>
-      <td>-0.70</td>
-      <td>32</td>
+      <td>6.72</td>
+      <td>-0.87</td>
+      <td>40</td>
       <td>2</td>
-      <td>6.50</td>
+      <td>6.67</td>
       <td>6.77</td>
       <td>157</td>
       <td>C157R</td>
@@ -4195,11 +4195,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.30</td>
       <td>5.65</td>
       <td>NaN</td>
-      <td>6.88</td>
-      <td>-0.45</td>
-      <td>34</td>
+      <td>6.90</td>
+      <td>-0.69</td>
+      <td>45</td>
       <td>2</td>
-      <td>6.68</td>
+      <td>6.72</td>
       <td>7.08</td>
       <td>157</td>
       <td>C157S</td>
@@ -4217,11 +4217,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.41</td>
       <td>5.39</td>
       <td>NaN</td>
-      <td>6.84</td>
-      <td>-0.50</td>
-      <td>38</td>
+      <td>6.82</td>
+      <td>-0.77</td>
+      <td>49</td>
       <td>2</td>
-      <td>6.74</td>
+      <td>6.71</td>
       <td>6.93</td>
       <td>157</td>
       <td>C157T</td>
@@ -4239,11 +4239,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.37</td>
       <td>5.20</td>
       <td>NaN</td>
-      <td>6.75</td>
-      <td>-0.59</td>
-      <td>21</td>
+      <td>6.73</td>
+      <td>-0.86</td>
+      <td>24</td>
       <td>2</td>
-      <td>6.64</td>
+      <td>6.61</td>
       <td>6.86</td>
       <td>157</td>
       <td>C157V</td>
@@ -4261,11 +4261,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.82</td>
       <td>5.29</td>
       <td>NaN</td>
-      <td>6.50</td>
-      <td>-0.84</td>
-      <td>46</td>
+      <td>6.65</td>
+      <td>-0.94</td>
+      <td>57</td>
       <td>2</td>
-      <td>6.24</td>
+      <td>6.55</td>
       <td>6.75</td>
       <td>157</td>
       <td>C157W</td>
@@ -4283,11 +4283,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.83</td>
       <td>5.20</td>
       <td>NaN</td>
-      <td>6.50</td>
-      <td>-0.84</td>
-      <td>25</td>
+      <td>6.59</td>
+      <td>-1.00</td>
+      <td>28</td>
       <td>2</td>
-      <td>6.26</td>
+      <td>6.46</td>
       <td>6.73</td>
       <td>157</td>
       <td>C157Y</td>
@@ -4305,11 +4305,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.99</td>
       <td>5.40</td>
       <td>NaN</td>
-      <td>7.06</td>
-      <td>-0.27</td>
-      <td>27</td>
+      <td>7.12</td>
+      <td>-0.47</td>
+      <td>44</td>
       <td>2</td>
-      <td>6.87</td>
+      <td>6.99</td>
       <td>7.26</td>
       <td>158</td>
       <td>Y158-</td>
@@ -4327,11 +4327,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.51</td>
       <td>6.40</td>
       <td>NaN</td>
-      <td>6.91</td>
-      <td>-0.43</td>
-      <td>21</td>
+      <td>7.08</td>
+      <td>-0.51</td>
+      <td>27</td>
       <td>2</td>
-      <td>6.55</td>
+      <td>6.91</td>
       <td>7.26</td>
       <td>158</td>
       <td>Y158A</td>
@@ -4349,11 +4349,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.17</td>
       <td>5.35</td>
       <td>NaN</td>
-      <td>7.06</td>
-      <td>-0.28</td>
-      <td>27</td>
+      <td>7.17</td>
+      <td>-0.42</td>
+      <td>30</td>
       <td>2</td>
-      <td>6.88</td>
+      <td>7.11</td>
       <td>7.23</td>
       <td>158</td>
       <td>Y158C</td>
@@ -4371,11 +4371,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.16</td>
       <td>5.39</td>
       <td>NaN</td>
-      <td>6.97</td>
-      <td>-0.37</td>
-      <td>25</td>
+      <td>7.11</td>
+      <td>-0.48</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.62</td>
+      <td>6.91</td>
       <td>7.31</td>
       <td>158</td>
       <td>Y158D</td>
@@ -4393,11 +4393,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.99</td>
       <td>5.85</td>
       <td>NaN</td>
-      <td>7.21</td>
-      <td>-0.12</td>
-      <td>29</td>
+      <td>7.24</td>
+      <td>-0.35</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.07</td>
+      <td>7.13</td>
       <td>7.35</td>
       <td>158</td>
       <td>Y158E</td>
@@ -4415,11 +4415,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.55</td>
       <td>8.55</td>
       <td>NaN</td>
-      <td>7.51</td>
-      <td>0.18</td>
-      <td>28</td>
+      <td>7.78</td>
+      <td>0.19</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.11</td>
+      <td>7.65</td>
       <td>7.91</td>
       <td>158</td>
       <td>Y158F</td>
@@ -4437,11 +4437,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.95</td>
       <td>5.40</td>
       <td>NaN</td>
-      <td>7.02</td>
-      <td>-0.32</td>
-      <td>21</td>
+      <td>7.07</td>
+      <td>-0.52</td>
+      <td>26</td>
       <td>2</td>
-      <td>6.83</td>
+      <td>6.94</td>
       <td>7.21</td>
       <td>158</td>
       <td>Y158G</td>
@@ -4459,11 +4459,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.32</td>
       <td>8.49</td>
       <td>NaN</td>
-      <td>7.07</td>
-      <td>-0.26</td>
-      <td>27</td>
+      <td>7.14</td>
+      <td>-0.45</td>
+      <td>36</td>
       <td>2</td>
-      <td>6.78</td>
+      <td>6.92</td>
       <td>7.36</td>
       <td>158</td>
       <td>Y158H</td>
@@ -4481,11 +4481,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.98</td>
       <td>7.78</td>
       <td>NaN</td>
-      <td>7.32</td>
-      <td>-0.01</td>
-      <td>14</td>
+      <td>7.56</td>
+      <td>-0.03</td>
+      <td>22</td>
       <td>2</td>
-      <td>7.04</td>
+      <td>7.52</td>
       <td>7.60</td>
       <td>158</td>
       <td>Y158I</td>
@@ -4503,11 +4503,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.22</td>
       <td>5.94</td>
       <td>NaN</td>
-      <td>6.93</td>
-      <td>-0.40</td>
-      <td>36</td>
+      <td>6.88</td>
+      <td>-0.71</td>
+      <td>43</td>
       <td>2</td>
-      <td>6.89</td>
+      <td>6.79</td>
       <td>6.97</td>
       <td>158</td>
       <td>Y158K</td>
@@ -4525,11 +4525,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.25</td>
       <td>7.42</td>
       <td>NaN</td>
-      <td>7.36</td>
-      <td>0.02</td>
-      <td>26</td>
+      <td>7.61</td>
+      <td>0.01</td>
+      <td>32</td>
       <td>2</td>
-      <td>6.96</td>
+      <td>7.46</td>
       <td>7.75</td>
       <td>158</td>
       <td>Y158L</td>
@@ -4547,11 +4547,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.27</td>
       <td>7.49</td>
       <td>NaN</td>
-      <td>7.32</td>
-      <td>-0.01</td>
-      <td>25</td>
+      <td>7.45</td>
+      <td>-0.14</td>
+      <td>41</td>
       <td>2</td>
-      <td>7.12</td>
+      <td>7.38</td>
       <td>7.53</td>
       <td>158</td>
       <td>Y158M</td>
@@ -4569,11 +4569,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.99</td>
       <td>6.30</td>
       <td>NaN</td>
-      <td>6.84</td>
-      <td>-0.49</td>
-      <td>31</td>
+      <td>7.12</td>
+      <td>-0.47</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.49</td>
+      <td>7.05</td>
       <td>7.19</td>
       <td>158</td>
       <td>Y158N</td>
@@ -4591,11 +4591,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.25</td>
       <td>6.54</td>
       <td>NaN</td>
-      <td>6.90</td>
-      <td>-0.44</td>
-      <td>20</td>
+      <td>7.14</td>
+      <td>-0.45</td>
+      <td>29</td>
       <td>2</td>
-      <td>6.51</td>
+      <td>7.01</td>
       <td>7.28</td>
       <td>158</td>
       <td>Y158P</td>
@@ -4613,11 +4613,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>7.16</td>
       <td>6.85</td>
       <td>NaN</td>
-      <td>7.01</td>
-      <td>-0.32</td>
-      <td>28</td>
+      <td>7.12</td>
+      <td>-0.47</td>
+      <td>33</td>
       <td>2</td>
-      <td>6.78</td>
+      <td>6.99</td>
       <td>7.25</td>
       <td>158</td>
       <td>Y158Q</td>
@@ -4635,11 +4635,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.29</td>
       <td>5.67</td>
       <td>NaN</td>
-      <td>6.99</td>
-      <td>-0.34</td>
-      <td>28</td>
+      <td>7.01</td>
+      <td>-0.58</td>
+      <td>36</td>
       <td>2</td>
-      <td>6.81</td>
+      <td>6.85</td>
       <td>7.17</td>
       <td>158</td>
       <td>Y158R</td>
@@ -4657,11 +4657,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>6.27</td>
       <td>5.47</td>
       <td>NaN</td>
-      <td>7.48</td>
-      <td>0.15</td>
-      <td>22</td>
+      <td>7.72</td>
+      <td>0.13</td>
+      <td>32</td>
       <td>2</td>
-      <td>7.13</td>
+      <td>7.62</td>
       <td>7.83</td>
       <td>158</td>
       <td>Y158S</td>
@@ -4679,11 +4679,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>5.96</td>
       <td>5.31</td>
       <td>NaN</td>
-      <td>7.58</td>
-      <td>0.25</td>
-      <td>15</td>
+      <td>8.02</td>
+      <td>0.42</td>
+      <td>22</td>
       <td>2</td>
-      <td>6.96</td>
+      <td>7.83</td>
       <td>8.21</td>
       <td>158</td>
       <td>Y158T</td>
@@ -4701,11 +4701,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>8.03</td>
       <td>6.85</td>
       <td>NaN</td>
-      <td>7.39</td>
-      <td>0.05</td>
-      <td>24</td>
+      <td>7.54</td>
+      <td>-0.05</td>
+      <td>35</td>
       <td>2</td>
-      <td>7.06</td>
+      <td>7.36</td>
       <td>7.71</td>
       <td>158</td>
       <td>Y158V</td>
@@ -4723,11 +4723,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>9.62</td>
       <td>8.91</td>
       <td>NaN</td>
-      <td>7.27</td>
-      <td>-0.06</td>
-      <td>27</td>
+      <td>7.52</td>
+      <td>-0.08</td>
+      <td>41</td>
       <td>2</td>
-      <td>6.82</td>
+      <td>7.31</td>
       <td>7.72</td>
       <td>158</td>
       <td>Y158W</td>
@@ -4745,11 +4745,11 @@ display(HTML(mut_bind_expr.query("position > 480 & position < 490").to_html(inde
       <td>10.33</td>
       <td>9.81</td>
       <td>NaN</td>
-      <td>7.33</td>
+      <td>7.59</td>
       <td>0.00</td>
-      <td>3784</td>
+      <td>5260</td>
       <td>2</td>
-      <td>6.97</td>
+      <td>7.49</td>
       <td>7.70</td>
       <td>158</td>
       <td>Y158Y</td>
@@ -4783,7 +4783,7 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
 ```
 
     3314 of 4200 mutations have adequate bind.
-    2856 of 4200 mutations have adequate expr.
+    2914 of 4200 mutations have adequate expr.
 
 
 
@@ -4951,7 +4951,7 @@ else:
 ```
 
     Here are the number of mutations that pass the bind, express, and disulfide filters:
-    3133
+    3002
     There are these many possible mutations (excluding wildtype and disulfides!):
     3648
 
@@ -5238,7 +5238,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 183782 scores.
+    Read 187386 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -5386,13 +5386,14 @@ else:
 ```
 
     Excluding mutations where the wildtype identity is a cysteine
-    Specifically, excluding: ['C102I' 'C194-' 'C194A' 'C194D' 'C194E' 'C194F' 'C194G' 'C194H' 'C194I'
-     'C194L' 'C194M' 'C194N' 'C194P' 'C194Q' 'C194R' 'C194S' 'C194T' 'C194V'
-     'C194W' 'C194Y' 'C31-' 'C31D' 'C31E' 'C31F' 'C31G' 'C31H' 'C31K' 'C31M'
-     'C31N' 'C31P' 'C31Q' 'C31R' 'C31S' 'C31T' 'C31W' 'C49W' 'C6-' 'C61A'
-     'C61D' 'C61E' 'C61F' 'C61G' 'C61H' 'C61I' 'C61K' 'C61L' 'C61M' 'C61N'
-     'C61P' 'C61Q' 'C61R' 'C61S' 'C61T' 'C61V' 'C61Y' 'C6A' 'C6D' 'C6F' 'C6G'
-     'C6H' 'C6L' 'C6N' 'C6Q' 'C6S' 'C6T' 'C6V' 'C6W' 'C6Y']
+    Specifically, excluding: ['C102I' 'C102M' 'C194-' 'C194A' 'C194D' 'C194E' 'C194F' 'C194G' 'C194H'
+     'C194I' 'C194K' 'C194L' 'C194M' 'C194N' 'C194P' 'C194Q' 'C194R' 'C194S'
+     'C194T' 'C194V' 'C194W' 'C194Y' 'C31-' 'C31A' 'C31D' 'C31E' 'C31F' 'C31G'
+     'C31H' 'C31I' 'C31K' 'C31M' 'C31N' 'C31P' 'C31Q' 'C31R' 'C31S' 'C31T'
+     'C31W' 'C49W' 'C61A' 'C61D' 'C61E' 'C61F' 'C61G' 'C61H' 'C61I' 'C61K'
+     'C61L' 'C61M' 'C61N' 'C61P' 'C61Q' 'C61R' 'C61S' 'C61T' 'C61V' 'C61W'
+     'C61Y' 'C6A' 'C6D' 'C6F' 'C6G' 'C6H' 'C6K' 'C6L' 'C6M' 'C6N' 'C6Q' 'C6S'
+     'C6T' 'C6W']
 
 
 We need to compute the escape scores (calculated as [here](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores)) back to escape fractions. We define a function to do this depending on the score type:
@@ -5458,8 +5459,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    4874
-    9752
+    4966
+    9936
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -5589,8 +5590,8 @@ display(HTML(site_effects_df.head().to_html(index=False)))
       <td>S2V29_36</td>
       <td>average</td>
       <td>1</td>
-      <td>0.007203</td>
-      <td>0.136864</td>
+      <td>0.007364</td>
+      <td>0.147279</td>
     </tr>
     <tr>
       <td>S2V29_36</td>
@@ -5777,8 +5778,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004016</td>
-      <td>0.136864</td>
-      <td>0.007203</td>
+      <td>0.147279</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -5793,8 +5794,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.011084</td>
-      <td>0.136864</td>
-      <td>0.007203</td>
+      <td>0.147279</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>20</td>
     </tr>
@@ -5809,8 +5810,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.009714</td>
-      <td>0.136864</td>
-      <td>0.007203</td>
+      <td>0.147279</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>36</td>
     </tr>
@@ -5825,8 +5826,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004846</td>
-      <td>0.136864</td>
-      <td>0.007203</td>
+      <td>0.147279</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>18</td>
     </tr>
@@ -5841,8 +5842,8 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
       <td>E</td>
       <td>331</td>
       <td>0.004962</td>
-      <td>0.136864</td>
-      <td>0.007203</td>
+      <td>0.147279</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>29</td>
     </tr>

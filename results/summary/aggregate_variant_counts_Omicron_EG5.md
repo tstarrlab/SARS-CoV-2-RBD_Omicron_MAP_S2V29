@@ -476,52 +476,52 @@ display(HTML(fates
       <th rowspan="2" valign="top">expt1-S2V29_v37_2-39-abneg</th>
       <th>lib94</th>
       <td>0.0e+00</td>
-      <td>3.6e+05</td>
-      <td>1.4e+05</td>
-      <td>3.5e+04</td>
-      <td>1.1e+06</td>
+      <td>3.2e+05</td>
+      <td>2.0e+05</td>
+      <td>2.3e+04</td>
+      <td>9.5e+05</td>
     </tr>
     <tr>
       <th>lib95</th>
       <td>0.0e+00</td>
-      <td>1.0e+04</td>
-      <td>5.2e+03</td>
-      <td>1.2e+03</td>
-      <td>3.7e+04</td>
+      <td>3.1e+05</td>
+      <td>2.3e+05</td>
+      <td>2.8e+04</td>
+      <td>1.2e+06</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">expt2-S2V29-80-abneg</th>
       <th>lib94</th>
       <td>0.0e+00</td>
-      <td>1.8e+05</td>
-      <td>8.0e+04</td>
-      <td>2.0e+04</td>
       <td>5.4e+05</td>
+      <td>3.3e+05</td>
+      <td>4.2e+04</td>
+      <td>1.6e+06</td>
     </tr>
     <tr>
       <th>lib95</th>
       <td>0.0e+00</td>
-      <td>1.1e+03</td>
-      <td>6.0e+02</td>
-      <td>1.6e+02</td>
-      <td>4.0e+03</td>
+      <td>4.6e+05</td>
+      <td>3.4e+05</td>
+      <td>3.9e+04</td>
+      <td>1.7e+06</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">expt3-S2K146-121-abneg</th>
       <th>lib94</th>
       <td>0.0e+00</td>
-      <td>8.4e+01</td>
-      <td>2.6e+01</td>
-      <td>4.0e+00</td>
-      <td>1.6e+02</td>
+      <td>1.2e+06</td>
+      <td>7.5e+05</td>
+      <td>1.0e+05</td>
+      <td>3.8e+06</td>
     </tr>
     <tr>
       <th>lib95</th>
       <td>0.0e+00</td>
-      <td>1.8e+02</td>
-      <td>8.1e+01</td>
-      <td>1.9e+01</td>
-      <td>5.5e+02</td>
+      <td>8.5e+05</td>
+      <td>6.7e+05</td>
+      <td>7.7e+04</td>
+      <td>3.3e+06</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">exptREF-none-0-ref</th>

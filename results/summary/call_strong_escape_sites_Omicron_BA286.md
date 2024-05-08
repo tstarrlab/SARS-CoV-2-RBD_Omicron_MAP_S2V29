@@ -98,8 +98,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004016</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>31</td>
     </tr>
@@ -111,8 +111,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.011080</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>20</td>
     </tr>
@@ -124,8 +124,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.009714</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>36</td>
     </tr>
@@ -137,8 +137,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004846</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>18</td>
     </tr>
@@ -150,8 +150,8 @@ display(HTML(escape_fracs.head().to_html(index=False)))
       <td>E</td>
       <td>331</td>
       <td>0.004962</td>
-      <td>0.1369</td>
-      <td>0.007203</td>
+      <td>0.1473</td>
+      <td>0.007364</td>
       <td>2</td>
       <td>29</td>
     </tr>
@@ -335,11 +335,11 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA286'], index=False)
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>2</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>3</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -376,12 +376,12 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA286'], index=False)
       <th>0</th>
       <td>S2V29_36</td>
       <td>456</td>
-      <td>5.1610</td>
+      <td>5.161</td>
       <td>0.7315</td>
       <td>default</td>
-      <td>0.1400</td>
+      <td>0.13935</td>
       <td>5.161</td>
-      <td>1.4000</td>
+      <td>1.39350</td>
       <td>True</td>
       <td>0.51610</td>
       <td>True</td>
@@ -395,12 +395,12 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA286'], index=False)
       <th>1</th>
       <td>S2V29_v37_2_48</td>
       <td>456</td>
-      <td>2.4800</td>
+      <td>2.480</td>
       <td>0.7396</td>
       <td>default</td>
-      <td>0.1207</td>
+      <td>0.12125</td>
       <td>2.480</td>
-      <td>1.2070</td>
+      <td>1.21250</td>
       <td>True</td>
       <td>0.24800</td>
       <td>True</td>
@@ -413,13 +413,13 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA286'], index=False)
     <tr>
       <th>2</th>
       <td>S2V29_36</td>
-      <td>421</td>
-      <td>0.8334</td>
-      <td>0.6584</td>
-      <td>sensitive</td>
-      <td>0.1400</td>
+      <td>456</td>
       <td>5.161</td>
-      <td>0.7000</td>
+      <td>0.7315</td>
+      <td>sensitive</td>
+      <td>0.13935</td>
+      <td>5.161</td>
+      <td>0.69675</td>
       <td>True</td>
       <td>0.25805</td>
       <td>True</td>
@@ -427,43 +427,43 @@ strong_sites.to_csv(config['strong_escape_sites_Omicron_BA286'], index=False)
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>2</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>S2V29_36</td>
-      <td>456</td>
-      <td>5.1610</td>
-      <td>0.7315</td>
-      <td>sensitive</td>
-      <td>0.1400</td>
-      <td>5.161</td>
-      <td>0.7000</td>
-      <td>True</td>
-      <td>0.25805</td>
-      <td>True</td>
-      <td>0</td>
-      <td>True</td>
-      <td>False</td>
-      <td>True</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>4</th>
       <td>S2V29_v37_2_48</td>
       <td>456</td>
-      <td>2.4800</td>
+      <td>2.480</td>
       <td>0.7396</td>
       <td>sensitive</td>
-      <td>0.1207</td>
+      <td>0.12125</td>
       <td>2.480</td>
-      <td>0.6035</td>
+      <td>0.60625</td>
       <td>True</td>
       <td>0.12400</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
+      <td>True</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>S2V29_36</td>
+      <td>456</td>
+      <td>5.161</td>
+      <td>0.7315</td>
+      <td>sensitive_max_mut</td>
+      <td>0.13935</td>
+      <td>5.161</td>
+      <td>0.69675</td>
+      <td>True</td>
+      <td>0.25805</td>
+      <td>True</td>
+      <td>0</td>
+      <td>True</td>
+      <td>True</td>
       <td>True</td>
       <td>1</td>
     </tr>

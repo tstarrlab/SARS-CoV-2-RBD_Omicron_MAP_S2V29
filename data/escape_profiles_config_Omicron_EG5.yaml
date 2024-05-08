@@ -99,3 +99,70 @@ VIR7229_structural_epitope:
     frac: 0.05
     min_ymax: 8
    
+
+S2K146:
+  conditions:
+    S2K146_121: S2K146 - EG5
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: True
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 16
+    
+S2K146_wide:
+  conditions:
+    S2K146_121: S2K146 - EG5
+  plot_auto_identified_sites: False
+  add_sites: [407, 416, 419, 449, 453, 455, 456, 471, 472, 473, 474, 475, 476, 477, 478, 479, 481, 482, 483, 484, 485, 486, 487, 489, 490, 491, 492, 493, 494, 496, 505]
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: False
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 16
+
+
+S2V29_parent:
+  conditions:
+    S2V29_80: S2V29 - EG5
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: [347, 407, 416, 419, 421, 455, 456, 475]
+  exclude_sites: [331]
+  site_color_scheme: barnes_serum_epitopes
+  color_by_dms: True
+  make_supp_data: True
+  dmslogo_facet_plot_kwargs:
+    height_per_ax: 2.0
+  dmslogo_draw_line_kwargs:
+    widthscale: 0.5
+    axisfontscale: 1.5
+  dmslogo_draw_logo_kwargs:
+    widthscale: 0.75
+    axisfontscale: 1.5
+  escape_profile_ymax:
+    quantile: 0.5
+    frac: 0.05
+    min_ymax: 6.2

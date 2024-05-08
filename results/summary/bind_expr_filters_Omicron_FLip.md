@@ -64,11 +64,11 @@ display(HTML(new_filter_df.to_html(index=False)))
   <tbody>
     <tr>
       <td>delta_bind</td>
-      <td>-3.00</td>
+      <td>-3.0</td>
     </tr>
     <tr>
       <td>delta_expr</td>
-      <td>-0.75</td>
+      <td>-1.0</td>
     </tr>
   </tbody>
 </table>
@@ -491,7 +491,7 @@ for metric in ['bind', 'expr']:
 </table>
 
 
-    Mutations with >=50 GISAID counts but with expr score < -0.75
+    Mutations with >=50 GISAID counts but with expr score < -1
 
 
 
@@ -545,66 +545,6 @@ for metric in ['bind', 'expr']:
       <td>0.000027</td>
       <td>delta_expr</td>
       <td>-1.04</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>G</td>
-      <td>G413V</td>
-      <td>413</td>
-      <td>V</td>
-      <td>56.0</td>
-      <td>18.0</td>
-      <td>0.000029</td>
-      <td>delta_expr</td>
-      <td>-0.89</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>S</td>
-      <td>S494L</td>
-      <td>494</td>
-      <td>L</td>
-      <td>893.0</td>
-      <td>49.0</td>
-      <td>0.000462</td>
-      <td>delta_expr</td>
-      <td>-0.89</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>P</td>
-      <td>P373L</td>
-      <td>373</td>
-      <td>L</td>
-      <td>285.0</td>
-      <td>30.0</td>
-      <td>0.000148</td>
-      <td>delta_expr</td>
-      <td>-0.80</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>A</td>
-      <td>A352V</td>
-      <td>352</td>
-      <td>V</td>
-      <td>156.0</td>
-      <td>23.0</td>
-      <td>0.000081</td>
-      <td>delta_expr</td>
-      <td>-0.78</td>
-      <td>&gt;=50</td>
-    </tr>
-    <tr>
-      <td>P</td>
-      <td>P499L</td>
-      <td>499</td>
-      <td>L</td>
-      <td>83.0</td>
-      <td>13.0</td>
-      <td>0.000043</td>
-      <td>delta_expr</td>
-      <td>-0.77</td>
       <td>&gt;=50</td>
     </tr>
   </tbody>
@@ -941,10 +881,10 @@ print(f'Total number of possible mutations to non-disulfide sites: {total_muts_n
 
     FLip SSM mutations that 
     pass bind: 3635 
-    pass expr: 2631 
-    pass both: 2578 
-    pass both and not disulfide: 2530
-    Pass bind, expr, not disulfide, and not WT: 2337
+    pass expr: 2761 
+    pass both: 2703 
+    pass both and not disulfide: 2651
+    Pass bind, expr, not disulfide, and not WT: 2458
     Total number of possible mutations to non-disulfide sites: 3854
 
 
@@ -976,8 +916,8 @@ print(round(100-stats.percentileofscore((dms_scores
 
     This percentage of all variants seen >=50x in GISAID are retained by the binding filter of -3.0
     100.0
-    This percentage of all variants seen >=50x in GISAID are retained by the expression filter of -0.75
-    95.1
+    This percentage of all variants seen >=50x in GISAID are retained by the expression filter of -1
+    98.4
 
 
 
