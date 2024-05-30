@@ -246,6 +246,108 @@ display(HTML(barcode_runs.to_html(index=False)))
       <td>results/counts/Omicron_BA286/expt8-S2V29-36-abneg_lib93_counts.csv</td>
       <td>results/counts/Omicron_BA286/expt8-S2V29-36-abneg_lib93_fates.csv</td>
     </tr>
+    <tr>
+      <td>240422</td>
+      <td>exptREF2</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF2-none-0-ref_lib92</td>
+      <td>results/counts/Omicron_BA286/exptREF2-none-0-ref_lib92_counts.csv</td>
+      <td>results/counts/Omicron_BA286/exptREF2-none-0-ref_lib92_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>exptREF2</td>
+      <td>Omicron_BA286</td>
+      <td>lib93</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF2-none-0-ref_lib93</td>
+      <td>results/counts/Omicron_BA286/exptREF2-none-0-ref_lib93_counts.csv</td>
+      <td>results/counts/Omicron_BA286/exptREF2-none-0-ref_lib93_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt3</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt3-SA55-33-abneg</td>
+      <td>NaN</td>
+      <td>1064000.0</td>
+      <td>0.266</td>
+      <td>expt3-SA55-33-abneg_lib92</td>
+      <td>results/counts/Omicron_BA286/expt3-SA55-33-abneg_lib92_counts.csv</td>
+      <td>results/counts/Omicron_BA286/expt3-SA55-33-abneg_lib92_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt3</td>
+      <td>Omicron_BA286</td>
+      <td>lib93</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt3-SA55-33-abneg</td>
+      <td>NaN</td>
+      <td>1036000.0</td>
+      <td>0.259</td>
+      <td>expt3-SA55-33-abneg_lib93</td>
+      <td>results/counts/Omicron_BA286/expt3-SA55-33-abneg_lib93_counts.csv</td>
+      <td>results/counts/Omicron_BA286/expt3-SA55-33-abneg_lib93_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt6</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>Omi42</td>
+      <td>73</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>NaN</td>
+      <td>1216000.0</td>
+      <td>0.304</td>
+      <td>expt6-Omi42-73-abneg_lib92</td>
+      <td>results/counts/Omicron_BA286/expt6-Omi42-73-abneg_lib92_counts.csv</td>
+      <td>results/counts/Omicron_BA286/expt6-Omi42-73-abneg_lib92_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt6</td>
+      <td>Omicron_BA286</td>
+      <td>lib93</td>
+      <td>Omi42</td>
+      <td>73</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>NaN</td>
+      <td>1196000.0</td>
+      <td>0.299</td>
+      <td>expt6-Omi42-73-abneg_lib93</td>
+      <td>results/counts/Omicron_BA286/expt6-Omi42-73-abneg_lib93_counts.csv</td>
+      <td>results/counts/Omicron_BA286/expt6-Omi42-73-abneg_lib93_fates.csv</td>
+    </tr>
   </tbody>
 </table>
 
@@ -439,6 +541,40 @@ display(HTML(fates
   </thead>
   <tbody>
     <tr>
+      <th rowspan="2" valign="top">expt3-SA55-33-abneg</th>
+      <th>lib92</th>
+      <td>0.0e+00</td>
+      <td>5.9e+05</td>
+      <td>3.2e+05</td>
+      <td>5.9e+04</td>
+      <td>2.3e+06</td>
+    </tr>
+    <tr>
+      <th>lib93</th>
+      <td>0.0e+00</td>
+      <td>5.7e+05</td>
+      <td>3.3e+05</td>
+      <td>5.4e+04</td>
+      <td>2.1e+06</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">expt6-Omi42-73-abneg</th>
+      <th>lib92</th>
+      <td>0.0e+00</td>
+      <td>7.7e+05</td>
+      <td>4.5e+05</td>
+      <td>7.8e+04</td>
+      <td>3.0e+06</td>
+    </tr>
+    <tr>
+      <th>lib93</th>
+      <td>0.0e+00</td>
+      <td>1.0e+06</td>
+      <td>6.1e+05</td>
+      <td>1.0e+05</td>
+      <td>3.8e+06</td>
+    </tr>
+    <tr>
       <th rowspan="2" valign="top">expt7-S2V29_v37_2-48-abneg</th>
       <th>lib92</th>
       <td>0.0e+00</td>
@@ -488,6 +624,23 @@ display(HTML(fates
       <td>9.6e+06</td>
       <td>2.1e+06</td>
       <td>6.3e+07</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">exptREF2-none-0-ref</th>
+      <th>lib92</th>
+      <td>0.0e+00</td>
+      <td>1.2e+07</td>
+      <td>7.5e+06</td>
+      <td>1.2e+06</td>
+      <td>4.6e+07</td>
+    </tr>
+    <tr>
+      <th>lib93</th>
+      <td>0.0e+00</td>
+      <td>1.2e+07</td>
+      <td>7.0e+06</td>
+      <td>1.3e+06</td>
+      <td>4.4e+07</td>
     </tr>
   </tbody>
 </table>

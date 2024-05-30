@@ -32,6 +32,8 @@ from plotnine import *
 import seaborn
 
 import yaml
+
+%matplotlib inline
 ```
 
 Set [plotnine](https://github.com/has2k1/plotnine) theme to the gray-grid one defined in [dms_variants](https://jbloomlab.github.io/dms_variants):
@@ -181,6 +183,21 @@ display(HTML(
       <td>20.9</td>
       <td>11.0</td>
     </tr>
+    <tr>
+      <th>exptREF3-none-0-ref</th>
+      <td>385.9</td>
+      <td>446.9</td>
+    </tr>
+    <tr>
+      <th>expt2-SA55-63-abneg</th>
+      <td>25.2</td>
+      <td>21.9</td>
+    </tr>
+    <tr>
+      <th>expt5-Omi42-156-abneg</th>
+      <td>28.7</td>
+      <td>23.7</td>
+    </tr>
   </tbody>
 </table>
 
@@ -216,6 +233,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
     
 
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_23_2.png)
+    
+
+
 Now similar plots but showing mutation frequency across the gene:
 
 
@@ -246,6 +269,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
     
 
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_25_2.png)
+    
+
+
 ## Jackpotting and mutation coverage in pre-selection libraries
 We look at the distribution of counts in the "reference" (pre-selection) libraries to see if they seem jackpotted (a few variants at very high frequency):
 
@@ -269,6 +298,12 @@ p = variants.plotMutFreqs(variant_type='all',
 _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_29_0.png)
+    
+
+
 How many mutations are observed frequently in pre-selection libraries?
 Note that the libraries have been pre-selected for ACE2 binding, so we expect stop variants to mostly be missing.
 Make the plot both for all variants and just single-mutant variants:
@@ -289,6 +324,18 @@ for variant_type in ['all', 'single']:
    _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_31_0.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_31_1.png)
+    
+
+
 Now make a plot showing what number and fraction of counts are for each variant in each pre-selection sample / library.
 If some variants constitute a very high fraction, then that indicates extensive bottlenecking:
 
@@ -303,6 +350,18 @@ for ystat in ['frac_counts', 'count']:
                                       )
     _ = p.draw()
 ```
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_33_0.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_33_1.png)
+    
+
 
 Now make the same plot breaking down by variant class, which enables determination of which types of variants are at high and low frequencies.
 For this plot (unlike one above not classified by category) we only show variants of the primary target (not the homologs), and also group synonymous with wildtype in order to reduce number of plotted categories to make more interpretable:
@@ -321,6 +380,18 @@ for ystat in ['frac_counts', 'count']:
                                       )
     _ = p.draw()
 ```
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_35_0.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_35_1.png)
+    
+
 
 We also directly look to see what is the variant in each reference library / sample with the highest fraction counts.
 Knowing if the highest frequency variant is shared helps determine **where** in the experiment the jackpotting happened:
@@ -369,7 +440,7 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
-      <th rowspan="2" valign="top">lib59</th>
+      <th rowspan="3" valign="top">lib59</th>
       <th>exptREF2-none-0-ref</th>
       <td>0.0004</td>
       <td>Omicron_XBB15</td>
@@ -386,7 +457,15 @@ display(HTML(
       <td>TCT108TTT</td>
     </tr>
     <tr>
-      <th rowspan="2" valign="top">lib60</th>
+      <th>exptREF3-none-0-ref</th>
+      <td>0.0003</td>
+      <td>Omicron_XBB15</td>
+      <td>CAAGGGAAAGAATCGT</td>
+      <td>A67V</td>
+      <td>GCC67GTT</td>
+    </tr>
+    <tr>
+      <th rowspan="3" valign="top">lib60</th>
       <th>exptREF2-none-0-ref</th>
       <td>0.0002</td>
       <td>Omicron_XBB15</td>
@@ -401,6 +480,14 @@ display(HTML(
       <td>TTTATAGAGGGACCCT</td>
       <td>E141I G146C</td>
       <td>GAA141ATT GGT146TGT</td>
+    </tr>
+    <tr>
+      <th>exptREF3-none-0-ref</th>
+      <td>0.0002</td>
+      <td>Omicron_XBB15</td>
+      <td>TACTACCGGTGGTTCT</td>
+      <td>G172I</td>
+      <td>GGT172ATT</td>
     </tr>
   </tbody>
 </table>
@@ -431,48 +518,6 @@ for lib, lib_df in frac_counts_per_variant.groupby('library'):
 
     
 ![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_1.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_2.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_3.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_4.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_5.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_6.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_7.png)
-    
-
-
-
-    
-![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_39_8.png)
     
 
 
@@ -597,6 +642,12 @@ p = (ggplot(counts_by_class
 _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_43_0.png)
+    
+
+
 ## Compute escape scores
 We use the escape score metric, which does **not** involve normalizing to wildtype and so isn't strongly affected by low wildtype counts.
 We compute the scores using the method [dms_variants.codonvarianttable.CodonVariantTable.escape_scores](https://jbloomlab.github.io/dms_variants/dms_variants.codonvarianttable.html?highlight=escape_scores#dms_variants.codonvarianttable.CodonVariantTable.escape_scores).
@@ -660,6 +711,30 @@ display(HTML(score_sample_df.to_html(index=False)))
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>Omi42_156</td>
+      <td>lib59</td>
+      <td>Omi42</td>
+      <td>156</td>
+      <td>240422</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>0.2500</td>
+      <td>1000000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>Omi42_156</td>
+      <td>lib60</td>
+      <td>Omi42</td>
+      <td>156</td>
+      <td>240422</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>0.2200</td>
+      <td>880000.0</td>
+      <td>NaN</td>
+    </tr>
     <tr>
       <td>S2K146_266</td>
       <td>lib59</td>
@@ -732,6 +807,30 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>259200.0</td>
       <td>NaN</td>
     </tr>
+    <tr>
+      <td>SA55_63</td>
+      <td>lib59</td>
+      <td>SA55</td>
+      <td>63</td>
+      <td>240422</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt2-SA55-63-abneg</td>
+      <td>0.2140</td>
+      <td>856000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>SA55_63</td>
+      <td>lib60</td>
+      <td>SA55</td>
+      <td>63</td>
+      <td>240422</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt2-SA55-63-abneg</td>
+      <td>0.2150</td>
+      <td>860000.0</td>
+      <td>NaN</td>
+    </tr>
   </tbody>
 </table>
 
@@ -789,50 +888,16 @@ display(HTML(escape_scores.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>ACTAGGCACTCCCGTA</td>
-      <td>0.874632</td>
-      <td>3.094471e-04</td>
-      <td>10510</td>
-      <td>3223</td>
-      <td>TCT108TTT</td>
-      <td>1</td>
-      <td>S108F</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-    </tr>
-    <tr>
-      <td>S2K146_266</td>
-      <td>Omicron_XBB15</td>
-      <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>CATAATCCTCTTCATT</td>
-      <td>0.698605</td>
-      <td>2.643931e-04</td>
-      <td>9366</td>
-      <td>2294</td>
-      <td>AAG94ACT CCA197CCG</td>
-      <td>2</td>
-      <td>K94T</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-    </tr>
-    <tr>
-      <td>S2K146_266</td>
-      <td>Omicron_XBB15</td>
-      <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CAAGGGAAAGAATCGT</td>
-      <td>0.001822</td>
-      <td>6.037021e-07</td>
-      <td>8610</td>
-      <td>5</td>
+      <td>0.000132</td>
+      <td>3.483166e-08</td>
+      <td>12526</td>
+      <td>0</td>
       <td>GCC67GTT</td>
       <td>1</td>
       <td>A67V</td>
@@ -840,16 +905,16 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>1 nonsynonymous</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>ATCTATCCCAATACGA</td>
-      <td>0.003069</td>
-      <td>1.108983e-06</td>
-      <td>7899</td>
-      <td>8</td>
+      <td>0.000743</td>
+      <td>2.211409e-07</td>
+      <td>11117</td>
+      <td>2</td>
       <td>GAG186TGG</td>
       <td>1</td>
       <td>E186W</td>
@@ -857,21 +922,55 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>1 nonsynonymous</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>ACTAGGCACTCCCGTA</td>
+      <td>0.702991</td>
+      <td>2.816772e-04</td>
+      <td>9991</td>
+      <td>2124</td>
+      <td>TCT108TTT</td>
+      <td>1</td>
+      <td>S108F</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+    </tr>
+    <tr>
+      <td>Omi42_156</td>
+      <td>Omicron_XBB15</td>
+      <td>lib59</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>GACTTGAGTGATACCA</td>
-      <td>0.017003</td>
-      <td>7.007687e-06</td>
-      <td>6960</td>
-      <td>41</td>
+      <td>0.010465</td>
+      <td>3.487719e-06</td>
+      <td>9951</td>
+      <td>31</td>
       <td></td>
       <td>0</td>
       <td></td>
       <td>0</td>
       <td>wildtype</td>
+    </tr>
+    <tr>
+      <td>Omi42_156</td>
+      <td>Omicron_XBB15</td>
+      <td>lib59</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>CATAATCCTCTTCATT</td>
+      <td>0.661740</td>
+      <td>2.881665e-04</td>
+      <td>9100</td>
+      <td>1821</td>
+      <td>AAG94ACT CCA197CCG</td>
+      <td>2</td>
+      <td>K94T</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
     </tr>
   </tbody>
 </table>
@@ -951,54 +1050,16 @@ escape_scores.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>ACTAGGCACTCCCGTA</td>
-      <td>0.874632</td>
-      <td>3.094471e-04</td>
-      <td>10510</td>
-      <td>3223</td>
-      <td>TCT108TTT</td>
-      <td>1</td>
-      <td>S108F</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>S2K146_266</td>
-      <td>Omicron_XBB15</td>
-      <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>CATAATCCTCTTCATT</td>
-      <td>0.698605</td>
-      <td>2.643931e-04</td>
-      <td>9366</td>
-      <td>2294</td>
-      <td>AAG94ACT CCA197CCG</td>
-      <td>2</td>
-      <td>K94T</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>S2K146_266</td>
-      <td>Omicron_XBB15</td>
-      <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CAAGGGAAAGAATCGT</td>
-      <td>0.001822</td>
-      <td>6.037021e-07</td>
-      <td>8610</td>
-      <td>5</td>
+      <td>0.000132</td>
+      <td>3.483166e-08</td>
+      <td>12526</td>
+      <td>0</td>
       <td>GCC67GTT</td>
       <td>1</td>
       <td>A67V</td>
@@ -1007,17 +1068,17 @@ escape_scores.head()
       <td>True</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>S2K146_266</td>
+      <th>1</th>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>ATCTATCCCAATACGA</td>
-      <td>0.003069</td>
-      <td>1.108983e-06</td>
-      <td>7899</td>
-      <td>8</td>
+      <td>0.000743</td>
+      <td>2.211409e-07</td>
+      <td>11117</td>
+      <td>2</td>
       <td>GAG186TGG</td>
       <td>1</td>
       <td>E186W</td>
@@ -1026,22 +1087,60 @@ escape_scores.head()
       <td>True</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>S2K146_266</td>
+      <th>2</th>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>ACTAGGCACTCCCGTA</td>
+      <td>0.702991</td>
+      <td>2.816772e-04</td>
+      <td>9991</td>
+      <td>2124</td>
+      <td>TCT108TTT</td>
+      <td>1</td>
+      <td>S108F</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Omi42_156</td>
+      <td>Omicron_XBB15</td>
+      <td>lib59</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>GACTTGAGTGATACCA</td>
-      <td>0.017003</td>
-      <td>7.007687e-06</td>
-      <td>6960</td>
-      <td>41</td>
+      <td>0.010465</td>
+      <td>3.487719e-06</td>
+      <td>9951</td>
+      <td>31</td>
       <td></td>
       <td>0</td>
       <td></td>
       <td>0</td>
       <td>wildtype</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Omi42_156</td>
+      <td>Omicron_XBB15</td>
+      <td>lib59</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>CATAATCCTCTTCATT</td>
+      <td>0.661740</td>
+      <td>2.881665e-04</td>
+      <td>9100</td>
+      <td>1821</td>
+      <td>AAG94ACT CCA197CCG</td>
+      <td>2</td>
+      <td>K94T</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
       <td>True</td>
     </tr>
   </tbody>
@@ -1280,16 +1379,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>ACTAGGCACTCCCGTA</td>
-      <td>0.874632</td>
-      <td>0.000309</td>
-      <td>10510</td>
-      <td>3223</td>
+      <td>0.702991</td>
+      <td>0.000282</td>
+      <td>9991</td>
+      <td>2124</td>
       <td>TCT108TTT</td>
       <td>1</td>
       <td>S108F</td>
@@ -1301,16 +1400,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CATAATCCTCTTCATT</td>
-      <td>0.698605</td>
-      <td>0.000264</td>
-      <td>9366</td>
-      <td>2294</td>
+      <td>0.661740</td>
+      <td>0.000288</td>
+      <td>9100</td>
+      <td>1821</td>
       <td>AAG94ACT CCA197CCG</td>
       <td>2</td>
       <td>K94T</td>
@@ -1322,16 +1421,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CACCACTGCAAACAAC</td>
-      <td>0.797598</td>
-      <td>0.000473</td>
-      <td>6144</td>
-      <td>1718</td>
+      <td>0.391508</td>
+      <td>0.000245</td>
+      <td>5915</td>
+      <td>700</td>
       <td>GAT112ACT</td>
       <td>1</td>
       <td>D112T</td>
@@ -1343,37 +1442,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>AGAGGGGGTGCAGTTC</td>
-      <td>0.875018</td>
-      <td>0.000550</td>
-      <td>5923</td>
-      <td>1817</td>
-      <td>TTG162TCT</td>
-      <td>1</td>
-      <td>L162S</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-      <td>False</td>
-      <td>False</td>
-      <td>False</td>
-    </tr>
-    <tr>
-      <td>S2K146_266</td>
-      <td>Omicron_XBB15</td>
-      <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CGTCCGGCGCAGTACC</td>
-      <td>0.068522</td>
-      <td>0.000034</td>
-      <td>5847</td>
-      <td>140</td>
+      <td>0.081880</td>
+      <td>0.000049</td>
+      <td>5713</td>
+      <td>141</td>
       <td>TAC91GGT</td>
       <td>1</td>
       <td>Y91G</td>
@@ -1381,6 +1459,27 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>1 nonsynonymous</td>
       <td>True</td>
       <td>True</td>
+      <td>False</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>Omi42_156</td>
+      <td>Omicron_XBB15</td>
+      <td>lib59</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>AGAGGGGGTGCAGTTC</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>5558</td>
+      <td>2322</td>
+      <td>TTG162TCT</td>
+      <td>1</td>
+      <td>L162S</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+      <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
     </tr>
@@ -1466,6 +1565,12 @@ p = (ggplot(frac_ACE2bind_expr_pass_filter) +
 _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_58_0.png)
+    
+
+
 ## Examine and write escape scores
 Plot the distribution of escape scores across variants of different classes **among those that pass both the pre-selection count filter and the ACE2-binding / expression filter**.
 If things are working correctly, we don't expect escape in wildtype (or synonymous variants), but do expect escape for some small fraction of nonsynymous variants.
@@ -1497,6 +1602,12 @@ p = (ggplot(df) +
 _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_60_0.png)
+    
+
+
 Also, we want to see how much the high escape scores are correlated with simple coverage.
 To do this, we plot the correlation between escape score and pre-selection count just for the nonsynonymous variants (which are the ones that we expect to have true escape).
 The plots below have a lot of overplotting, but are still sufficient to test of the score is simply correlated with the pre-selection counts or not.
@@ -1522,6 +1633,12 @@ p = (ggplot(escape_scores
 
 _ = p.draw()
 ```
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_62_0.png)
+    
+
 
 Write the escape scores to a file:
 
@@ -1574,17 +1691,17 @@ print(f"Read {len(escape_scores_primary)} scores.")
   </thead>
   <tbody>
     <tr>
-      <th>2</th>
-      <td>S2K146_266</td>
+      <th>0</th>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>CAAGGGAAAGAATCGT</td>
-      <td>0.001822</td>
-      <td>6.037021e-07</td>
-      <td>8610</td>
-      <td>5</td>
+      <td>0.000132</td>
+      <td>3.483166e-08</td>
+      <td>12526</td>
+      <td>0</td>
       <td>GCC67GTT</td>
       <td>1</td>
       <td>A67V</td>
@@ -1596,17 +1713,17 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
     </tr>
     <tr>
-      <th>3</th>
-      <td>S2K146_266</td>
+      <th>1</th>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>ATCTATCCCAATACGA</td>
-      <td>0.003069</td>
-      <td>1.108983e-06</td>
-      <td>7899</td>
-      <td>8</td>
+      <td>0.000743</td>
+      <td>2.211409e-07</td>
+      <td>11117</td>
+      <td>2</td>
       <td>GAG186TGG</td>
       <td>1</td>
       <td>E186W</td>
@@ -1618,17 +1735,17 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>S2K146_266</td>
+      <th>3</th>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>GACTTGAGTGATACCA</td>
-      <td>0.017003</td>
-      <td>7.007687e-06</td>
-      <td>6960</td>
-      <td>41</td>
+      <td>0.010465</td>
+      <td>3.487719e-06</td>
+      <td>9951</td>
+      <td>31</td>
       <td></td>
       <td>0</td>
       <td></td>
@@ -1641,16 +1758,16 @@ print(f"Read {len(escape_scores_primary)} scores.")
     </tr>
     <tr>
       <th>5</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
       <td>AATGCTAACGCATGCC</td>
-      <td>0.033139</td>
-      <td>1.379976e-05</td>
-      <td>6927</td>
-      <td>80</td>
+      <td>0.060835</td>
+      <td>2.487457e-05</td>
+      <td>8233</td>
+      <td>151</td>
       <td>GCT22TTG</td>
       <td>1</td>
       <td>A22L</td>
@@ -1663,19 +1780,19 @@ print(f"Read {len(escape_scores_primary)} scores.")
     </tr>
     <tr>
       <th>6</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>Omicron_XBB15</td>
       <td>lib59</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt5-S2K146-266-abneg</td>
-      <td>CAAATGCTCTGAACCC</td>
-      <td>0.023406</td>
-      <td>1.032356e-05</td>
-      <td>6518</td>
-      <td>53</td>
-      <td>GGT51TTT</td>
+      <td>exptREF3-none-0-ref</td>
+      <td>expt5-Omi42-156-abneg</td>
+      <td>AATGCGAGACTTTTGT</td>
+      <td>0.008226</td>
+      <td>3.478550e-06</td>
+      <td>7837</td>
+      <td>19</td>
+      <td>TTG162TTT</td>
       <td>1</td>
-      <td>G51F</td>
+      <td>L162F</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -1687,7 +1804,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 273024 scores.
+    Read 477038 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -1712,6 +1829,12 @@ p = (ggplot(escape_scores_primary) +
 
 _ = p.draw()
 ```
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_68_0.png)
+    
+
 
 ### Filter dataframe on single mutations that are present in at least `n` number of variants (specified in `config.yaml` file)
 Now see how many `n_single_mut_measurements` there are for each variant:
@@ -1765,43 +1888,43 @@ display(HTML(effects_df.head().to_html()))
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>lib59</td>
       <td>A105C</td>
-      <td>0.044897</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>S2K146_266</td>
-      <td>lib59</td>
-      <td>A105F</td>
-      <td>0.006812</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>S2K146_266</td>
-      <td>lib59</td>
-      <td>A105G</td>
-      <td>0.023407</td>
+      <td>0.006176</td>
       <td>14</td>
     </tr>
     <tr>
+      <th>1</th>
+      <td>Omi42_156</td>
+      <td>lib59</td>
+      <td>A105F</td>
+      <td>0.004870</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Omi42_156</td>
+      <td>lib59</td>
+      <td>A105G</td>
+      <td>0.005018</td>
+      <td>13</td>
+    </tr>
+    <tr>
       <th>3</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>lib59</td>
       <td>A105H</td>
-      <td>0.010545</td>
+      <td>0.005107</td>
       <td>9</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>lib59</td>
       <td>A105I</td>
-      <td>0.007466</td>
-      <td>9</td>
+      <td>0.005303</td>
+      <td>10</td>
     </tr>
   </tbody>
 </table>
@@ -1904,8 +2027,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    8382
-    16836
+    13972
+    28072
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -1981,6 +2104,12 @@ p = (ggplot(effects_df_wide) +
 _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_78_0.png)
+    
+
+
 ### Escape at site level
 The above analysis estimates the effects of mutations. We also compute escape statistics at the site level. First, add sites to the data frame of mutational effects:
 
@@ -2026,39 +2155,39 @@ display(HTML(site_effects_df.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
       <td>1</td>
-      <td>0.016737</td>
-      <td>0.334732</td>
+      <td>0.016472</td>
+      <td>0.329435</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
       <td>2</td>
-      <td>0.014770</td>
-      <td>0.295393</td>
+      <td>0.013720</td>
+      <td>0.274410</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
       <td>3</td>
-      <td>0.017887</td>
-      <td>0.357747</td>
+      <td>0.014495</td>
+      <td>0.289899</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
       <td>4</td>
-      <td>0.015497</td>
-      <td>0.309937</td>
+      <td>0.015807</td>
+      <td>0.316130</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
       <td>5</td>
-      <td>0.013821</td>
-      <td>0.276422</td>
+      <td>0.011915</td>
+      <td>0.238295</td>
     </tr>
   </tbody>
 </table>
@@ -2136,6 +2265,18 @@ for val in ['site_avg_escape_frac_single_mut', 'site_total_escape_frac_single_mu
     _ = p.draw()
 ```
 
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_84_0.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_XBB15_files/counts_to_scores_Omicron_XBB15_84_1.png)
+    
+
+
 ## Write file with escape fractions at mutation and site levels
 We write a files that has the mutation- and site-level escape fractions. This file has both the separate measurements for each library plus the average across libraries for all mutations measured in both libraries. We name the columns in such a way that this file can be used as [dms-view data file](https://dms-view.github.io/docs/dataupload):
 
@@ -2193,84 +2334,84 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_XBB15'], index=False, 
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.012161</td>
-      <td>0.334732</td>
-      <td>0.016737</td>
+      <td>0.007279</td>
+      <td>0.329435</td>
+      <td>0.016472</td>
       <td>2</td>
-      <td>27</td>
+      <td>32</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.047130</td>
-      <td>0.334732</td>
-      <td>0.016737</td>
+      <td>0.012751</td>
+      <td>0.329435</td>
+      <td>0.016472</td>
       <td>2</td>
-      <td>20</td>
+      <td>21</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.014969</td>
-      <td>0.334732</td>
-      <td>0.016737</td>
+      <td>0.015821</td>
+      <td>0.329435</td>
+      <td>0.016472</td>
       <td>2</td>
-      <td>29</td>
+      <td>30</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.012206</td>
-      <td>0.334732</td>
-      <td>0.016737</td>
+      <td>0.006378</td>
+      <td>0.329435</td>
+      <td>0.016472</td>
       <td>2</td>
-      <td>30</td>
+      <td>32</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>average</td>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.011978</td>
-      <td>0.334732</td>
-      <td>0.016737</td>
+      <td>0.033553</td>
+      <td>0.329435</td>
+      <td>0.016472</td>
       <td>2</td>
-      <td>26</td>
+      <td>28</td>
     </tr>
   </tbody>
 </table>

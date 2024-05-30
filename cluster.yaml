@@ -7,12 +7,12 @@ __default__:
   name: "{rule}"
 
 gisaid_rbd_mutations:
-  cpus: 12
+  cpus: 16
   time: 1-0
-  mem: 75000
+  mem: 320000
 
 download_gisaid:
-  cpus: 12
+  cpus: 16
   time: 1-0
   mem: 75000
 

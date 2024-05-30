@@ -35,6 +35,8 @@ from IPython.display import display, HTML
 import pandas as pd
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read the configuration file:
@@ -107,54 +109,54 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>331</td>
-      <td>0.334739</td>
-      <td>0.04713</td>
-      <td>16.5207</td>
-      <td>0.986</td>
-      <td>0.020262</td>
-      <td>0.047799</td>
+      <td>0.329449</td>
+      <td>0.07648</td>
+      <td>14.917205</td>
+      <td>0.9881</td>
+      <td>0.022085</td>
+      <td>0.077401</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>332</td>
-      <td>0.295386</td>
-      <td>0.04183</td>
-      <td>16.5207</td>
-      <td>0.986</td>
-      <td>0.017880</td>
-      <td>0.042424</td>
+      <td>0.274397</td>
+      <td>0.04426</td>
+      <td>14.917205</td>
+      <td>0.9881</td>
+      <td>0.018395</td>
+      <td>0.044793</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>333</td>
-      <td>0.357738</td>
-      <td>0.06987</td>
-      <td>16.5207</td>
-      <td>0.986</td>
-      <td>0.021654</td>
-      <td>0.070862</td>
+      <td>0.289907</td>
+      <td>0.06053</td>
+      <td>14.917205</td>
+      <td>0.9881</td>
+      <td>0.019434</td>
+      <td>0.061259</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>334</td>
-      <td>0.309953</td>
-      <td>0.03992</td>
-      <td>16.5207</td>
-      <td>0.986</td>
-      <td>0.018761</td>
-      <td>0.040487</td>
+      <td>0.316126</td>
+      <td>0.06752</td>
+      <td>14.917205</td>
+      <td>0.9881</td>
+      <td>0.021192</td>
+      <td>0.068333</td>
     </tr>
     <tr>
-      <td>S2K146_266</td>
+      <td>Omi42_156</td>
       <td>335</td>
-      <td>0.276427</td>
-      <td>0.03280</td>
-      <td>16.5207</td>
-      <td>0.986</td>
-      <td>0.016732</td>
-      <td>0.033266</td>
+      <td>0.238292</td>
+      <td>0.03301</td>
+      <td>14.917205</td>
+      <td>0.9881</td>
+      <td>0.015974</td>
+      <td>0.033408</td>
     </tr>
   </tbody>
 </table>
@@ -211,8 +213,13 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 8iov to data/pdbs/8iov_XBB1.pdb
-    Making mappings for 3 conditions.
+    Making mappings for 5 conditions.
     Mapping to the following chains: B
+      Writing B-factor re-assigned PDBs for Omi42_156 to:
+        results/pdb_outputs/Omicron_XBB15/Omi42_156_8iov_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/Omi42_156_8iov_max_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/Omi42_156_8iov_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/Omi42_156_8iov_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2K146_266 to:
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_total_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2K146_266_8iov_max_escape.pdb
@@ -228,6 +235,11 @@ for name, specs in output_pdbs_config.items():
         results/pdb_outputs/Omicron_XBB15/S2V29_v37_2_42_8iov_max_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2V29_v37_2_42_8iov_norm_total_escape.pdb
         results/pdb_outputs/Omicron_XBB15/S2V29_v37_2_42_8iov_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for SA55_63 to:
+        results/pdb_outputs/Omicron_XBB15/SA55_63_8iov_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/SA55_63_8iov_max_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/SA55_63_8iov_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_XBB15/SA55_63_8iov_norm_max_escape.pdb
 
 
 

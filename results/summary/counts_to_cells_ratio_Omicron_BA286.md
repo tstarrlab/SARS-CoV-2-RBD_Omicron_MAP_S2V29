@@ -227,7 +227,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/599482/ipykernel_1629071/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530461/ipykernel_3817915/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -240,7 +240,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/599482/ipykernel_1629071/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530461/ipykernel_3817915/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -253,7 +253,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/599482/ipykernel_1629071/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530461/ipykernel_3817915/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -300,6 +300,42 @@ display(HTML(
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td>expt3-SA55-33-abneg, lib92</td>
+      <td>240422</td>
+      <td>expt3</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>abneg</td>
+      <td>1.1e+06</td>
+      <td>2.3e+06</td>
+      <td>2.2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>expt3-SA55-33-abneg, lib93</td>
+      <td>240422</td>
+      <td>expt3</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>abneg</td>
+      <td>1e+06</td>
+      <td>2.1e+06</td>
+      <td>2</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <td>expt6-Omi42-73-abneg, lib92</td>
+      <td>240422</td>
+      <td>expt6</td>
+      <td>Omi42</td>
+      <td>73</td>
+      <td>abneg</td>
+      <td>1.2e+06</td>
+      <td>3e+06</td>
+      <td>2.5</td>
+      <td>False</td>
+    </tr>
   </tbody>
 </table>
 

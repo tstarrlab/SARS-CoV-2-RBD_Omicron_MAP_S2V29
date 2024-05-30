@@ -133,69 +133,69 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004016</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.006879</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>31</td>
+      <td>29</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.011080</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.012200</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
       <td>20</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004846</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.014930</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>18</td>
+      <td>17</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004962</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.028800</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>29</td>
+      <td>27</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>G</td>
       <td>E</td>
       <td>331</td>
-      <td>0.008418</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.011130</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>27</td>
+      <td>26</td>
     </tr>
   </tbody>
 </table>
@@ -246,73 +246,73 @@ escape_fracs.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004016</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.006879</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>31</td>
+      <td>29</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.011080</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.012200</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
       <td>20</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004846</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.014930</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>18</td>
+      <td>17</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004962</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.028800</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>29</td>
+      <td>27</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
       <td>N</td>
       <td>G</td>
       <td>E</td>
       <td>331</td>
-      <td>0.008418</td>
-      <td>0.1159</td>
-      <td>0.007245</td>
+      <td>0.011130</td>
+      <td>0.4015</td>
+      <td>0.02509</td>
       <td>2</td>
-      <td>27</td>
+      <td>26</td>
     </tr>
   </tbody>
 </table>
@@ -491,16 +491,18 @@ if len(nan_color):
 ```
 
     Reading DMS data from results/prior_DMS_data/mutant_ACE2binding_expression.csv
+
+
+    /scratch/local/u6042467/911945/ipykernel_3379233/3818419764.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+
+
     
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/6530177/ipykernel_2445893/3818419764.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
-
-
 
     
-![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_2.png)
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_3.png)
     
 
 
@@ -510,7 +512,7 @@ if len(nan_color):
 
 
     
-![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_4.png)
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_5.png)
     
 
 
@@ -519,12 +521,12 @@ if len(nan_color):
     expr ranges from -0.75 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_BA286/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/6530177/ipykernel_2445893/3818419764.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/911945/ipykernel_3379233/3818419764.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
     
-![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_7.png)
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_8.png)
     
 
 
@@ -534,7 +536,7 @@ if len(nan_color):
 
 
     
-![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_9.png)
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_19_10.png)
     
 
 
@@ -812,7 +814,7 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 12 profiles using 16 CPUs...
+    Drawing 30 profiles using 16 CPUs...
 
 
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
@@ -961,6 +963,222 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
 ![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_25.png)
+    
+
+
+    
+    Plotted profile 13 to:
+     results/escape_profiles/Omicron_BA286/SA55_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_27.png)
+    
+
+
+    
+    Plotted profile 14 to:
+     results/escape_profiles/Omicron_BA286/SA55_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_29.png)
+    
+
+
+    
+    Plotted profile 15 to:
+     results/escape_profiles/Omicron_BA286/SA55_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_31.png)
+    
+
+
+    
+    Plotted profile 16 to:
+     results/escape_profiles/Omicron_BA286/SA55_wide_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_33.png)
+    
+
+
+    
+    Plotted profile 17 to:
+     results/escape_profiles/Omicron_BA286/SA55_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_35.png)
+    
+
+
+    
+    Plotted profile 18 to:
+     results/escape_profiles/Omicron_BA286/SA55_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_wide_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_37.png)
+    
+
+
+    
+    Plotted profile 19 to:
+     results/escape_profiles/Omicron_BA286/SA55_structure_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_structure_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_39.png)
+    
+
+
+    
+    Plotted profile 20 to:
+     results/escape_profiles/Omicron_BA286/SA55_structure_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_structure_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_41.png)
+    
+
+
+    
+    Plotted profile 21 to:
+     results/escape_profiles/Omicron_BA286/SA55_structure_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/SA55_structure_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_43.png)
+    
+
+
+    
+    Plotted profile 22 to:
+     results/escape_profiles/Omicron_BA286/Omi42_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_45.png)
+    
+
+
+    
+    Plotted profile 23 to:
+     results/escape_profiles/Omicron_BA286/Omi42_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_47.png)
+    
+
+
+    
+    Plotted profile 24 to:
+     results/escape_profiles/Omicron_BA286/Omi42_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_49.png)
+    
+
+
+    
+    Plotted profile 25 to:
+     results/escape_profiles/Omicron_BA286/Omi42_wide_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_51.png)
+    
+
+
+    
+    Plotted profile 26 to:
+     results/escape_profiles/Omicron_BA286/Omi42_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_53.png)
+    
+
+
+    
+    Plotted profile 27 to:
+     results/escape_profiles/Omicron_BA286/Omi42_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_wide_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_55.png)
+    
+
+
+    
+    Plotted profile 28 to:
+     results/escape_profiles/Omicron_BA286/Omi42_structure_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_structure_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_57.png)
+    
+
+
+    
+    Plotted profile 29 to:
+     results/escape_profiles/Omicron_BA286/Omi42_structure_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_structure_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_59.png)
+    
+
+
+    
+    Plotted profile 30 to:
+     results/escape_profiles/Omicron_BA286/Omi42_structure_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Omicron_BA286/Omi42_structure_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Omicron_BA286_files/escape_profiles_Omicron_BA286_27_61.png)
     
 
 

@@ -133,67 +133,67 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000345</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.007121</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001037</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.008723</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>4</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000413</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.002737</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>2</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000562</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.004747</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>2</td>
       <td>6</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>F</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000842</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.005351</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>4</td>
     </tr>
@@ -378,16 +378,18 @@ if len(nan_color):
 ```
 
     Reading DMS data from results/prior_DMS_data/mutant_ACE2binding_expression.csv
+
+
+    /scratch/local/u6042467/911938/ipykernel_3378991/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+
+
     
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696145/ipykernel_33019/2590831829.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
-
-
 
     
-![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_2.png)
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_3.png)
     
 
 
@@ -397,7 +399,7 @@ if len(nan_color):
 
 
     
-![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_4.png)
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_5.png)
     
 
 
@@ -406,12 +408,12 @@ if len(nan_color):
     expr ranges from -1.25 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Wuhan_Hu_1/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/696145/ipykernel_33019/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/911938/ipykernel_3378991/2590831829.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
     
-![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_7.png)
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_8.png)
     
 
 
@@ -421,7 +423,7 @@ if len(nan_color):
 
 
     
-![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_9.png)
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_19_10.png)
     
 
 
@@ -700,7 +702,7 @@ with multiprocessing.Pool(ncpus) as pool:
         
 ```
 
-    Drawing 21 profiles using 16 CPUs...
+    Drawing 39 profiles using 16 CPUs...
 
 
     /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
@@ -957,6 +959,222 @@ with multiprocessing.Pool(ncpus) as pool:
 
     
 ![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_43.png)
+    
+
+
+    
+    Plotted profile 22 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_45.png)
+    
+
+
+    
+    Plotted profile 23 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_47.png)
+    
+
+
+    
+    Plotted profile 24 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_49.png)
+    
+
+
+    
+    Plotted profile 25 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_51.png)
+    
+
+
+    
+    Plotted profile 26 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_53.png)
+    
+
+
+    
+    Plotted profile 27 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_wide_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_55.png)
+    
+
+
+    
+    Plotted profile 28 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_57.png)
+    
+
+
+    
+    Plotted profile 29 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_59.png)
+    
+
+
+    
+    Plotted profile 30 to:
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/SA55_structure_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_61.png)
+    
+
+
+    
+    Plotted profile 31 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_63.png)
+    
+
+
+    
+    Plotted profile 32 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_65.png)
+    
+
+
+    
+    Plotted profile 33 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_67.png)
+    
+
+
+    
+    Plotted profile 34 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_69.png)
+    
+
+
+    
+    Plotted profile 35 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_71.png)
+    
+
+
+    
+    Plotted profile 36 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_wide_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_73.png)
+    
+
+
+    
+    Plotted profile 37 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_75.png)
+    
+
+
+    
+    Plotted profile 38 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_color_by_bind_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_color_by_bind_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_77.png)
+    
+
+
+    
+    Plotted profile 39 to:
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_color_by_expr_stackedlogo.pdf
+     results/escape_profiles/Wuhan_Hu_1/Omi42_structure_color_by_expr_stackedlogo.png.
+
+
+
+    
+![png](escape_profiles_Wuhan_Hu_1_files/escape_profiles_Wuhan_Hu_1_27_79.png)
     
 
 

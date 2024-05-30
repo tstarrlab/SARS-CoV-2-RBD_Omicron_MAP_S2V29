@@ -9,6 +9,9 @@
 _*
 !docs/_config.yml
 
+data/hCoV*.tar.xz
+
+
 env/
 
 results/*

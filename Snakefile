@@ -648,8 +648,8 @@ rule custom_plots:
 
 rule gisaid_rbd_mutations:
     input:
-        config['spike_sequences'],
-        config['RBD_sequence_Omicron_BA2'],
+        config['gisaid_spikes'],
+        config['wildtype_sequence_Wuhan_Hu_1'],
     output:
         config['gisaid_mutation_counts'],
         nb_markdown=nb_markdown('gisaid_rbd_mutations.ipynb'),

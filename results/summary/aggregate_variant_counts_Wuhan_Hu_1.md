@@ -30,6 +30,8 @@ import pandas as pd
 from plotnine import *
 
 import yaml
+
+%matplotlib inline
 ```
 
 Set [plotnine](https://plotnine.readthedocs.io/en/stable/) theme to the gray-grid one defined in `dms_variants`:
@@ -345,6 +347,108 @@ display(HTML(barcode_runs.to_html(index=False)))
       <td>results/counts/Wuhan_Hu_1/expt2-S2K146-50-abneg_lib13_counts.csv</td>
       <td>results/counts/Wuhan_Hu_1/expt2-S2K146-50-abneg_lib13_fates.csv</td>
     </tr>
+    <tr>
+      <td>240422</td>
+      <td>exptREF4</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib12</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF4-none-0-ref</td>
+      <td>ab_selection</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF4-none-0-ref_lib12</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF4-none-0-ref_lib12_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF4-none-0-ref_lib12_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>exptREF4</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib13</td>
+      <td>none</td>
+      <td>0</td>
+      <td>ref</td>
+      <td>reference</td>
+      <td>exptREF4-none-0-ref</td>
+      <td>ab_selection</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>exptREF4-none-0-ref_lib13</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF4-none-0-ref_lib13_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/exptREF4-none-0-ref_lib13_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt1</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib12</td>
+      <td>SA55</td>
+      <td>247</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt1-SA55-247-abneg</td>
+      <td>ab_selection</td>
+      <td>737380.0</td>
+      <td>0.2190</td>
+      <td>expt1-SA55-247-abneg_lib12</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-SA55-247-abneg_lib12_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-SA55-247-abneg_lib12_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt1</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib13</td>
+      <td>SA55</td>
+      <td>247</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt1-SA55-247-abneg</td>
+      <td>ab_selection</td>
+      <td>798058.0</td>
+      <td>0.2250</td>
+      <td>expt1-SA55-247-abneg_lib13</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-SA55-247-abneg_lib13_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt1-SA55-247-abneg_lib13_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt4</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib12</td>
+      <td>Omi42</td>
+      <td>376</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt4-Omi42-376-abneg</td>
+      <td>ab_selection</td>
+      <td>646664.0</td>
+      <td>0.1790</td>
+      <td>expt4-Omi42-376-abneg_lib12</td>
+      <td>results/counts/Wuhan_Hu_1/expt4-Omi42-376-abneg_lib12_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt4-Omi42-376-abneg_lib12_fates.csv</td>
+    </tr>
+    <tr>
+      <td>240422</td>
+      <td>expt4</td>
+      <td>Wuhan_Hu_1</td>
+      <td>lib13</td>
+      <td>Omi42</td>
+      <td>376</td>
+      <td>abneg</td>
+      <td>escape</td>
+      <td>expt4-Omi42-376-abneg</td>
+      <td>ab_selection</td>
+      <td>524218.0</td>
+      <td>0.1560</td>
+      <td>expt4-Omi42-376-abneg_lib13</td>
+      <td>results/counts/Wuhan_Hu_1/expt4-Omi42-376-abneg_lib13_counts.csv</td>
+      <td>results/counts/Wuhan_Hu_1/expt4-Omi42-376-abneg_lib13_fates.csv</td>
+    </tr>
   </tbody>
 </table>
 
@@ -555,6 +659,23 @@ display(HTML(fates
       <td>2.6e+05</td>
     </tr>
     <tr>
+      <th rowspan="2" valign="top">expt1-SA55-247-abneg</th>
+      <th>lib12</th>
+      <td>0.0e+00</td>
+      <td>6.9e+05</td>
+      <td>3.3e+05</td>
+      <td>6.2e+04</td>
+      <td>2.2e+06</td>
+    </tr>
+    <tr>
+      <th>lib13</th>
+      <td>0.0e+00</td>
+      <td>7.1e+05</td>
+      <td>4.1e+05</td>
+      <td>6.8e+04</td>
+      <td>2.7e+06</td>
+    </tr>
+    <tr>
       <th rowspan="2" valign="top">expt2-S2K146-50-abneg</th>
       <th>lib12</th>
       <td>0.0e+00</td>
@@ -587,6 +708,23 @@ display(HTML(fates
       <td>5.9e+04</td>
       <td>1.8e+04</td>
       <td>6.3e+05</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">expt4-Omi42-376-abneg</th>
+      <th>lib12</th>
+      <td>0.0e+00</td>
+      <td>5.1e+05</td>
+      <td>2.4e+05</td>
+      <td>5.1e+04</td>
+      <td>1.5e+06</td>
+    </tr>
+    <tr>
+      <th>lib13</th>
+      <td>0.0e+00</td>
+      <td>4.1e+05</td>
+      <td>2.3e+05</td>
+      <td>3.6e+04</td>
+      <td>1.5e+06</td>
     </tr>
     <tr>
       <th rowspan="2" valign="top">exptREF-none-0-ref</th>
@@ -638,6 +776,23 @@ display(HTML(fates
       <td>2.3e+06</td>
       <td>7.4e+05</td>
       <td>2.2e+07</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">exptREF4-none-0-ref</th>
+      <th>lib12</th>
+      <td>0.0e+00</td>
+      <td>1.3e+07</td>
+      <td>7.6e+06</td>
+      <td>1.3e+06</td>
+      <td>4.5e+07</td>
+    </tr>
+    <tr>
+      <th>lib13</th>
+      <td>0.0e+00</td>
+      <td>1.0e+07</td>
+      <td>6.2e+06</td>
+      <td>1.0e+06</td>
+      <td>3.9e+07</td>
     </tr>
   </tbody>
 </table>

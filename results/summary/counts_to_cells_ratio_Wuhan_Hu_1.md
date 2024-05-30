@@ -16,6 +16,8 @@ import pandas as pd
 from plotnine import *
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read the configuration file:
@@ -225,7 +227,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530463/ipykernel_4191480/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -238,7 +240,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530463/ipykernel_4191480/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -251,7 +253,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/136848/ipykernel_1159473/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530463/ipykernel_4191480/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -309,6 +311,18 @@ display(HTML(
       <td>2.2e+07</td>
       <td>NaN</td>
       <td>True</td>
+    </tr>
+    <tr>
+      <td>expt4-Omi42-376-abneg, lib12</td>
+      <td>240422</td>
+      <td>expt4</td>
+      <td>Omi42</td>
+      <td>376</td>
+      <td>abneg</td>
+      <td>6.5e+05</td>
+      <td>1.5e+06</td>
+      <td>2.3</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>

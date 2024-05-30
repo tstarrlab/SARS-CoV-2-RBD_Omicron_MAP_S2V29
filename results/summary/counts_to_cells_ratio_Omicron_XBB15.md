@@ -16,6 +16,8 @@ import pandas as pd
 from plotnine import *
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read the configuration file:
@@ -225,7 +227,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     plt.close(fig)
 ```
 
-    /scratch/local/u6042467/136671/ipykernel_906116/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530457/ipykernel_4191227/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -238,7 +240,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/136671/ipykernel_906116/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530457/ipykernel_4191227/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     
@@ -251,7 +253,7 @@ for var, is_reference, lower_clip, upper_clip, desired_min in [
     
 
 
-    /scratch/local/u6042467/136671/ipykernel_906116/1580948032.py:14: SettingWithCopyWarning: 
+    /scratch/local/u6042467/6530457/ipykernel_4191227/1580948032.py:14: SettingWithCopyWarning: 
     A value is trying to be set on a copy of a slice from a DataFrame.
     Try using .loc[row_indexer,col_indexer] = value instead
     

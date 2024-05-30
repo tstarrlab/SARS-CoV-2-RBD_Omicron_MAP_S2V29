@@ -58,7 +58,7 @@ VIR7229_wide:
   conditions:
     S2V29_v37_2_39: VIR7229 - EG5
   plot_auto_identified_sites: False
-  add_sites: [407, 416, 419, 456, 459, 475]
+  add_sites: [407, 416, 419, 421, 456, 459, 475]
   exclude_sites: []
   site_color_scheme: barnes_serum_epitopes
   color_by_dms: True
@@ -148,8 +148,8 @@ S2K146_wide:
 S2V29_parent:
   conditions:
     S2V29_80: S2V29 - EG5
-  plot_auto_identified_sites: sensitive_max_mut
-  add_sites: [347, 407, 416, 419, 421, 455, 456, 475]
+  plot_auto_identified_sites: False
+  add_sites: [347, 407, 416, 417, 419, 420, 421, 455, 456, 475]
   exclude_sites: [331]
   site_color_scheme: barnes_serum_epitopes
   color_by_dms: True

@@ -109,54 +109,54 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>331</td>
-      <td>0.115916</td>
-      <td>0.01578</td>
-      <td>5.161211</td>
-      <td>0.7315</td>
-      <td>0.022459</td>
-      <td>0.021572</td>
+      <td>0.401504</td>
+      <td>0.06532</td>
+      <td>14.0882</td>
+      <td>0.8888</td>
+      <td>0.028499</td>
+      <td>0.073492</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>332</td>
-      <td>0.130124</td>
-      <td>0.01659</td>
-      <td>5.161211</td>
-      <td>0.7315</td>
-      <td>0.025212</td>
-      <td>0.022679</td>
+      <td>0.444300</td>
+      <td>0.05184</td>
+      <td>14.0882</td>
+      <td>0.8888</td>
+      <td>0.031537</td>
+      <td>0.058326</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>333</td>
-      <td>0.131617</td>
-      <td>0.02327</td>
-      <td>5.161211</td>
-      <td>0.7315</td>
-      <td>0.025501</td>
-      <td>0.031811</td>
+      <td>0.426588</td>
+      <td>0.06356</td>
+      <td>14.0882</td>
+      <td>0.8888</td>
+      <td>0.030280</td>
+      <td>0.071512</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>334</td>
-      <td>0.233253</td>
-      <td>0.06148</td>
-      <td>5.161211</td>
-      <td>0.7315</td>
-      <td>0.045193</td>
-      <td>0.084046</td>
+      <td>0.556935</td>
+      <td>0.06830</td>
+      <td>14.0882</td>
+      <td>0.8888</td>
+      <td>0.039532</td>
+      <td>0.076845</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>335</td>
-      <td>0.178889</td>
-      <td>0.02956</td>
-      <td>5.161211</td>
-      <td>0.7315</td>
-      <td>0.034660</td>
-      <td>0.040410</td>
+      <td>0.533630</td>
+      <td>0.05614</td>
+      <td>14.0882</td>
+      <td>0.8888</td>
+      <td>0.037878</td>
+      <td>0.063164</td>
     </tr>
   </tbody>
 </table>
@@ -213,8 +213,13 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 8iov to data/pdbs/8iov_XBB1.pdb
-    Making mappings for 2 conditions.
+    Making mappings for 4 conditions.
     Mapping to the following chains: B
+      Writing B-factor re-assigned PDBs for Omi42_73 to:
+        results/pdb_outputs/Omicron_BA286/Omi42_73_8iov_total_escape.pdb
+        results/pdb_outputs/Omicron_BA286/Omi42_73_8iov_max_escape.pdb
+        results/pdb_outputs/Omicron_BA286/Omi42_73_8iov_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_BA286/Omi42_73_8iov_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2V29_36 to:
         results/pdb_outputs/Omicron_BA286/S2V29_36_8iov_total_escape.pdb
         results/pdb_outputs/Omicron_BA286/S2V29_36_8iov_max_escape.pdb
@@ -225,6 +230,11 @@ for name, specs in output_pdbs_config.items():
         results/pdb_outputs/Omicron_BA286/S2V29_v37_2_48_8iov_max_escape.pdb
         results/pdb_outputs/Omicron_BA286/S2V29_v37_2_48_8iov_norm_total_escape.pdb
         results/pdb_outputs/Omicron_BA286/S2V29_v37_2_48_8iov_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for SA55_33 to:
+        results/pdb_outputs/Omicron_BA286/SA55_33_8iov_total_escape.pdb
+        results/pdb_outputs/Omicron_BA286/SA55_33_8iov_max_escape.pdb
+        results/pdb_outputs/Omicron_BA286/SA55_33_8iov_norm_total_escape.pdb
+        results/pdb_outputs/Omicron_BA286/SA55_33_8iov_norm_max_escape.pdb
 
 
 

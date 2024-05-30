@@ -377,7 +377,7 @@ if len(nan_color):
     bind ranges from -3.0 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/bind_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/6530176/ipykernel_1161465/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/6530479/ipykernel_2156186/3014684448.py:55: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -401,7 +401,7 @@ if len(nan_color):
     expr ranges from -0.75 to 0.0, here is the scale bar, which is being saved to results/escape_profiles/Omicron_FLip/expr_scalebar_horizontal.pdf
 
 
-    /scratch/local/u6042467/6530176/ipykernel_1161465/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
+    /scratch/local/u6042467/6530479/ipykernel_2156186/3014684448.py:74: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed two minor releases later. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap(obj)`` instead.
 
 
 
@@ -696,13 +696,6 @@ with multiprocessing.Pool(ncpus) as pool:
 ```
 
     Drawing 18 profiles using 16 CPUs...
-
-
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-    /uufs/chpc.utah.edu/common/home/starr-group1/software/pkg/miniconda3/envs/StarrLab1/lib/python3.8/site-packages/dmslogo/facet.py:196: UserWarning: Tight layout not applied. The left and right margins cannot be made large enough to accommodate all axes decorations.
-
-
     
     Plotted profile 1 to:
      results/escape_profiles/Omicron_FLip/VIR7229_stackedlogo.pdf
@@ -711,7 +704,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_3.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_1.png)
     
 
 
@@ -723,7 +716,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_5.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_3.png)
     
 
 
@@ -735,7 +728,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_7.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_5.png)
     
 
 
@@ -747,7 +740,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_9.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_7.png)
     
 
 
@@ -759,7 +752,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_11.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_9.png)
     
 
 
@@ -771,7 +764,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_13.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_11.png)
     
 
 
@@ -783,7 +776,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_15.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_13.png)
     
 
 
@@ -795,7 +788,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_17.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_15.png)
     
 
 
@@ -807,7 +800,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_19.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_17.png)
     
 
 
@@ -819,7 +812,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_21.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_19.png)
     
 
 
@@ -831,7 +824,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_23.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_21.png)
     
 
 
@@ -843,7 +836,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_25.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_23.png)
     
 
 
@@ -855,7 +848,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_27.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_25.png)
     
 
 
@@ -867,7 +860,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_29.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_27.png)
     
 
 
@@ -879,7 +872,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_31.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_29.png)
     
 
 
@@ -891,7 +884,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_33.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_31.png)
     
 
 
@@ -903,7 +896,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_35.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_33.png)
     
 
 
@@ -915,7 +908,7 @@ with multiprocessing.Pool(ncpus) as pool:
 
 
     
-![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_37.png)
+![png](escape_profiles_Omicron_FLip_files/escape_profiles_Omicron_FLip_26_35.png)
     
 
 

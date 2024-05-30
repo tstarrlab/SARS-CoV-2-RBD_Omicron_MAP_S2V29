@@ -73,6 +73,12 @@ print('Making supplementary data for the following condition sets:\n  ' + '\n  '
       VIR7229
       S2K146
       S2V29_parent
+      SA55
+      SA55_wide
+      SA55_structure
+      Omi42
+      Omi42_wide
+      Omi42_structure
 
 
 Read the escape fractions
@@ -222,12 +228,78 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
     Saving plot to results/supp_data/Wuhan_Hu_1/S2V29_parent-mutation-corr.pdf
     
-    Plotting correlations of site escape for VIR7229
+    Plotting correlations of mutation escape for SA55
 
 
 
     
 ![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_7.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for SA55_wide
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_9.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55_wide-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for SA55_structure
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_11.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55_structure-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_13.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42_wide
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_15.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42_wide-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42_structure
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_17.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42_structure-mutation-corr.pdf
+    
+    Plotting correlations of site escape for VIR7229
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_19.png)
     
 
 
@@ -238,7 +310,7 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
     
-![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_9.png)
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_21.png)
     
 
 
@@ -249,11 +321,77 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
     
-![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_11.png)
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_23.png)
     
 
 
     Saving plot to results/supp_data/Wuhan_Hu_1/S2V29_parent-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_25.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55_wide
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_27.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55_wide-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55_structure
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_29.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/SA55_structure-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_31.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42_wide
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_33.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42_wide-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42_structure
+
+
+
+    
+![png](make_supp_data_Wuhan_Hu_1_files/make_supp_data_Wuhan_Hu_1_16_35.png)
+    
+
+
+    Saving plot to results/supp_data/Wuhan_Hu_1/Omi42_structure-site-corr.pdf
 
 
 ## Raw data files
@@ -302,6 +440,24 @@ for set_name, condition_set in condition_sets.items():
     
     Raw data for S2V29_parent:
     Writing to results/supp_data/Wuhan_Hu_1/S2V29_parent_raw_data.csv
+    
+    Raw data for SA55:
+    Writing to results/supp_data/Wuhan_Hu_1/SA55_raw_data.csv
+    
+    Raw data for SA55_wide:
+    Writing to results/supp_data/Wuhan_Hu_1/SA55_wide_raw_data.csv
+    
+    Raw data for SA55_structure:
+    Writing to results/supp_data/Wuhan_Hu_1/SA55_structure_raw_data.csv
+    
+    Raw data for Omi42:
+    Writing to results/supp_data/Wuhan_Hu_1/Omi42_raw_data.csv
+    
+    Raw data for Omi42_wide:
+    Writing to results/supp_data/Wuhan_Hu_1/Omi42_wide_raw_data.csv
+    
+    Raw data for Omi42_structure:
+    Writing to results/supp_data/Wuhan_Hu_1/Omi42_structure_raw_data.csv
 
 
 ## Data for `dms-view`:
@@ -371,75 +527,75 @@ display(HTML(dms_view_df.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>331</td>
-      <td>0.000345</td>
-      <td>0.01219</td>
-      <td>0.001537</td>
+      <td>0.007121</td>
+      <td>0.08983</td>
+      <td>0.008763</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>C</td>
       <td>331</td>
-      <td>0.001037</td>
-      <td>0.01219</td>
-      <td>0.001537</td>
+      <td>0.008723</td>
+      <td>0.08983</td>
+      <td>0.008763</td>
       <td>#a13703</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>331</td>
-      <td>0.000413</td>
-      <td>0.01219</td>
-      <td>0.001537</td>
+      <td>0.002737</td>
+      <td>0.08983</td>
+      <td>0.008763</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000562</td>
-      <td>0.01219</td>
-      <td>0.001537</td>
+      <td>0.004747</td>
+      <td>0.08983</td>
+      <td>0.008763</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>F</td>
       <td>331</td>
-      <td>0.000842</td>
-      <td>0.01219</td>
-      <td>0.001537</td>
+      <td>0.005351</td>
+      <td>0.08983</td>
+      <td>0.008763</td>
       <td>#7f2c04</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -487,6 +643,12 @@ for set_name, condition_set in condition_sets.items():
     Writing `dms-view` input file for VIR7229 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/VIR7229_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2K146 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/S2K146_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2V29_parent mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/S2V29_parent_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/SA55_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55_wide mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/SA55_wide_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55_structure mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/SA55_structure_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42 mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/Omi42_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42_wide mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/Omi42_wide_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42_structure mapped to PDB 6m0j to results/supp_data/Wuhan_Hu_1/Omi42_structure_6m0j_dms-view_data.csv
 
 
 

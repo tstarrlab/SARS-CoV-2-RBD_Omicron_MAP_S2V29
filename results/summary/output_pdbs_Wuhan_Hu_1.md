@@ -35,6 +35,8 @@ from IPython.display import display, HTML
 import pandas as pd
 
 import yaml
+
+%matplotlib inline
 ```
 
 Read the configuration file:
@@ -107,54 +109,54 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
-      <td>0.012186</td>
-      <td>0.001537</td>
-      <td>2.351458</td>
-      <td>0.8394</td>
-      <td>0.005182</td>
-      <td>0.001831</td>
+      <td>0.089836</td>
+      <td>0.008763</td>
+      <td>6.488825</td>
+      <td>1.0</td>
+      <td>0.013845</td>
+      <td>0.008763</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>332</td>
-      <td>0.011095</td>
-      <td>0.001218</td>
-      <td>2.351458</td>
-      <td>0.8394</td>
-      <td>0.004718</td>
-      <td>0.001451</td>
+      <td>0.230980</td>
+      <td>0.125100</td>
+      <td>6.488825</td>
+      <td>1.0</td>
+      <td>0.035597</td>
+      <td>0.125100</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>333</td>
-      <td>0.008084</td>
-      <td>0.002184</td>
-      <td>2.351458</td>
-      <td>0.8394</td>
-      <td>0.003438</td>
-      <td>0.002602</td>
+      <td>0.070786</td>
+      <td>0.015490</td>
+      <td>6.488825</td>
+      <td>1.0</td>
+      <td>0.010909</td>
+      <td>0.015490</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>334</td>
-      <td>0.019307</td>
-      <td>0.004150</td>
-      <td>2.351458</td>
-      <td>0.8394</td>
-      <td>0.008211</td>
-      <td>0.004944</td>
+      <td>0.264864</td>
+      <td>0.170900</td>
+      <td>6.488825</td>
+      <td>1.0</td>
+      <td>0.040818</td>
+      <td>0.170900</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>335</td>
-      <td>0.012154</td>
-      <td>0.001321</td>
-      <td>2.351458</td>
-      <td>0.8394</td>
-      <td>0.005169</td>
-      <td>0.001574</td>
+      <td>0.201410</td>
+      <td>0.036860</td>
+      <td>6.488825</td>
+      <td>1.0</td>
+      <td>0.031040</td>
+      <td>0.036860</td>
     </tr>
   </tbody>
 </table>
@@ -211,8 +213,13 @@ for name, specs in output_pdbs_config.items():
 
     
     Making PDB mappings for 6m0j to data/pdbs/6M0J.pdb
-    Making mappings for 3 conditions.
+    Making mappings for 5 conditions.
     Mapping to the following chains: E
+      Writing B-factor re-assigned PDBs for Omi42_376 to:
+        results/pdb_outputs/Wuhan_Hu_1/Omi42_376_6m0j_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/Omi42_376_6m0j_max_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/Omi42_376_6m0j_norm_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/Omi42_376_6m0j_norm_max_escape.pdb
       Writing B-factor re-assigned PDBs for S2K146_50 to:
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_total_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2K146_50_6m0j_max_escape.pdb
@@ -228,6 +235,11 @@ for name, specs in output_pdbs_config.items():
         results/pdb_outputs/Wuhan_Hu_1/S2V29_v37_2_91_6m0j_max_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2V29_v37_2_91_6m0j_norm_total_escape.pdb
         results/pdb_outputs/Wuhan_Hu_1/S2V29_v37_2_91_6m0j_norm_max_escape.pdb
+      Writing B-factor re-assigned PDBs for SA55_247 to:
+        results/pdb_outputs/Wuhan_Hu_1/SA55_247_6m0j_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/SA55_247_6m0j_max_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/SA55_247_6m0j_norm_total_escape.pdb
+        results/pdb_outputs/Wuhan_Hu_1/SA55_247_6m0j_norm_max_escape.pdb
 
 
 

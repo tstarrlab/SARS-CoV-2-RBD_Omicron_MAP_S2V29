@@ -91,67 +91,67 @@ display(HTML(escape_fracs.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000345</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.007121</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>2</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>C</td>
       <td>E</td>
       <td>331</td>
-      <td>0.001037</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.008723</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>4</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000413</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.002737</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>2</td>
       <td>5</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000562</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.004747</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>2</td>
       <td>6</td>
     </tr>
     <tr>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>331</td>
       <td>N</td>
       <td>F</td>
       <td>E</td>
       <td>331</td>
-      <td>0.000842</td>
-      <td>0.01219</td>
-      <td>0.000717</td>
+      <td>0.005351</td>
+      <td>0.08983</td>
+      <td>0.005615</td>
       <td>1</td>
       <td>4</td>
     </tr>
@@ -331,15 +331,15 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
   <tbody>
     <tr>
       <th>default</th>
-      <td>6</td>
+      <td>14</td>
     </tr>
     <tr>
       <th>sensitive</th>
-      <td>6</td>
+      <td>18</td>
     </tr>
     <tr>
       <th>sensitive_max_mut</th>
-      <td>6</td>
+      <td>18</td>
     </tr>
   </tbody>
 </table>
@@ -374,16 +374,16 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2K146_50</td>
+      <td>Omi42_376</td>
       <td>416</td>
-      <td>0.4392</td>
-      <td>0.3209</td>
+      <td>1.9320</td>
+      <td>0.9903</td>
       <td>default</td>
-      <td>0.011995</td>
-      <td>2.3510</td>
-      <td>0.11995</td>
+      <td>0.123650</td>
+      <td>6.489</td>
+      <td>1.23650</td>
       <td>True</td>
-      <td>0.23510</td>
+      <td>0.6489</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -393,16 +393,16 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
     </tr>
     <tr>
       <th>1</th>
-      <td>S2K146_50</td>
-      <td>486</td>
-      <td>1.1200</td>
-      <td>0.7583</td>
+      <td>Omi42_376</td>
+      <td>420</td>
+      <td>6.4890</td>
+      <td>1.0000</td>
       <td>default</td>
-      <td>0.011995</td>
-      <td>2.3510</td>
-      <td>0.11995</td>
+      <td>0.123650</td>
+      <td>6.489</td>
+      <td>1.23650</td>
       <td>True</td>
-      <td>0.23510</td>
+      <td>0.6489</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -412,16 +412,16 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
     </tr>
     <tr>
       <th>2</th>
-      <td>S2K146_50</td>
-      <td>487</td>
-      <td>0.4415</td>
-      <td>0.4223</td>
+      <td>Omi42_376</td>
+      <td>421</td>
+      <td>2.0800</td>
+      <td>1.0000</td>
       <td>default</td>
-      <td>0.011995</td>
-      <td>2.3510</td>
-      <td>0.11995</td>
+      <td>0.123650</td>
+      <td>6.489</td>
+      <td>1.23650</td>
       <td>True</td>
-      <td>0.23510</td>
+      <td>0.6489</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -431,16 +431,16 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
     </tr>
     <tr>
       <th>3</th>
-      <td>S2K146_50</td>
-      <td>489</td>
-      <td>2.3510</td>
-      <td>0.8394</td>
+      <td>Omi42_376</td>
+      <td>456</td>
+      <td>2.0960</td>
+      <td>1.0000</td>
       <td>default</td>
-      <td>0.011995</td>
-      <td>2.3510</td>
-      <td>0.11995</td>
+      <td>0.123650</td>
+      <td>6.489</td>
+      <td>1.23650</td>
       <td>True</td>
-      <td>0.23510</td>
+      <td>0.6489</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
@@ -450,22 +450,22 @@ strong_sites.to_csv(config['strong_escape_sites_Wuhan_Hu_1'], index=False)
     </tr>
     <tr>
       <th>4</th>
-      <td>S2V29_65</td>
-      <td>347</td>
-      <td>0.4892</td>
-      <td>0.4780</td>
+      <td>S2K146_50</td>
+      <td>416</td>
+      <td>0.4392</td>
+      <td>0.3209</td>
       <td>default</td>
-      <td>0.035725</td>
-      <td>0.5823</td>
-      <td>0.35725</td>
+      <td>0.011995</td>
+      <td>2.351</td>
+      <td>0.11995</td>
       <td>True</td>
-      <td>0.05823</td>
+      <td>0.2351</td>
       <td>True</td>
       <td>0</td>
       <td>True</td>
       <td>False</td>
       <td>True</td>
-      <td>3</td>
+      <td>4</td>
     </tr>
   </tbody>
 </table>

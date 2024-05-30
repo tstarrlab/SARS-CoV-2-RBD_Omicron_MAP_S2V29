@@ -35,8 +35,8 @@
 VIR7229:
   conditions:
     S2V29_v37_2_89: VIR7229 - FLip
-  plot_auto_identified_sites: False
-  add_sites: [456]
+  plot_auto_identified_sites: sensitive_max_mut
+  add_sites: []
   exclude_sites: []
   site_color_scheme: barnes_serum_epitopes
   color_by_dms: True

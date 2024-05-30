@@ -72,6 +72,12 @@ print('Making supplementary data for the following condition sets:\n  ' + '\n  '
     Making supplementary data for the following condition sets:
       VIR7229
       S2V29_parent
+      SA55
+      SA55_wide
+      SA55_structure
+      Omi42
+      Omi42_wide
+      Omi42_structure
 
 
 Read the escape fractions
@@ -210,12 +216,78 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
     Saving plot to results/supp_data/Omicron_BA286/S2V29_parent-mutation-corr.pdf
     
-    Plotting correlations of site escape for VIR7229
+    Plotting correlations of mutation escape for SA55
 
 
 
     
 ![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_5.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for SA55_wide
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_7.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55_wide-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for SA55_structure
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_9.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55_structure-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_11.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42_wide
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_13.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42_wide-mutation-corr.pdf
+    
+    Plotting correlations of mutation escape for Omi42_structure
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_15.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42_structure-mutation-corr.pdf
+    
+    Plotting correlations of site escape for VIR7229
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_17.png)
     
 
 
@@ -226,11 +298,77 @@ for metric_type, (set_name, condition_set) in itertools.product(['mutation', 'si
 
 
     
-![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_7.png)
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_19.png)
     
 
 
     Saving plot to results/supp_data/Omicron_BA286/S2V29_parent-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_21.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55_wide
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_23.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55_wide-site-corr.pdf
+    
+    Plotting correlations of site escape for SA55_structure
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_25.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/SA55_structure-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_27.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42_wide
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_29.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42_wide-site-corr.pdf
+    
+    Plotting correlations of site escape for Omi42_structure
+
+
+
+    
+![png](make_supp_data_Omicron_BA286_files/make_supp_data_Omicron_BA286_16_31.png)
+    
+
+
+    Saving plot to results/supp_data/Omicron_BA286/Omi42_structure-site-corr.pdf
 
 
 ## Raw data files
@@ -276,6 +414,24 @@ for set_name, condition_set in condition_sets.items():
     
     Raw data for S2V29_parent:
     Writing to results/supp_data/Omicron_BA286/S2V29_parent_raw_data.csv
+    
+    Raw data for SA55:
+    Writing to results/supp_data/Omicron_BA286/SA55_raw_data.csv
+    
+    Raw data for SA55_wide:
+    Writing to results/supp_data/Omicron_BA286/SA55_wide_raw_data.csv
+    
+    Raw data for SA55_structure:
+    Writing to results/supp_data/Omicron_BA286/SA55_structure_raw_data.csv
+    
+    Raw data for Omi42:
+    Writing to results/supp_data/Omicron_BA286/Omi42_raw_data.csv
+    
+    Raw data for Omi42_wide:
+    Writing to results/supp_data/Omicron_BA286/Omi42_wide_raw_data.csv
+    
+    Raw data for Omi42_structure:
+    Writing to results/supp_data/Omicron_BA286/Omi42_structure_raw_data.csv
 
 
 ## Data for `dms-view`:
@@ -345,75 +501,75 @@ display(HTML(dms_view_df.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>-</td>
       <td>331</td>
-      <td>0.004016</td>
-      <td>0.1159</td>
-      <td>0.01578</td>
+      <td>0.006879</td>
+      <td>0.4015</td>
+      <td>0.06532</td>
       <td>#762905</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>331</td>
-      <td>0.011080</td>
-      <td>0.1159</td>
-      <td>0.01578</td>
+      <td>0.012200</td>
+      <td>0.4015</td>
+      <td>0.06532</td>
       <td>#8e3004</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>331</td>
-      <td>0.004846</td>
-      <td>0.1159</td>
-      <td>0.01578</td>
+      <td>0.014930</td>
+      <td>0.4015</td>
+      <td>0.06532</td>
       <td>#a63a03</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004962</td>
-      <td>0.1159</td>
-      <td>0.01578</td>
+      <td>0.028800</td>
+      <td>0.4015</td>
+      <td>0.06532</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>NaN</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>G</td>
       <td>331</td>
-      <td>0.008418</td>
-      <td>0.1159</td>
-      <td>0.01578</td>
+      <td>0.011130</td>
+      <td>0.4015</td>
+      <td>0.06532</td>
       <td>#662505</td>
       <td>NaN</td>
       <td>NaN</td>
@@ -460,6 +616,12 @@ for set_name, condition_set in condition_sets.items():
 
     Writing `dms-view` input file for VIR7229 mapped to PDB 6m0j to results/supp_data/Omicron_BA286/VIR7229_6m0j_dms-view_data.csv
     Writing `dms-view` input file for S2V29_parent mapped to PDB 6m0j to results/supp_data/Omicron_BA286/S2V29_parent_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55 mapped to PDB 6m0j to results/supp_data/Omicron_BA286/SA55_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55_wide mapped to PDB 6m0j to results/supp_data/Omicron_BA286/SA55_wide_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for SA55_structure mapped to PDB 6m0j to results/supp_data/Omicron_BA286/SA55_structure_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42 mapped to PDB 6m0j to results/supp_data/Omicron_BA286/Omi42_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42_wide mapped to PDB 6m0j to results/supp_data/Omicron_BA286/Omi42_wide_6m0j_dms-view_data.csv
+    Writing `dms-view` input file for Omi42_structure mapped to PDB 6m0j to results/supp_data/Omicron_BA286/Omi42_structure_6m0j_dms-view_data.csv
 
 
 

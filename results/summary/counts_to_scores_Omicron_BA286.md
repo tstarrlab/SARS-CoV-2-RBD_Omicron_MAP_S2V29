@@ -173,6 +173,21 @@ display(HTML(
       <td>21.8</td>
       <td>17.4</td>
     </tr>
+    <tr>
+      <th>exptREF2-none-0-ref</th>
+      <td>543.9</td>
+      <td>532.2</td>
+    </tr>
+    <tr>
+      <th>expt3-SA55-33-abneg</th>
+      <td>27.1</td>
+      <td>25.5</td>
+    </tr>
+    <tr>
+      <th>expt6-Omi42-73-abneg</th>
+      <td>35.1</td>
+      <td>46.1</td>
+    </tr>
   </tbody>
 </table>
 
@@ -202,6 +217,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
     
 
 
+
+    
+![png](counts_to_scores_Omicron_BA286_files/counts_to_scores_Omicron_BA286_23_1.png)
+    
+
+
 Now similar plots but showing mutation frequency across the gene:
 
 
@@ -223,6 +244,12 @@ for date, date_df in samples_df.groupby('date', sort=False):
 
     
 ![png](counts_to_scores_Omicron_BA286_files/counts_to_scores_Omicron_BA286_25_0.png)
+    
+
+
+
+    
+![png](counts_to_scores_Omicron_BA286_files/counts_to_scores_Omicron_BA286_25_1.png)
     
 
 
@@ -391,7 +418,7 @@ display(HTML(
   </thead>
   <tbody>
     <tr>
-      <th>lib92</th>
+      <th rowspan="2" valign="top">lib92</th>
       <th>exptREF-none-0-ref</th>
       <td>0.0003</td>
       <td>Omicron_BA286</td>
@@ -400,8 +427,24 @@ display(HTML(
       <td>AAA73CAT</td>
     </tr>
     <tr>
-      <th>lib93</th>
+      <th>exptREF2-none-0-ref</th>
+      <td>0.0003</td>
+      <td>Omicron_BA286</td>
+      <td>AACCGTTAAATGCAAA</td>
+      <td>K73H</td>
+      <td>AAA73CAT</td>
+    </tr>
+    <tr>
+      <th rowspan="2" valign="top">lib93</th>
       <th>exptREF-none-0-ref</th>
+      <td>0.0002</td>
+      <td>Omicron_BA286</td>
+      <td>CCAATGCGATACGGGT</td>
+      <td>T100A</td>
+      <td>ACC100GCT</td>
+    </tr>
+    <tr>
+      <th>exptREF2-none-0-ref</th>
       <td>0.0002</td>
       <td>Omicron_BA286</td>
       <td>CCAATGCGATACGGGT</td>
@@ -631,6 +674,30 @@ display(HTML(score_sample_df.to_html(index=False)))
   </thead>
   <tbody>
     <tr>
+      <td>Omi42_73</td>
+      <td>lib92</td>
+      <td>Omi42</td>
+      <td>73</td>
+      <td>240422</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>0.304</td>
+      <td>1216000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>Omi42_73</td>
+      <td>lib93</td>
+      <td>Omi42</td>
+      <td>73</td>
+      <td>240422</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>0.299</td>
+      <td>1196000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
       <td>S2V29_36</td>
       <td>lib92</td>
       <td>S2V29</td>
@@ -676,6 +743,30 @@ display(HTML(score_sample_df.to_html(index=False)))
       <td>expt7-S2V29_v37_2-48-abneg</td>
       <td>0.081</td>
       <td>324000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>SA55_33</td>
+      <td>lib92</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>240422</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt3-SA55-33-abneg</td>
+      <td>0.266</td>
+      <td>1064000.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>SA55_33</td>
+      <td>lib93</td>
+      <td>SA55</td>
+      <td>33</td>
+      <td>240422</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt3-SA55-33-abneg</td>
+      <td>0.259</td>
+      <td>1036000.0</td>
       <td>NaN</td>
     </tr>
   </tbody>
@@ -735,16 +826,16 @@ display(HTML(escape_scores.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AACCGTTAAATGCAAA</td>
-      <td>0.009930</td>
-      <td>1.582215e-06</td>
-      <td>21129</td>
-      <td>62</td>
+      <td>0.050805</td>
+      <td>0.000015</td>
+      <td>15509</td>
+      <td>169</td>
       <td>AAA73CAT</td>
       <td>1</td>
       <td>K73H</td>
@@ -752,16 +843,16 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>1 nonsynonymous</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AAAAAATCAAACTGAA</td>
-      <td>0.549101</td>
-      <td>1.248995e-04</td>
-      <td>17127</td>
-      <td>2801</td>
+      <td>0.915401</td>
+      <td>0.000436</td>
+      <td>11667</td>
+      <td>2297</td>
       <td>TAC177GAT</td>
       <td>1</td>
       <td>Y177D</td>
@@ -769,33 +860,16 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>1 nonsynonymous</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>CAATATCACCCAAGTG</td>
-      <td>0.002073</td>
-      <td>4.093863e-07</td>
-      <td>17006</td>
-      <td>10</td>
-      <td>GGT165GAA</td>
-      <td>1</td>
-      <td>G165E</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-    </tr>
-    <tr>
-      <td>S2V29_36</td>
-      <td>Omicron_BA286</td>
-      <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AGACGAAATAGATGAC</td>
-      <td>0.007114</td>
-      <td>1.428507e-06</td>
-      <td>16752</td>
-      <td>35</td>
+      <td>0.019743</td>
+      <td>0.000008</td>
+      <td>11184</td>
+      <td>47</td>
       <td>ACC3---</td>
       <td>1</td>
       <td>T3-</td>
@@ -803,19 +877,36 @@ display(HTML(escape_scores.head().to_html(index=False)))
       <td>deletion</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>CTAACTGACCCACTAA</td>
-      <td>0.013908</td>
-      <td>3.011216e-06</td>
-      <td>15568</td>
-      <td>64</td>
-      <td>TCC69TTG</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>CAATATCACCCAAGTG</td>
+      <td>0.006859</td>
+      <td>0.000003</td>
+      <td>11182</td>
+      <td>16</td>
+      <td>GGT165GAA</td>
       <td>1</td>
-      <td>S69L</td>
+      <td>G165E</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+    </tr>
+    <tr>
+      <td>Omi42_73</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>GTATAAGACAGAAGAG</td>
+      <td>0.066525</td>
+      <td>0.000029</td>
+      <td>10726</td>
+      <td>153</td>
+      <td>GGT146AAA</td>
+      <td>1</td>
+      <td>G146K</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
     </tr>
@@ -897,16 +988,16 @@ escape_scores.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AACCGTTAAATGCAAA</td>
-      <td>0.009930</td>
-      <td>1.582215e-06</td>
-      <td>21129</td>
-      <td>62</td>
+      <td>0.050805</td>
+      <td>0.000015</td>
+      <td>15509</td>
+      <td>169</td>
       <td>AAA73CAT</td>
       <td>1</td>
       <td>K73H</td>
@@ -916,16 +1007,16 @@ escape_scores.head()
     </tr>
     <tr>
       <th>1</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AAAAAATCAAACTGAA</td>
-      <td>0.549101</td>
-      <td>1.248995e-04</td>
-      <td>17127</td>
-      <td>2801</td>
+      <td>0.915401</td>
+      <td>0.000436</td>
+      <td>11667</td>
+      <td>2297</td>
       <td>TAC177GAT</td>
       <td>1</td>
       <td>Y177D</td>
@@ -935,35 +1026,16 @@ escape_scores.head()
     </tr>
     <tr>
       <th>2</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>CAATATCACCCAAGTG</td>
-      <td>0.002073</td>
-      <td>4.093863e-07</td>
-      <td>17006</td>
-      <td>10</td>
-      <td>GGT165GAA</td>
-      <td>1</td>
-      <td>G165E</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>S2V29_36</td>
-      <td>Omicron_BA286</td>
-      <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AGACGAAATAGATGAC</td>
-      <td>0.007114</td>
-      <td>1.428507e-06</td>
-      <td>16752</td>
-      <td>35</td>
+      <td>0.019743</td>
+      <td>0.000008</td>
+      <td>11184</td>
+      <td>47</td>
       <td>ACC3---</td>
       <td>1</td>
       <td>T3-</td>
@@ -972,20 +1044,39 @@ escape_scores.head()
       <td>True</td>
     </tr>
     <tr>
-      <th>4</th>
-      <td>S2V29_36</td>
+      <th>3</th>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>CTAACTGACCCACTAA</td>
-      <td>0.013908</td>
-      <td>3.011216e-06</td>
-      <td>15568</td>
-      <td>64</td>
-      <td>TCC69TTG</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>CAATATCACCCAAGTG</td>
+      <td>0.006859</td>
+      <td>0.000003</td>
+      <td>11182</td>
+      <td>16</td>
+      <td>GGT165GAA</td>
       <td>1</td>
-      <td>S69L</td>
+      <td>G165E</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Omi42_73</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>GTATAAGACAGAAGAG</td>
+      <td>0.066525</td>
+      <td>0.000029</td>
+      <td>10726</td>
+      <td>153</td>
+      <td>GGT146AAA</td>
+      <td>1</td>
+      <td>G146K</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -4813,16 +4904,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AACCGTTAAATGCAAA</td>
-      <td>0.009930</td>
-      <td>1.582215e-06</td>
-      <td>21129</td>
-      <td>62</td>
+      <td>0.050805</td>
+      <td>0.000015</td>
+      <td>15509</td>
+      <td>169</td>
       <td>AAA73CAT</td>
       <td>1</td>
       <td>K73H</td>
@@ -4834,16 +4925,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AAAAAATCAAACTGAA</td>
-      <td>0.549101</td>
-      <td>1.248995e-04</td>
-      <td>17127</td>
-      <td>2801</td>
+      <td>0.915401</td>
+      <td>0.000436</td>
+      <td>11667</td>
+      <td>2297</td>
       <td>TAC177GAT</td>
       <td>1</td>
       <td>Y177D</td>
@@ -4855,16 +4946,16 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>CAATATCACCCAAGTG</td>
-      <td>0.002073</td>
-      <td>4.093863e-07</td>
-      <td>17006</td>
-      <td>10</td>
+      <td>0.006859</td>
+      <td>0.000003</td>
+      <td>11182</td>
+      <td>16</td>
       <td>GGT165GAA</td>
       <td>1</td>
       <td>G165E</td>
@@ -4876,19 +4967,19 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>CTAACTGACCCACTAA</td>
-      <td>0.013908</td>
-      <td>3.011216e-06</td>
-      <td>15568</td>
-      <td>64</td>
-      <td>TCC69TTG</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>GTATAAGACAGAAGAG</td>
+      <td>0.066525</td>
+      <td>0.000029</td>
+      <td>10726</td>
+      <td>153</td>
+      <td>GGT146AAA</td>
       <td>1</td>
-      <td>S69L</td>
+      <td>G146K</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -4897,23 +4988,23 @@ display(HTML(escape_scores.query('not pass_ACE2bind_expr_filter & variant_class 
       <td>False</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>GTATAAGACAGAAGAG</td>
-      <td>0.006827</td>
-      <td>1.531027e-06</td>
-      <td>14998</td>
-      <td>30</td>
-      <td>GGT146AAA</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>TTGCGCTCACAAAAAG</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>10548</td>
+      <td>2458</td>
+      <td>ATT80TTT</td>
       <td>1</td>
-      <td>G146K</td>
+      <td>I80F</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
-      <td>True</td>
+      <td>False</td>
       <td>False</td>
       <td>False</td>
     </tr>
@@ -5125,17 +5216,17 @@ print(f"Read {len(escape_scores_primary)} scores.")
   </thead>
   <tbody>
     <tr>
-      <th>3</th>
-      <td>S2V29_36</td>
+      <th>2</th>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>AGACGAAATAGATGAC</td>
-      <td>0.007114</td>
-      <td>1.428507e-06</td>
-      <td>16752</td>
-      <td>35</td>
+      <td>0.019743</td>
+      <td>8.240495e-06</td>
+      <td>11184</td>
+      <td>47</td>
       <td>ACC3---</td>
       <td>1</td>
       <td>T3-</td>
@@ -5147,39 +5238,17 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>S2V29_36</td>
+      <th>5</th>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>TTACTTTAGCGACTCA</td>
-      <td>0.005857</td>
-      <td>1.347439e-06</td>
-      <td>14616</td>
-      <td>25</td>
-      <td>TAC119AGA</td>
-      <td>1</td>
-      <td>Y119R</td>
-      <td>1</td>
-      <td>1 nonsynonymous</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-      <td>True</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>S2V29_36</td>
-      <td>Omicron_BA286</td>
-      <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
       <td>CTAAAATCCACCTCTA</td>
-      <td>0.003830</td>
-      <td>8.901341e-07</td>
-      <td>14461</td>
-      <td>16</td>
+      <td>0.014761</td>
+      <td>6.524273e-06</td>
+      <td>10550</td>
+      <td>33</td>
       <td>ACT200TTT</td>
       <td>1</td>
       <td>T200F</td>
@@ -5191,20 +5260,20 @@ print(f"Read {len(escape_scores_primary)} scores.")
       <td>True</td>
     </tr>
     <tr>
-      <th>11</th>
-      <td>S2V29_36</td>
+      <th>10</th>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>AAGGAATCTAGAGCGG</td>
-      <td>0.002515</td>
-      <td>6.026694e-07</td>
-      <td>14017</td>
-      <td>10</td>
-      <td>TTG95ATT</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>TTGCGTTCGGTGAAGG</td>
+      <td>0.060648</td>
+      <td>2.770140e-05</td>
+      <td>10309</td>
+      <td>134</td>
+      <td>TTC159TGT</td>
       <td>1</td>
-      <td>L95I</td>
+      <td>F159C</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -5214,19 +5283,41 @@ print(f"Read {len(escape_scores_primary)} scores.")
     </tr>
     <tr>
       <th>12</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>Omicron_BA286</td>
       <td>lib92</td>
-      <td>exptREF-none-0-ref</td>
-      <td>expt8-S2V29-36-abneg</td>
-      <td>TTGCGTTCGGTGAAGG</td>
-      <td>0.002998</td>
-      <td>7.197201e-07</td>
-      <td>13996</td>
-      <td>12</td>
-      <td>TTC159TGT</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>GAACAGAATTCAAGCA</td>
+      <td>0.000714</td>
+      <td>3.402448e-07</td>
+      <td>9761</td>
       <td>1</td>
-      <td>F159C</td>
+      <td>CCA43GAT</td>
+      <td>1</td>
+      <td>P43D</td>
+      <td>1</td>
+      <td>1 nonsynonymous</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Omi42_73</td>
+      <td>Omicron_BA286</td>
+      <td>lib92</td>
+      <td>exptREF2-none-0-ref</td>
+      <td>expt6-Omi42-73-abneg</td>
+      <td>TTACTTTAGCGACTCA</td>
+      <td>0.032255</td>
+      <td>1.551890e-05</td>
+      <td>9728</td>
+      <td>67</td>
+      <td>TAC119AGA</td>
+      <td>1</td>
+      <td>Y119R</td>
       <td>1</td>
       <td>1 nonsynonymous</td>
       <td>True</td>
@@ -5238,7 +5329,7 @@ print(f"Read {len(escape_scores_primary)} scores.")
 </table>
 
 
-    Read 159636 scores.
+    Read 310878 scores.
 
 
 ### Count number of barcodes per mutation and remove variants with >1 amino acid substitution
@@ -5322,42 +5413,42 @@ display(HTML(effects_df.head().to_html()))
   <tbody>
     <tr>
       <th>0</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>lib92</td>
       <td>A105I</td>
-      <td>0.007985</td>
-      <td>19</td>
+      <td>0.069167</td>
+      <td>17</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>lib92</td>
       <td>A105S</td>
-      <td>0.005138</td>
-      <td>20</td>
+      <td>0.037684</td>
+      <td>18</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>lib92</td>
       <td>A105T</td>
-      <td>0.021114</td>
-      <td>15</td>
+      <td>0.042922</td>
+      <td>14</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>lib92</td>
       <td>A105V</td>
-      <td>0.008595</td>
-      <td>19</td>
+      <td>0.016130</td>
+      <td>17</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>lib92</td>
       <td>A105W</td>
-      <td>0.004693</td>
+      <td>0.011688</td>
       <td>27</td>
     </tr>
   </tbody>
@@ -5456,8 +5547,8 @@ print(len(effects_df.query('nlibs==1')))
 ```
 
     Only taking average of mutations with escape fractions in >=2 libraries or with >=2 single-mutant measurements total.
-    4228
     8456
+    16912
 
 
 Plot the correlations of the escape fractions among the two libraries for all selections performed on both libraries. 
@@ -5584,39 +5675,39 @@ display(HTML(site_effects_df.head().to_html(index=False)))
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
       <td>1</td>
-      <td>0.007245</td>
-      <td>0.115927</td>
+      <td>0.025093</td>
+      <td>0.401488</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
       <td>2</td>
-      <td>0.006506</td>
-      <td>0.130121</td>
+      <td>0.022214</td>
+      <td>0.444285</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
       <td>3</td>
-      <td>0.008774</td>
-      <td>0.131614</td>
+      <td>0.028440</td>
+      <td>0.426596</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
       <td>4</td>
-      <td>0.011663</td>
-      <td>0.233251</td>
+      <td>0.027847</td>
+      <td>0.556931</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
       <td>5</td>
-      <td>0.008945</td>
-      <td>0.178904</td>
+      <td>0.026681</td>
+      <td>0.533618</td>
     </tr>
   </tbody>
 </table>
@@ -5765,84 +5856,84 @@ escape_fracs_to_write.to_csv(config['escape_fracs_Omicron_BA286'], index=False, 
   </thead>
   <tbody>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>-</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004016</td>
-      <td>0.115927</td>
-      <td>0.007245</td>
+      <td>0.006879</td>
+      <td>0.401488</td>
+      <td>0.025093</td>
       <td>2</td>
-      <td>31</td>
+      <td>29</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>A</td>
       <td>E</td>
       <td>331</td>
-      <td>0.011084</td>
-      <td>0.115927</td>
-      <td>0.007245</td>
+      <td>0.012198</td>
+      <td>0.401488</td>
+      <td>0.025093</td>
       <td>2</td>
       <td>20</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>D</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004846</td>
-      <td>0.115927</td>
-      <td>0.007245</td>
+      <td>0.014928</td>
+      <td>0.401488</td>
+      <td>0.025093</td>
       <td>2</td>
-      <td>18</td>
+      <td>17</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>E</td>
       <td>E</td>
       <td>331</td>
-      <td>0.004962</td>
-      <td>0.115927</td>
-      <td>0.007245</td>
+      <td>0.028805</td>
+      <td>0.401488</td>
+      <td>0.025093</td>
       <td>2</td>
-      <td>29</td>
+      <td>27</td>
     </tr>
     <tr>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>average</td>
-      <td>S2V29_36</td>
+      <td>Omi42_73</td>
       <td>1</td>
       <td>331</td>
       <td>N</td>
       <td>G</td>
       <td>E</td>
       <td>331</td>
-      <td>0.008418</td>
-      <td>0.115927</td>
-      <td>0.007245</td>
+      <td>0.011132</td>
+      <td>0.401488</td>
+      <td>0.025093</td>
       <td>2</td>
-      <td>27</td>
+      <td>26</td>
     </tr>
   </tbody>
 </table>
