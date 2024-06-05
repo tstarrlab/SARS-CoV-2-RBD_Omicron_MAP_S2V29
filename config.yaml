@@ -13,7 +13,6 @@ barcode_runs_Omicron_BQ11: data/barcode_runs_Omicron_BQ11.csv
 barcode_runs_Omicron_XBB15: data/barcode_runs_Omicron_XBB15.csv
 
 barcode_runs_Omicron_EG5: data/barcode_runs_Omicron_EG5.csv
-barcode_runs_Omicron_FLip: data/barcode_runs_Omicron_FLip.csv
 barcode_runs_Omicron_BA286: data/barcode_runs_Omicron_BA286.csv
 
 
@@ -24,7 +23,6 @@ bc_variant_lookup_Omicron_BQ11: data/codon_variant_table_Omicron_BQ11.csv
 bc_variant_lookup_Omicron_XBB15: data/codon_variant_table_Omicron_XBB15.csv
 
 bc_variant_lookup_Omicron_EG5: data/codon_variant_table_Omicron_EG5.csv
-bc_variant_lookup_Omicron_FLip: data/codon_variant_table_Omicron_FLip.csv
 bc_variant_lookup_Omicron_BA286: data/codon_variant_table_Omicron_BA286.csv
 
 # sequencing counts to cells ratio should exceed this for escape samples
@@ -39,7 +37,6 @@ wildtype_sequence_Omicron_BQ11: data/wildtype_sequence_Omicron_BQ11.fasta
 wildtype_sequence_Omicron_XBB15: data/wildtype_sequence_Omicron_XBB15.fasta
 
 wildtype_sequence_Omicron_EG5: data/wildtype_sequence_Omicron_EG5.fasta
-wildtype_sequence_Omicron_FLip: data/wildtype_sequence_Omicron_FLip.fasta
 wildtype_sequence_Omicron_BA286: data/wildtype_sequence_Omicron_BA286.fasta
 
 RBD_sequence_Omicron_BA2: data/RBD_BA2_seq.fasta
@@ -93,8 +90,6 @@ escape_score_min_bind_mut_Omicron_BA286: -3.0
 escape_score_min_expr_mut_Omicron_BA286: -0.75
 escape_score_min_bind_mut_Omicron_EG5: -3.0
 escape_score_min_expr_mut_Omicron_EG5: -0.75
-escape_score_min_bind_mut_Omicron_FLip: -3.0
-escape_score_min_expr_mut_Omicron_FLip: -0.75
 
 #for YlOrBr scaling of bind phenotype, what should be the floor where YlOrBr reaches its minimum yellow coloring?
 escape_score_bind_Yl_threshold: -2
@@ -147,7 +142,6 @@ escape_profiles_config_Omicron_BQ11: data/escape_profiles_config_Omicron_BQ11.ya
 escape_profiles_config_Omicron_XBB15: data/escape_profiles_config_Omicron_XBB15.yaml
 
 escape_profiles_config_Omicron_EG5: data/escape_profiles_config_Omicron_EG5.yaml
-escape_profiles_config_Omicron_FLip: data/escape_profiles_config_Omicron_FLip.yaml
 escape_profiles_config_Omicron_BA286: data/escape_profiles_config_Omicron_BA286.yaml
 # Site color schemes for escape profiles
 site_color_schemes: data/site_color_schemes.csv
@@ -169,7 +163,6 @@ output_pdbs_config_BQ11: data/output_pdbs_config_Omicron_BQ11.yaml
 output_pdbs_config_XBB15: data/output_pdbs_config_Omicron_XBB15.yaml
 
 output_pdbs_config_EG5: data/output_pdbs_config_Omicron_EG5.yaml
-output_pdbs_config_FLip: data/output_pdbs_config_Omicron_FLip.yaml
 output_pdbs_config_BA286: data/output_pdbs_config_Omicron_BA286.yaml
 
 # escape selection results
@@ -190,7 +183,6 @@ counts_dir_Omicron_BQ11: results/counts/Omicron_BQ11
 counts_dir_Omicron_XBB15: results/counts/Omicron_XBB15
 
 counts_dir_Omicron_EG5: results/counts/Omicron_EG5
-counts_dir_Omicron_FLip: results/counts/Omicron_FLip
 counts_dir_Omicron_BA286: results/counts/Omicron_BA286
 
 variant_counts_Wuhan_Hu_1: results/counts/Wuhan_Hu_1/variant_counts.csv.gz
@@ -199,7 +191,6 @@ variant_counts_Omicron_BQ11: results/counts/Omicron_BQ11/variant_counts.csv.gz
 variant_counts_Omicron_XBB15: results/counts/Omicron_XBB15/variant_counts.csv.gz
 
 variant_counts_Omicron_EG5: results/counts/Omicron_EG5/variant_counts.csv.gz
-variant_counts_Omicron_FLip: results/counts/Omicron_FLip/variant_counts.csv.gz
 variant_counts_Omicron_BA286: results/counts/Omicron_BA286/variant_counts.csv.gz
 
 counts_to_cells_csv_Wuhan_Hu_1: results/counts/Wuhan_Hu_1/counts_to_cells_csv.csv
@@ -208,7 +199,6 @@ counts_to_cells_csv_Omicron_BQ11: results/counts/Omicron_BQ11/counts_to_cells_cs
 counts_to_cells_csv_Omicron_XBB15: results/counts/Omicron_XBB15/counts_to_cells_csv.csv
 
 counts_to_cells_csv_Omicron_EG5: results/counts/Omicron_EG5/counts_to_cells_csv.csv
-counts_to_cells_csv_Omicron_FLip: results/counts/Omicron_FLip/counts_to_cells_csv.csv
 counts_to_cells_csv_Omicron_BA286: results/counts/Omicron_BA286/counts_to_cells_csv.csv
 
 escape_scores_dir: results/escape_scores
@@ -219,7 +209,6 @@ escape_score_samples_Omicron_BQ11: results/escape_scores/samples_Omicron_BQ11.cs
 escape_score_samples_Omicron_XBB15: results/escape_scores/samples_Omicron_XBB15.csv
 
 escape_score_samples_Omicron_EG5: results/escape_scores/samples_Omicron_EG5.csv
-escape_score_samples_Omicron_FLip: results/escape_scores/samples_Omicron_FLip.csv
 escape_score_samples_Omicron_BA286: results/escape_scores/samples_Omicron_BA286.csv
 
 escape_scores_Wuhan_Hu_1: results/escape_scores/scores_Wuhan_Hu_1.csv
@@ -228,7 +217,6 @@ escape_scores_Omicron_BQ11: results/escape_scores/scores_Omicron_BQ11.csv
 escape_scores_Omicron_XBB15: results/escape_scores/scores_Omicron_XBB15.csv
 
 escape_scores_Omicron_EG5: results/escape_scores/scores_Omicron_EG5.csv
-escape_scores_Omicron_FLip: results/escape_scores/scores_Omicron_FLip.csv
 escape_scores_Omicron_BA286: results/escape_scores/scores_Omicron_BA286.csv
 
 escape_fracs_Wuhan_Hu_1: results/escape_scores/escape_fracs_Wuhan_Hu_1.csv
@@ -237,7 +225,6 @@ escape_fracs_Omicron_BQ11: results/escape_scores/escape_fracs_Omicron_BQ11.csv
 escape_fracs_Omicron_XBB15: results/escape_scores/escape_fracs_Omicron_XBB15.csv
 
 escape_fracs_Omicron_EG5: results/escape_scores/escape_fracs_Omicron_EG5.csv
-escape_fracs_Omicron_FLip: results/escape_scores/escape_fracs_Omicron_FLip.csv
 escape_fracs_Omicron_BA286: results/escape_scores/escape_fracs_Omicron_BA286.csv
 
 escape_profiles_dms_colors_Wuhan_Hu_1: results/escape_profiles/Wuhan_Hu_1/escape_profiles_dms_colors.csv
@@ -246,7 +233,6 @@ escape_profiles_dms_colors_Omicron_BQ11: results/escape_profiles/Omicron_BQ11/es
 escape_profiles_dms_colors_Omicron_XBB15: results/escape_profiles/Omicron_XBB15/escape_profiles_dms_colors.csv
 
 escape_profiles_dms_colors_Omicron_EG5: results/escape_profiles/Omicron_EG5/escape_profiles_dms_colors.csv
-escape_profiles_dms_colors_Omicron_FLip: results/escape_profiles/Omicron_FLip/escape_profiles_dms_colors.csv
 escape_profiles_dms_colors_Omicron_BA286: results/escape_profiles/Omicron_BA286/escape_profiles_dms_colors.csv
 
 escape_profiles_dir_Wuhan_Hu_1: results/escape_profiles/Wuhan_Hu_1
@@ -255,7 +241,6 @@ escape_profiles_dir_Omicron_BQ11: results/escape_profiles/Omicron_BQ11
 escape_profiles_dir_Omicron_XBB15: results/escape_profiles/Omicron_XBB15
 
 escape_profiles_dir_Omicron_EG5: results/escape_profiles/Omicron_EG5
-escape_profiles_dir_Omicron_FLip: results/escape_profiles/Omicron_FLip
 escape_profiles_dir_Omicron_BA286: results/escape_profiles/Omicron_BA286
 
 strong_escape_sites_Wuhan_Hu_1: results/escape_profiles/strong_escape_sites_Wuhan_Hu_1.csv
@@ -264,7 +249,6 @@ strong_escape_sites_Omicron_BQ11: results/escape_profiles/strong_escape_sites_Om
 strong_escape_sites_Omicron_XBB15: results/escape_profiles/strong_escape_sites_Omicron_XBB15.csv
 
 strong_escape_sites_Omicron_EG5: results/escape_profiles/strong_escape_sites_Omicron_EG5.csv
-strong_escape_sites_Omicron_FLip: results/escape_profiles/strong_escape_sites_Omicron_FLip.csv
 strong_escape_sites_Omicron_BA286: results/escape_profiles/strong_escape_sites_Omicron_BA286.csv
 
 pdb_outputs_dir_Wuhan_Hu_1: results/pdb_outputs/Wuhan_Hu_1
@@ -273,7 +257,6 @@ pdb_outputs_dir_Omicron_BQ11: results/pdb_outputs/Omicron_BQ11
 pdb_outputs_dir_Omicron_XBB15: results/pdb_outputs/Omicron_XBB15
 
 pdb_outputs_dir_Omicron_EG5: results/pdb_outputs/Omicron_EG5
-pdb_outputs_dir_Omicron_FLip: results/pdb_outputs/Omicron_FLip
 pdb_outputs_dir_Omicron_BA286: results/pdb_outputs/Omicron_BA286
 
 supp_data_dir_Wuhan_Hu_1: results/supp_data/Wuhan_Hu_1
@@ -282,7 +265,6 @@ supp_data_dir_Omicron_BQ11: results/supp_data/Omicron_BQ11
 supp_data_dir_Omicron_XBB15: results/supp_data/Omicron_XBB15
 
 supp_data_dir_Omicron_EG5: results/supp_data/Omicron_EG5
-supp_data_dir_Omicron_FLip: results/supp_data/Omicron_FLip
 supp_data_dir_Omicron_BA286: results/supp_data/Omicron_BA286
 
 bind_expr_filters_dir_Wuhan_Hu_1: results/bind_expr_filters/Wuhan_Hu_1
@@ -291,7 +273,6 @@ bind_expr_filters_dir_Omicron_BQ11: results/bind_expr_filters/Omicron_BQ11
 bind_expr_filters_dir_Omicron_XBB15: results/bind_expr_filters/Omicron_XBB15
 
 bind_expr_filters_dir_Omicron_EG5: results/bind_expr_filters/Omicron_EG5
-bind_expr_filters_dir_Omicron_FLip: results/bind_expr_filters/Omicron_FLip
 bind_expr_filters_dir_Omicron_BA286: results/bind_expr_filters/Omicron_BA286
 
 escape_selections_dir: results/escape_selections

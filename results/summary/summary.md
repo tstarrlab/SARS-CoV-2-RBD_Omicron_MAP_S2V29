@@ -18,14 +18,12 @@
     [Omicron_BQ11](aggregate_variant_counts_Omicron_BQ11.md),
     [Omicron_XBB15](aggregate_variant_counts_Omicron_XBB15.md),
     [Omicron_EG5](aggregate_variant_counts_Omicron_EG5.md),
-    [Omicron_FLip](aggregate_variant_counts_Omicron_FLip.md),
     [Omicron_BA286](aggregate_variant_counts_Omicron_BA286.md)
     to create variant counts files for [Wuhan_Hu_1](../counts/Wuhan_Hu_1/variant_counts.csv.gz), 
     [Omicron_BA2](../counts/Omicron_BA2/variant_counts.csv.gz), 
     [Omicron_BQ11](../counts/Omicron_BQ11/variant_counts.csv.gz),
     [Omicron_XBB15](../counts/Omicron_XBB15/variant_counts.csv.gz), 
     [Omicron_EG5](../counts/Omicron_EG5/variant_counts.csv.gz), 
-    [Omicron_FLip](../counts/Omicron_FLip/variant_counts.csv.gz), and
     [Omicron_BA286](../counts/Omicron_BA286/variant_counts.csv.gz).
 
  3. Analyze sequencing counts to cells ratio for [Wuhan_Hu_1](counts_to_cells_ratio_Wuhan_Hu_1.md), 
@@ -33,7 +31,6 @@
     [Omicron_BQ11](counts_to_cells_ratio_Omicron_BQ11.md), 
     [Omicron_XBB15](counts_to_cells_ratio_Omicron_XBB15.md),
     [Omicron_EG5](counts_to_cells_ratio_Omicron_EG5.md),
-    [Omicron_FLip](counts_to_cells_ratio_Omicron_FLip.md) and 
     [Omicron_BA286](counts_to_cells_ratio_Omicron_BA286.md).
     this prints a list of any samples where this ratio too low. Also
     creates a CSV for [Wuhan_Hu_1](../counts/Wuhan_Hu_1/counts_to_cells_csv.csv), 
@@ -41,7 +38,6 @@
     [Omicron_BQ11](../counts/Omicron_BQ11/counts_to_cells_csv.csv), 
     [Omicron_XBB15](../counts/Omicron_XBB15/counts_to_cells_csv.csv), 
     [Omicron_EG5](../counts/Omicron_EG5/counts_to_cells_csv.csv),
-    [Omicron_FLip](../counts/Omicron_FLip/counts_to_cells_csv.csv) and 
     [Omicron_BA286](../counts/Omicron_BA286/counts_to_cells_csv.csv) with the
     sequencing counts, number of sorted cells, and ratios for
     all samples.
@@ -51,7 +47,6 @@
     [Omicron_BQ11](counts_to_scores_Omicron_BQ11.md), 
     [Omicron_XBB15](counts_to_scores_Omicron_XBB15.md),
     [Omicron_EG5](counts_to_scores_Omicron_EG5.md),
-    [Omicron_FLip](counts_to_scores_Omicron_FLip.md) and 
     [Omicron_BA286](counts_to_scores_Omicron_BA286.md).
 
  5. Call sites of strong escape for [Wuhan_Hu_1](call_strong_escape_sites_Wuhan_Hu_1.md), 
@@ -59,7 +54,6 @@
     [Omicron_BQ11](call_strong_escape_sites_Omicron_BQ11.md), 
     [Omicron_XBB15](call_strong_escape_sites_Omicron_XBB15.md), 
     [Omicron_EG5](call_strong_escape_sites_Omicron_EG5.md),
-    [Omicron_FLip](call_strong_escape_sites_Omicron_FLip.md) and 
     [Omicron_BA286](call_strong_escape_sites_Omicron_BA286.md).
 
  6. Plot escape profiles for [Wuhan_Hu_1](escape_profiles_Wuhan_Hu_1.md), 
@@ -67,7 +61,6 @@
     [Omicron_BQ11](escape_profiles_Omicron_BQ11.md), 
     [Omicron_XBB15](escape_profiles_Omicron_XBB15.md),
     [Omicron_EG5](escape_profiles_Omicron_EG5.md),
-    [Omicron_FLip](escape_profiles_Omicron_FLip.md) and 
     [Omicron_BA286](escape_profiles_Omicron_BA286.md).
 
  7. Map escape profiles to ``*.pdb`` files using notebooks here for 
@@ -76,7 +69,6 @@
     [Omicron_BQ11](output_pdbs_Omicron_BQ11.md), 
     [Omicron_XBB15](output_pdbs_Omicron_XBB15.md),
     [Omicron_EG5](output_pdbs_Omicron_EG5.md),
-    [Omicron_FLip](output_pdbs_Omicron_FLip.md) and 
     [Omicron_BA286](output_pdbs_Omicron_BA286.md).
 
  8. Compare DMS escape to circulating variants from GISAID. First requires manually running
@@ -89,13 +81,11 @@
     [Omicron_BQ11](make_supp_data_Omicron_BQ11.md), 
     [Omicron_XBB15](make_supp_data_Omicron_XBB15.md),
     [Omicron_EG5](make_supp_data_Omicron_EG5.md), 
-    [Omicron_FLip](make_supp_data_Omicron_FLip.md) and 
     [Omicron_BA286](make_supp_data_Omicron_BA286.md)
     which are here for [Wuhan_Hu_1](../supp_data/Wuhan_Hu_1), 
     [Omicron_BA2](../supp_data/Omicron_BA2), 
     [Omicron_BQ11](../supp_data/Omicron_BQ11), 
     [Omicron_XBB15](../supp_data/Omicron_XBB15), 
     [Omicron_EG5](../supp_data/Omicron_EG5), 
-    [Omicron_FLip](../supp_data/Omicron_FLip) and 
     [Omicron_BA286](../supp_data/Omicron_BA286). These include
     `dms-view` input files.
