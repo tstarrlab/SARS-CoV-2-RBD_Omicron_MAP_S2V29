@@ -1,0 +1,15 @@
+# the BioSample accession
+biosample_accession: SAMN41694243
+
+# name of CSV file listing barcode runs to uploade
+barcode_runs: barcode_runs_to_upload.csv
+
+#
+sample_name: Vir_S2V29_MAP_barcodes
+
+# the following come from the SRA FTP upload instructions
+ftp_username: subftp
+ftp_account_folder: uploads/tyler.n.starr_gmail.com_pVxU5Fx4
+
+# Meaningful name for this sample's FTP folder:
+ftp_subfolder: Vir_S2V29_MAP_barcodes
