@@ -2,7 +2,9 @@
 
 The effects of mutations on antibody binding to the SARS-CoV-2 RBD in Wuhan-Hu-1 and Omicron BA.2 backgrounds.
 
-Study and analysis by Tyler Starr, Ashley Taylor, and coauthors.
+Study and analysis by Tyler Starr, Will Foreman, Ashley Taylor, and coauthors.
+
+Find the published study [here](https://www.cell.com/cell/fulltext/S0092-8674(24)01084-5).
 
 
 ## Summary of workflow and results
